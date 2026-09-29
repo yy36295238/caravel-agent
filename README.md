@@ -26,7 +26,7 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
 
 macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model accounts<br>TRAE requires CLI 2.0 and an Enterprise Flagship account.
 
-[![Caravel workbench: tasks, agent conversations, and code review](https://caravel-site.pages.dev/assets/workbench-en.png?v=fd1a81550300)](https://caravel-site.pages.dev/?lang=en)
+[![Caravel workbench: tasks, agent conversations, and code review](https://caravel-site.pages.dev/assets/workbench-en.png?v=20589f435134)](https://caravel-site.pages.dev/?lang=en)
 
 **Click the screenshot to explore the full workbench on the website.**<br>
 <sub>The demo uses the actual product interface and sample data. No installation required.</sub>

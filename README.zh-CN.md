@@ -26,7 +26,7 @@
 
 macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和模型账号<br>TRAE 需要 CLI 2.0 与企业版旗舰版账号。
 
-[![Caravel 工作台：全部任务、Agent 会话与代码验收](https://caravel-site.pages.dev/assets/workbench-zh-CN.png?v=163c7aa5263d)](https://caravel-site.pages.dev/?lang=zh-CN)
+[![Caravel 工作台：全部任务、Agent 会话与代码验收](https://caravel-site.pages.dev/assets/workbench-zh-CN.png?v=ad7f5950761d)](https://caravel-site.pages.dev/?lang=zh-CN)
 
 **点击截图，访问官网并体验完整工作台。**<br>
 <sub>演示使用产品原版界面与示例数据，无需安装。</sub>
