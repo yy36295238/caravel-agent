@@ -2,7 +2,7 @@
 
 [English](README.md) · **简体中文**
 
-<img src="https://caravel-site.pages.dev/assets/icon.png" width="64" height="64" alt="Caravel">
+<a href="https://caravel-site.pages.dev/?lang=zh-CN"><img src="https://caravel-site.pages.dev/assets/og-zh-CN.png?v=2" width="100%" alt="Caravel"></a>
 
 # Caravel
 
@@ -16,6 +16,8 @@
   <a href="https://caravel-site.pages.dev/?lang=zh-CN"><strong>访问官网 ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/demo/?lang=zh-CN"><strong>在线体验</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://caravel-site.pages.dev/?lang=zh-CN#film"><strong>观看短片</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yy36295238/caravel-releases/releases/latest"><strong>下载 Caravel</strong></a>
 </p>

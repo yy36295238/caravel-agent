@@ -2,7 +2,7 @@
 
 **English** · [简体中文](README.zh-CN.md)
 
-<img src="https://caravel-site.pages.dev/assets/icon.png" width="64" height="64" alt="Caravel">
+<a href="https://caravel-site.pages.dev/?lang=en"><img src="https://caravel-site.pages.dev/assets/og-en.png?v=2" width="100%" alt="Caravel"></a>
 
 # Caravel
 
@@ -16,6 +16,8 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
   <a href="https://caravel-site.pages.dev/?lang=en"><strong>Visit website ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/demo/?lang=en"><strong>Try the demo</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://caravel-site.pages.dev/?lang=en#film"><strong>Watch the film</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yy36295238/caravel-releases/releases/latest"><strong>Download Caravel</strong></a>
 </p>
