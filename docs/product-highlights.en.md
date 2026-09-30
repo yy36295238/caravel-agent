@@ -102,7 +102,7 @@ Investigating an issue often means moving information between an IDE, terminal, 
 - Preview code, Markdown, Mermaid, images, and version differences.
 - Inspect branches, commit, push, stage, and resolve conflicts.
 - Query MySQL, PostgreSQL, SQLite, MongoDB, and Redis.
-- Generate, explain, optimize, and repair queries with SQL Copilot.
+- Generate, explain, optimize, and repair queries with SQL Copilot; link a business workspace so the agent can trace business rules using current code and database metadata, with cited files and line numbers to review.
 - Confirm dangerous database operations and inspect their scope where available.
 - Give agents authorized database context through MCP.
 

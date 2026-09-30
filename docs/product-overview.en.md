@@ -127,7 +127,9 @@ Connect to MySQL, PostgreSQL, SQLite, MongoDB, or Redis to query and edit data.
 - Browse objects, filter and page through data, open local SQLite files, query MongoDB documents, and manage Redis keys.
 - Write SQL or document queries, inspect and edit results, and export complete results, including SQL output. For editable results, cell and row-detail value dialogs let you edit raw text, set NULL, and stage changes for confirmation and submission in the results panel.
 - Resize result columns by dragging or keyboard; hidden columns and horizontal scrolling retain correct field positions.
-- Generate, explain, optimize, and repair queries with a conversational SQL Copilot.
+- Generate, explain, optimize, and repair queries with a conversational SQL Copilot. Editor SQL is excluded from ordinary questions by default; explicitly attach the selection or current statement when needed, and stop an active request.
+- Link a workspace per connection and database scope so the selected agent can search current on-disk code, including uncommitted changes, trace business logic alongside database metadata, and show cited files and line numbers. Query results are not sent; answers based on a previous workspace are excluded after switching or unlinking it. Analysis uses each agent’s native permissions and project configuration, without a uniform sandbox guarantee; code may differ from the deployed database environment.
+- Connection settings group basic details, connection fields, safety policies, and advanced options, with password visibility and persistent test results. Marking a network connection as production automatically selects and locks required TLS.
 - Save queries, use parameters, and inspect execution history and object definitions.
 - Let agents access authorized database capabilities through MCP.
 - Confirm dangerous production operations and inspect target-table size before changes.

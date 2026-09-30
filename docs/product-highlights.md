@@ -102,7 +102,7 @@ Caravel 按真实会话续接任务，被中断的运行会明确标记为待续
 - 预览代码、Markdown、Mermaid、图片和版本差异；
 - 查看分支、提交、推送、暂存和处理冲突；
 - 查询 MySQL、PostgreSQL、SQLite、MongoDB 和 Redis；
-- 通过 SQL Copilot 生成、解释、优化和修复查询；
+- 通过 SQL Copilot 生成、解释、优化和修复查询，也可关联业务工作区，让 Agent 结合当前代码和数据库结构追踪业务口径，并核对引用的文件与行号；
 - 在危险数据库操作前确认并尽可能展示影响范围；
 - 经授权后通过 MCP 让 Agent 使用真实数据库上下文。
 
