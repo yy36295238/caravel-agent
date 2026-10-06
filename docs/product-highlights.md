@@ -4,7 +4,7 @@
 
 > **把等待 AI 的时间，变成真正的并行产出。**
 
-Caravel 不是又一个 AI 聊天窗口，也不只是多个 Agent 的启动器。它把 Claude Code、Codex、OpenCode、pi、Grok 和 TRAE 组织成一支可调度、可追踪、可干预、可验收的执行队伍。
+Caravel 不是又一个 AI 聊天窗口，也不只是多个 Agent 的启动器。它把 Claude Code、Codex、OpenCode、pi、Grok、TRAE 和 Antigravity 组织成一支可调度、可追踪、可干预、可验收的执行队伍。
 
 你负责目标和判断，Agent 负责搜索、修改、验证和执行；只有遇到授权、业务决策和最终验收时，Caravel 才把注意力还给你。
 
@@ -184,6 +184,7 @@ Agent CLI 仍需实际运行。Claude、Codex 等任务产生的进程资源，�
 ## 使用边界
 
 - Caravel 仍需至少一个已经安装并完成配置的 Agent CLI；
+- Antigravity 需要官方 CLI 和可用的账号或 API 配置；首次 ACP 连接可能需要独立浏览器登录；
 - TRAE 需要 CLI 2.0 与企业版旗舰版账号；
 - Git 工作区仍需 Git；
 - 断点调试、性能分析、复杂类型导航和大型人工重构仍建议使用专业 IDE；

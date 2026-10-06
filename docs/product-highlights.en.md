@@ -4,7 +4,7 @@
 
 > **Turn time spent waiting for AI into work progressing in parallel.**
 
-Caravel brings Claude Code, Codex, OpenCode, pi, Grok, and TRAE into a coordinated workspace where their work can be assigned, tracked, guided, and reviewed.
+Caravel brings Claude Code, Codex, OpenCode, pi, Grok, TRAE, and Antigravity into a coordinated workspace where their work can be assigned, tracked, guided, and reviewed.
 
 You set goals and make decisions. Agents search, edit, verify, and execute. Permissions, product decisions, and final acceptance bring your attention back when it is needed.
 
@@ -179,6 +179,7 @@ Developers working across projects, frequent AI coding users managing many sessi
 ## Requirements and boundaries
 
 - At least one installed and configured agent CLI is required for agent execution.
+- Antigravity requires the official CLI and a working account or API configuration; the first ACP connection may require a separate browser sign-in.
 - TRAE requires CLI 2.0 and an Enterprise Flagship account.
 - Git workspaces require Git.
 - Windows also needs Git for Windows and Node.js.
