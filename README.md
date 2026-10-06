@@ -72,6 +72,12 @@ This command only removes Caravel’s download quarantine attribute. See the [in
 
 </details>
 
+## Free use and license
+
+Caravel installers are provided under the [Apache License 2.0](LICENSE), free for personal and commercial use. Modification and redistribution are permitted under its terms; retain the required license and attribution notices and identify changes when redistributing modified files.
+
+The application source code remains private and is not provided, so Caravel is not presented as open-source software. Third-party components retain their own licenses. Agent subscriptions, model APIs, and other external services may charge separately.
+
 ---
 
 This repository provides **macOS / Windows installers and release history**. Visit the [website](https://caravel-site.pages.dev/?lang=en) for product information, the interactive demo, and FAQs.

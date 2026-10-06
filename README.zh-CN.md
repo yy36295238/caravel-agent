@@ -72,6 +72,12 @@ xattr -dr com.apple.quarantine /Applications/Caravel.app
 
 </details>
 
+## 免费使用与许可证
+
+Caravel 安装包以 [Apache License 2.0](LICENSE) 授权，个人和商业用途均可免费使用，也可按许可证条款修改和再分发；再分发时须保留所需许可证与归属声明，分发修改后的文件时须注明修改。
+
+应用源码保持私有，不对外提供，因此不将 Caravel 描述为开源软件。第三方组件遵循各自许可证；Agent 订阅、模型 API 及其他外部服务可能另行收费。
+
 ---
 
 本仓库提供 **macOS / Windows 安装包与版本记录**。产品介绍、交互演示与常见问题请以 [官网](https://caravel-site.pages.dev/?lang=zh-CN) 为主。
