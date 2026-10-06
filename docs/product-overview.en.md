@@ -53,7 +53,7 @@ The filter bar groups session sync, view, and split controls under “More actio
 - Image links in completed desktop replies become thumbnails that open enlarged previews. Switch chat SVG images between preview and read-only source, with text selection and copying.
 - Local video links and recognized inline-code paths in completed desktop replies show video thumbnails. Click to play from the beginning inside the message, with seeking, volume, and fullscreen controls. Videos do not autoplay and stop when leaving the conversation; unsupported files can open externally. Open the video’s containing folder directly, or hover over its name to see the full path.
 - Closed Mermaid code blocks in desktop and mobile chats and workflow output support diagram/text switching and zoom. Feishu conversation snapshots also render diagrams; unfinished code blocks retain their source.
-- Choose a model and reasoning effort for a new task, a continuation, or a conversation fork. Defaults follow model settings. Manage models in Agent settings; historical tasks retain their existing model selection. Task headers show the latest known reasoning effort; continuations retain it without overwriting manual choices.
+- Choose a model and reasoning effort for a new task, a continuation, or a conversation fork. Defaults follow model settings. Manage models in Agent settings; historical tasks retain their existing model selection. Task headers show the latest known reasoning effort; continuations retain it without overwriting manual choices. Expand a run command to view that run’s agent, model, and reasoning effort. Historical commands retain their own configuration; missing values appear as “—”.
 - Scrolling toward the top loads earlier messages while preserving your reading position, including task quick previews and mobile task details.
 - Task turn counts and active time cover the full conversation, independently of message pagination. Active time excludes idle waits for input between turns.
 - Automatic task titles are optional under Settings → Agent → General and default to off for both new and existing users. When enabled, the selected agent and model summarize long goals for new tasks without blocking execution; desktop, web, and mobile details show generation status. Turning it off keeps the original name and discards pending summaries. Existing tasks, manual AI generation, full goals, and manual names are preserved.
@@ -174,7 +174,7 @@ Assess effectiveness, cost, and opportunities to improve.
 - Claude CLI and ACP recover per-run cost from local session records and fill delayed historical costs on later turns. These are Claude’s price-based estimates, not subscription bills; missing records preserve unknown or existing values.
 - View supported account quotas and reset times. TRAE weekly quota depends on its enterprise service; unavailable data shows an error or an older snapshot.
 - Inspect installation size, stored data, memory, and CPU usage per agent. TRAE storage covers CLI data and excludes other IDE data.
-- **Reviews**: use time, workspace, and tag filters to generate AI summaries with evidence, achievements, issues, and next steps.
+- **Reviews**: use time, workspace, and tag filters to generate AI summaries with evidence, achievements, issues, and next steps. Each agent call for batch analysis or the final summary can take up to 10 minutes and remains manually stoppable.
 - Export reports or turn their conclusions into prompts, lessons, workflows, or skills.
 - Rate individual replies and compare approval rates by model.
 
