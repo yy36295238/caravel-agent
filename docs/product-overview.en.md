@@ -103,7 +103,7 @@ Automate work that runs daily, weekly, at intervals, or just once.
 - Choose local reminders, local scripts, or agent execution. Reminders do not call an agent. Agents can generate and trial a script once, then run it on schedule without repeated model calls; shell and PowerShell are supported.
 - Optionally catch up on runs missed while the computer was unavailable.
 - Run a schedule immediately to inspect its behavior.
-- Review run history and output, with optional notification cards.
+- Review run history and output, with optional notification cards. Open the full task in a dialog from the schedule list or run details without leaving the page, including failed tasks with no output.
 - Pause, edit, or delete schedules; use list or card views and see the next run time.
 
 ### 4. Editor
@@ -248,7 +248,8 @@ Follow tasks and handle key decisions away from your computer, without configuri
 Use a phone browser on the same local network to follow Caravel on your computer. Viewing is available after pairing; task actions stay off until you enable them.
 
 - Enable mobile access separately in Settings and pair with a QR code or link. Disconnect this device from the phone’s Me page.
-- See run summaries, items that need you, workspaces, and conversations. Thinking and tool steps collapse into a one-line summary, with changes and task details on separate pages.
+- See run summaries, items that need you, workspaces, and conversations. The task list defaults to today, with options for the past 7 days or all time. Thinking and tool steps collapse into a one-line summary, with changes and task details on separate pages.
+- Image attachments in user messages appear as thumbnails and open in a fullscreen preview. Only images recorded in that task’s messages can be read, up to 20 MB each; other attachments show their filenames.
 - After turning on “Allow mobile task actions” on the computer, answer permission prompts, send messages and images, stop, continue, accept or discard isolated-copy changes, and create, rename, archive, or delete tasks.
 - Separate-branch tasks are still finished on the computer. Return to the computer when an agent is waiting for a structured form.
 - The phone follows the computer’s theme by default. Access uses HTTP and should stay on a trusted network.
