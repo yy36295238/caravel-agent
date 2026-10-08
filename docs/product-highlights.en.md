@@ -70,7 +70,7 @@ Caravel separates routine execution from decisions that need you:
 - Agents can ask follow-up questions when a decision is needed.
 - Completed code changes await review.
 - Stop, correct, continue the conversation, or take over in a terminal.
-- Use Feishu to follow progress, confirm actions, and accept results away from your desk.
+- Use Feishu to follow progress, confirm actions, and accept results away from your desk. A phone browser on the same local network can also follow progress, and can handle permissions, conversation, and acceptance after you allow task actions on the computer.
 
 You can leave a task running and return when your judgment is needed.
 
@@ -186,6 +186,7 @@ Developers working across projects, frequent AI coding users managing many sessi
 - Use a specialist IDE for breakpoint debugging, profiling, complex type navigation, and large manual refactors.
 - Model-service data handling depends on the selected agent and provider.
 - Caravel reduces the need to keep every development tool running at once; specialist tools remain useful when needed.
+- Mobile access uses HTTP on the local network and should stay on a trusted network. Task actions are off by default; if a link is exposed, turn the switch off or rotate the link.
 
 ## Get started
 
