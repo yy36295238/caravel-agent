@@ -17,6 +17,8 @@
   &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/demo/?lang=zh-CN"><strong>在线体验</strong></a>
   &nbsp; · &nbsp;
+  <a href="https://caravel-site.pages.dev/zh-CN/docs/"><strong>产品手册</strong></a>
+  &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/?lang=zh-CN#film"><strong>观看短片</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yy36295238/caravel-releases/releases/latest"><strong>下载 Caravel</strong></a>

@@ -17,6 +17,8 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
   &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/demo/?lang=en"><strong>Try the demo</strong></a>
   &nbsp; · &nbsp;
+  <a href="https://caravel-site.pages.dev/zh-CN/docs/"><strong>User guide</strong></a>
+  &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/?lang=en#film"><strong>Watch the film</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yy36295238/caravel-releases/releases/latest"><strong>Download Caravel</strong></a>
