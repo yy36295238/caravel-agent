@@ -192,6 +192,7 @@ Keep personal tools inside the workbench.
 - Local permissions can last for the current session or be remembered, and can be revoked individually in app settings. Installation does not grant local access, exported apps do not include these permissions, and web and mobile remote access do not expose these interfaces.
 - Program execution has the current user's privileges and is not restricted by file or communication scopes; it is not a process sandbox. Closing, refreshing, or revoking execution permission cleans up directly launched session processes, excluding descendants. Generic graceful stops and Unix Socket access are unsupported on Windows.
 - Card, compact, and list views show actual generation, refinement, confirmation, interruption, and ready-to-install states; uninstalled drafts no longer remain marked as generating.
+- Installed apps that can be opened may be pinned as quick apps. Pins stay on this computer in the order they were added and are not included in shared packages. The desktop sidebar opens a quick panel that launches an app in its own window, or returns to a window already open, without leaving the current workbench.
 - Private storage and database access require authorization. Cross-database file access, query duration, concurrency, and result size are limited. Network redirects across origins require a new authorized request; oversized responses are truncated.
 - Improve apps, save versions, and export them to share.
 
