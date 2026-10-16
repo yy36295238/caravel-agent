@@ -94,6 +94,8 @@ Cleanup preserves recovery information for separate project copies so they can r
 
 Choose agents for their strengths, and bring existing CLI sessions into the task library.
 
+When a reply is in an unfamiliar language, translate it on demand in desktop or full web conversations and compare it with the original in place, preserving code and links. Translations stay on your machine for reuse without adding another turn to the original task; generating a translation uses the selected model’s quota.
+
 ## 5. Keep code, Git, and database context close together
 
 Investigating an issue often means moving information between an IDE, terminal, database client, and AI conversation. Caravel puts common operations beside the task:
@@ -113,7 +115,7 @@ Reduce the manual work of describing context and copying results between tools.
 Daily reports, weekly summaries, code scans, dependency checks, and data inspections do not need to depend on remembering each run.
 
 - Describe a time and task, then confirm the parsed schedule.
-- Run a reminder, local script, or agent at the scheduled time.
+- Run a reminder, local script, or agent at the scheduled time, with skills and MCP services preselected for the agent. Without an explicit project selection, use a dedicated schedule workspace rather than an existing project.
 - Have an agent generate and trial a script once, then execute it deterministically without another model call each time.
 - Combine agents, commands, and human checks into workflows with retries and jumps.
 - Extract a workflow from a successful task and reuse it.

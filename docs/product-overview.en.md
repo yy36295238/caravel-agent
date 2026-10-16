@@ -63,6 +63,8 @@ The filter bar groups session sync, view, and split controls under “More actio
 - AI titles focus on the core action and subject. New separate-branch task and project directory names use only ASCII letters, digits, and `-_.`, falling back to `workspace` when empty and appending IDs to distinguish names. The task-name portion is limited to 20 characters; existing paths and full task goals remain available.
 - Projects added during a run join the next run, or you can pause, attach, and continue. Multi-project execution requires agent or adapter support for additional working directories.
 - Copy conversation messages as text or images.
+- Manually translate completed assistant replies in shared conversation panels on desktop and the full web interface, then switch between the original and translation in place. Text/image copying and search within loaded messages follow the displayed text, while switching preserves your reading position. Translations are saved locally for reuse after restarts or history sync and remain readable offline; failed regeneration preserves the previous result, and saving can be retried without generating again.
+- In Settings → Appearance → Language, choose a translation language independently of the interface: Simplified Chinese (default), Traditional Chinese, English, Japanese, Korean, French, German, or Spanish. Use the message’s model or another installed and enabled agent/model. Generation uses that model’s quota without continuing the original session or adding task turns; code snippets and link targets are preserved, with a 48 KB source limit. Thinking, tools, user messages, attachments, standalone task-library previews, and mobile pages do not offer translation.
 - Mark mistakenly sent user messages as deleted on desktop and the full web interface using the delete icon and confirmation dialog; canceling submits nothing. Keep struck-through text and submit one correction asking the agent to ignore the message and attachments and await further input. Stop running tasks first. Marks survive history sync and appear in the mobile conversation; native history and completed actions are not undone.
 - Startup and periodic checks reconcile running tasks and pending confirmations whose processes have exited. Explicitly interrupted tasks await continuation without restarting automatically. Codex/TRAE runs without current-turn records or a clear final state are marked as failed.
 - Repeated continuation requests replace the previous run and its pending questions, waiting for its process to exit before restoring the conversation. Requests for one task are handled in arrival order; different tasks can still run in parallel.
@@ -99,10 +101,13 @@ Automate work that runs daily, weekly, at intervals, or just once.
 
 - Describe the time and task in natural language; review the parsed form before creating the schedule.
 - Alternatively, enter the name, instructions, and recurrence manually.
+- New-schedule drafts automatically retain the description, form, agent, model, skills, and MCP selections locally. Closing and reopening restores the draft; successful creation clears it, while editing an existing schedule leaves it untouched.
 - Run daily, weekly, every few minutes or hours, or once.
 - Set multiple times for daily or weekly schedules, such as 09:30 and 20:30.
 - Restrict interval schedules to selected weekdays and working hours.
 - Choose local reminders, local scripts, or agent execution. Reminders do not call an agent. Agents can generate and trial a script once, then run it on schedule without repeated model calls; shell and PowerShell are supported.
+- Search and select skills and MCP services for scheduled agent tasks. Scheduled, immediate, and catch-up runs include those choices and MCP services associated with the selected skills.
+- Agent tasks, local scripts, and script trials without a selected workspace use an automatically created, reusable schedule workspace rather than the first project you added. An unavailable explicitly selected workspace requires reselection; reminders need no workspace.
 - Optionally catch up on runs missed while the computer was unavailable.
 - Run a schedule immediately to inspect its behavior.
 - Review run history and output, with optional notification cards. Open the full task in a dialog from the schedule list or run details without leaving the page, including failed tasks with no output.
