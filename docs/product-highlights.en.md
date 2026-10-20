@@ -61,6 +61,8 @@ A terminal shows a process. Caravel shows the stage of the work:
 
 Use a list to scan tasks, a board to follow stages, or split views to watch several important runs. A terminal remains available for taking over execution.
 
+Desktop tasks can also use a saved collaboration team. The lead agent assigns work according to members’ roles and notes, workers execute one at a time in the shared directory, and the lead reviews their results against the plan. The collaboration panel brings assignments, progress, reports, usage, and acceptance evidence together; a worker returning or a conversation ending does not automatically mean the whole request is delivered. Pixel cabin and modern office themes offer the same status and conversation controls, with permissions, stopping, and final confirmation available to the user.
+
 ## 2. Spend attention where it matters
 
 Caravel separates routine execution from decisions that need you:
