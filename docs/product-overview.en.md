@@ -193,7 +193,7 @@ Combine agent steps, commands, and human approval into repeatable processes.
 Assess effectiveness, cost, and opportunities to improve.
 
 - **Insights**: task efficiency, agent and model performance, tool usage, cost, permissions, and runtime health. Each visit opens Agent analysis → Cost and resources, with dates from Monday through today, while retaining workspace, agent, and trend interval preferences.
-- Compare spending or tokens with the previous period; drill down by agent, model, workspace, or tag. The high-usage ranking aggregates runs by task within the current filters, with run details and a link to the original task.
+- Compare spending or tokens with the previous period; drill down by agent, model, workspace, or tag. The high-usage ranking aggregates runs by task within the current filters, with run details and a link to the original task. Statistics include hidden tasks and team-member runs, retaining historical usage and agent filters after an agent is uninstalled. Member runs are grouped under the main task and counted once, preserving the actual agent and model while using the main task’s workspace and tags. Member tool calls are included, and completed tasks are deduplicated after grouping.
 - Claude CLI and ACP recover per-run cost from local session records and fill delayed historical costs on later turns. These are Claude’s price-based estimates, not subscription bills; missing records preserve unknown or existing values.
 - View supported account quotas and reset times. TRAE weekly quota depends on its enterprise service; unavailable data shows an error or an older snapshot.
 - Inspect installation size, stored data, memory, and CPU usage per agent. TRAE storage covers CLI data and excludes other IDE data.
