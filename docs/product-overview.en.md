@@ -279,7 +279,11 @@ Use a phone browser on the same local network to follow Caravel on your computer
 - See run summaries, items that need you, workspaces, and conversations. The task list defaults to today, with options for the past 7 days or all time. Thinking and tool steps collapse into a one-line summary, with changes and task details on separate pages.
 - Image attachments in user messages appear as thumbnails and open in a fullscreen preview. Only images recorded in that task’s messages can be read, up to 20 MB each; other attachments show their filenames.
 - After turning on “Allow mobile task actions” on the computer, answer permission prompts, send messages and images, stop, continue, accept or discard isolated-copy changes, and create, rename, archive, or delete tasks.
-- Separate-branch tasks are still finished on the computer. Return to the computer when an agent is waiting for a structured form.
+- When creating a task, choose a model, reasoning effort, and permissions; attach images and tags; select configured skills, MCP servers, and plugins; link workspaces; and reference up to five existing tasks. Idle conversations can also change settings and capabilities for the next turn.
+- After enabling the corresponding run modes on the computer, create isolated-copy or separate-branch tasks from the phone. Choose a base for isolated copies; separate branches start from main or master, support AI-generated branch names and task titles, and can be committed and pushed during review.
+- Answer agent forms directly on the phone, including single and multiple choices, text, numbers, booleans, and custom answers. Open link requests and continue; mobile forms do not offer local-file attachments.
+- The information page shows run mode, branch and base, linked workspaces, run counts, tokens, context usage, and cost. Supported Claude, Codex, Grok, and TRAE accounts show quota windows, warnings, and reset times; manual refresh requires mobile task actions to be enabled.
+- Copy message text, inspect the agent’s task plan, and distinguish new messages. New replies appear progressively, following updates at the bottom while preserving your position when reading earlier messages. Long conversations load in pages with incremental refresh; thinking and tool output are trimmed by size while message bodies remain complete.
 - The phone follows the computer’s theme by default. Access uses HTTP and should stay on a trusted network.
 
 ## Typical workflow
