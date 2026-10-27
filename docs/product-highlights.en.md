@@ -144,6 +144,8 @@ Use your own agent CLIs, model accounts, Git, and IDE. Decide whether to enable 
 
 Local-first makes the boundaries clear: what is stored locally, what external agents process, and which permissions you control. Online model calls and integrations still use the network.
 
+Release builds send random installation and event IDs, version, OS/architecture, and startup/update event times to Caravel’s own servers for installation and activity statistics. This excludes conversations, code, paths, accounts, and hardware identifiers. Statistics run independently of automatic-update settings; development builds do not report. Counts represent application data directories, not exact people or devices.
+
 ---
 
 ## A morning with Caravel

@@ -51,6 +51,8 @@ macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和�
 
 macOS 与 Windows 均提供包含全部功能模块的 Caravel 通用版。macOS 与 Windows x64 支持应用内签名更新；旧 Windows 客户端需先手动安装支持自动更新的版本。Windows 安装前准备 Git for Windows、Node.js 和 Agent CLI。Windows 安装包尚未使用 Authenticode 签名，如遇 SmartScreen 提示，确认来自本仓库 Releases 后，点击「更多信息 → 仍要运行」。任务与会话保存在本机；Agent 调用在线模型或使用外部集成时仍会联网。
 
+正式版会向 Caravel 自有服务器发送随机安装及事件标识、版本、系统/架构和启动、更新事件时间，用于安装与活跃统计；不包含会话、代码、路径、账号或硬件标识。统计独立于自动更新开关，开发版不上报；数据按安装数据目录去重，不代表准确人数或设备数。
+
 <details>
 <summary><strong>首次打开被 macOS 阻止？查看「仍要打开」和终端放行命令</strong></summary>
 

@@ -51,6 +51,8 @@ Explore apps, schedules, workflows, and more on the [website](https://caravel-si
 
 Both platforms provide the complete Caravel app with all feature modules. macOS and Windows x64 support signed in-app updates. Older Windows clients need a manual upgrade to a version with automatic update support. Windows requires Git for Windows, Node.js, and an agent CLI. The Windows installer is not yet Authenticode-signed: if SmartScreen appears, verify that it came from this repository’s Releases, then choose “More info → Run anyway”. Tasks and conversations stay on your machine; online model calls and external integrations still use the network.
 
+Release builds send random installation and event IDs, version, OS/architecture, and startup/update event times to Caravel’s own servers for installation and activity statistics. This excludes conversations, code, paths, accounts, and hardware identifiers. Statistics run independently of automatic-update settings; development builds do not report. Counts represent application data directories, not exact people or devices.
+
 <details>
 <summary><strong>First launch blocked on macOS? Use Open Anyway or Terminal</strong></summary>
 
