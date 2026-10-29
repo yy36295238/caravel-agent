@@ -43,6 +43,31 @@ macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model ac
 
 Explore apps, schedules, workflows, and more on the [website](https://caravel-site.pages.dev/en/#possibilities), or [try them in the demo](https://caravel-site.pages.dev/demo/?lang=en).
 
+## Architecture: how Caravel runs agents
+
+Caravel starts agent CLIs or protocol adapters on your machine. Its Rust backend manages each run, working directory, model, permissions, and session. Agents connect to model services using their own accounts; Caravel normalizes their output into conversations, tool activity, and usage information.
+
+![Caravel architecture: Rust orchestration starts local agents via CLI JSON, Codex App Server and ACP, then stores normalized events and updates the UI](docs/diagrams/agent-execution-en.png)
+
+| Agent | Default task transport | Local process / alternatives |
+| --- | --- | --- |
+| Claude Code | CLI JSON stream | `claude -p --output-format stream-json`; optional Claude ACP adapter (experimental) |
+| Codex | Native App Server | `codex app-server`; optional `codex exec --json` or Codex ACP adapter |
+| OpenCode | ACP | `opencode acp` |
+| pi | CLI JSON stream | `pi -p --mode json` |
+| Grok | ACP | `grok agent stdio` |
+| TRAE | ACP | `traex acp serve` / `traecli acp serve` |
+| Antigravity | Official ACP Server | `agy_acp_server`, distributed separately from the `agy` CLI |
+
+Commands show the communication entry points. Caravel adds the working directory, session ID, model, and permission settings for each run.
+
+- **Shared orchestration**: each run records its configuration and uses the original workspace or an isolated copy. Different tasks can run concurrently; starts, continuations, and stops within one task are serialized.
+- **Three drivers**: the CLI driver reads JSONL. App Server and ACP exchange bidirectional protocol messages over standard input/output. Live approvals, questions, steering, and forks depend on the agent and transport capabilities.
+- **One event pipeline**: drivers normalize messages, reasoning, tool activity, and usage into `AgentEvent`. `RunSink` stores records in local SQLite and emits UI updates.
+- **Sessions and shutdown**: continuations restore context by native session ID. Interactive drivers attempt protocol cancellation before process cleanup. Closing a panel does not stop a task.
+
+The diagram covers ordinary task execution; task advisors reuse the same drivers. One-shot features such as title generation, Git assistance, and database analysis have separate headless entry points, so not every operation uses ACP. Local-first does not mean offline inference: agents and the selected model services process content sent to the model.
+
 ## Get started
 
 1. [Download the installer](https://github.com/yy36295238/caravel-releases/releases/latest). On macOS, open the `.dmg` and drag **Caravel** into Applications. On Windows x64, download and run `Caravel_*_x64-setup.exe`.

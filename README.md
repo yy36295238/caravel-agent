@@ -43,6 +43,31 @@ macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和�
 
 我的应用、定时器、工作流和更多功能，前往 [官网查看](https://caravel-site.pages.dev/#possibilities) 或 [在线操作体验](https://caravel-site.pages.dev/demo/?lang=zh-CN)。
 
+## 架构：Caravel 如何调用 Agent
+
+Caravel 在本机启动 Agent CLI 或协议适配器，由 Rust 后端管理每轮任务、工作目录、模型、权限和会话。Agent 使用自己的账号与模型服务通信，Caravel 将不同协议的输出整理为统一的会话、工具过程和用量展示。
+
+![Caravel 架构：Rust 编排通过 CLI JSON、Codex App Server 与 ACP 启动本机 Agent，统一事件落库并回传界面](docs/diagrams/agent-execution-zh-CN.png)
+
+| Agent | 默认任务通路 | 本机进程 / 可选通路 |
+| --- | --- | --- |
+| Claude Code | CLI JSON 流 | `claude -p --output-format stream-json`；可选 Claude ACP 适配器（实验性） |
+| Codex | 原生 App Server | `codex app-server`；可选 `codex exec --json` 或 Codex ACP 适配器 |
+| OpenCode | ACP | `opencode acp` |
+| pi | CLI JSON 流 | `pi -p --mode json` |
+| Grok | ACP | `grok agent stdio` |
+| TRAE | ACP | `traex acp serve` / `traecli acp serve` |
+| Antigravity | 官方 ACP Server | `agy_acp_server`，与 `agy` CLI 分开发行 |
+
+命令仅展示通信入口；工作目录、会话 ID、模型和权限参数由 Caravel 按本轮配置补齐。
+
+- **统一编排**：每轮保存运行配置，选择原工作区或隔离副本；不同任务可以并行，同一任务的启动、续接和停止按顺序处理。
+- **三类驱动**：CLI 驱动读取 JSONL；App Server 和 ACP 通过标准输入/输出进行双向协议通信。实时授权、追问、运行中补充和分叉按 Agent 与传输能力开放。
+- **统一回流**：各驱动把消息、思考、工具调用和用量归一为 `AgentEvent`，交给 `RunSink` 保存到本地 SQLite，并推送界面事件。
+- **会话与退出**：续聊按原生会话 ID 恢复上下文。交互式驱动优先发送协议取消，必要时回收进程组；不会把关闭面板视为停止任务。
+
+图中聚焦普通任务执行；任务顾问复用同一套驱动。标题生成、Git 辅助和数据库分析等一次性能力另有 headless 调用入口，并非全部经过 ACP。本地优先不等于模型离线：发给模型的内容由 Agent 和所选服务处理。
+
 ## 开始使用
 
 1. [下载安装包](https://github.com/yy36295238/caravel-releases/releases/latest)：macOS 打开 `.dmg`，将 **Caravel** 拖入「应用程序」；Windows x64 下载并运行 `Caravel_*_x64-setup.exe`。
