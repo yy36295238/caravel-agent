@@ -43,9 +43,9 @@ Caravel turns these separate execution sessions into traceable tasks. Each task 
 
 ### 1. Workbench
 
-Create and manage AI agent tasks with list, board, and split views.
+Create and manage AI agent tasks with list, board, and split views. Switch the task list between the default two-line layout and a compact single-line layout, with your preference saved locally. Compact rows retain the agent icon, title, task badges, status dot, elapsed running time, and resume control.
 
-The filter bar groups session sync, view, and split controls under “More actions” when space is limited. In list view, press `⌘F` (`Ctrl+F` on Windows/Linux) to search the current conversation, see match counts, and navigate with `Enter / Shift+Enter`. Press `Esc` to close and clear highlights. Split views search the focused conversation; embedded workflow conversations support the same controls.
+The filter bar groups session sync, view, and split controls under “More actions” when space is limited. In list view, press `⌘F` (`Ctrl+F` on Windows/Linux) to search the current conversation, see match counts, and navigate with `Enter / Shift+Enter`. Matching keywords receive a background highlight; keywords in the current matching message use the accent color, and navigation scrolls to visible matching text when available. Press `Esc` to close and clear highlights. Split views search the focused conversation; embedded workflow conversations support the same controls.
 
 - Manage Claude Code, Codex, OpenCode, pi, Grok, TRAE, and Antigravity together. Invocation controls combine a brand icon, agent dropdown, and model selection; Settings retains full enablement controls.
 - Desktop tasks, split views, previews, and Sessions can open a compact always-on-top task window for reading, sending messages, and stopping the current run. It reuses the original conversation; closing it or pressing Esc only hides the window. On macOS it can follow full-screen Spaces, and ⌘⇧J toggles the bound window. This entry is unavailable on the web.
