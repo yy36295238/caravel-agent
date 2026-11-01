@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" lang="en" role="img" aria-labelledby="ttl dsc">
+<title id="ttl">Before and after Caravel</title>
+<desc id="dsc">Before: one terminal per agent CLI, switching windows to approve, check progress and review diffs. Now: one Caravel workbench runs tasks in parallel and gathers approvals, input, diff review and merges in one place.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#afb8c1"/></marker></defs>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Helvetica,Arial,sans-serif;font-size:12px}
+.blink{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.3}}
+@keyframes w0{0%,23.80%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes w1{0%,23.80%{opacity:0}25.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes w2{0%,23.80%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes w3{0%,23.80%{opacity:0}25.00%,48.80%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes w4{0%,23.80%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes w5{0%,48.80%{opacity:0}50.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes w6{0%,23.80%{opacity:0}25.00%,48.80%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes w7{0%,48.80%{opacity:0}50.00%,73.80%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes w8{0%,48.80%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes w9{0%,73.80%{opacity:0}75.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes w10{0%,48.80%{opacity:0}50.00%,73.80%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes w11{0%,73.80%{opacity:0}75.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes w12{0%,73.80%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes w13{0%,73.80%{opacity:0}75.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes hop{0.00%,22.00%{transform:translate(226px,268px)}25.00%,47.00%{transform:translate(486px,268px)}50.00%,72.00%{transform:translate(226px,436px)}75.00%,97.00%{transform:translate(486px,436px)}100%{transform:translate(226px,268px)}}
+@keyframes p0{0%{transform:scaleX(0)}62.00%,100%{transform:scaleX(1)}}
+@keyframes w14{0%,60.80%{opacity:1}62.00%,100%{opacity:0}}
+@keyframes w15{0%,60.80%{opacity:0}62.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes p1{0%{transform:scaleX(0)}80.00%,100%{transform:scaleX(1)}}
+@keyframes w16{0%,78.80%{opacity:1}80.00%,100%{opacity:0}}
+@keyframes w17{0%,78.80%{opacity:0}80.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes p2{0%{transform:scaleX(0)}50.00%,100%{transform:scaleX(1)}}
+@keyframes w18{0%,48.80%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes w19{0%,48.80%{opacity:0}50.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@keyframes p3{0%{transform:scaleX(0)}70.00%,100%{transform:scaleX(1)}}
+@keyframes w20{0%,68.80%{opacity:1}70.00%,100%{opacity:0}}
+@keyframes w21{0%,68.80%{opacity:0}70.00%,98.80%{opacity:1}100.00%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="0.5" y="0.5" width="1199" height="699" rx="14" fill="#ffffff" stroke="#d0d7de"/>
+<text x="600" y="46" fill="#1f2328" text-anchor="middle" font-weight="700" style="font-size:24px">From many terminals to one workbench</text>
+<text x="600" y="74" fill="#6e7781" text-anchor="middle" style="font-size:13px">Same agents, same models. Caravel gathers the follow-up work that used to be scattered across terminals.</text>
+<rect x="30" y="100" width="540" height="390" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="52" y="130" fill="#cf222e" font-weight="700" style="font-size:15px">Before</text>
+<text x="118" y="130" fill="#6e7781" style="font-size:12px">One terminal per agent CLI, you hop between windows</text>
+<rect x="50" y="148" width="240" height="150" rx="8" fill="#1f2328"/>
+<rect x="50" y="148" width="240" height="24" rx="8" fill="#2d333b"/><rect x="50" y="164" width="240" height="8" fill="#2d333b"/>
+<circle cx="64" cy="160" r="4" fill="#ff5f57"/>
+<circle cx="77" cy="160" r="4" fill="#febc2e"/>
+<circle cx="90" cy="160" r="4" fill="#28c840"/>
+<text x="188" y="164" fill="#8b949e" text-anchor="middle" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">claude — ~/project-1</text>
+<text x="64" y="196" fill="#7ee787" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ claude</text>
+<text x="64" y="216" fill="#c9d1d9" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">&gt; fix login validation</text>
+<text x="64" y="236" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">...</text>
+<g style="animation:w0 8s linear infinite"><text x="64" y="264" fill="#f2cc60" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">Allow edit to auth.ts? (y/n)</text><rect x="64" y="274" width="8" height="13" fill="#f2cc60" class="blink"/></g>
+<g style="animation:w1 8s linear infinite"><text x="64" y="264" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">waiting for you...</text></g>
+<rect x="48" y="146" width="244" height="154" rx="10" fill="none" stroke="#9a6700" stroke-width="2.5" style="animation:w2 8s linear infinite"/>
+<rect x="310" y="148" width="240" height="150" rx="8" fill="#1f2328"/>
+<rect x="310" y="148" width="240" height="24" rx="8" fill="#2d333b"/><rect x="310" y="164" width="240" height="8" fill="#2d333b"/>
+<circle cx="324" cy="160" r="4" fill="#ff5f57"/>
+<circle cx="337" cy="160" r="4" fill="#febc2e"/>
+<circle cx="350" cy="160" r="4" fill="#28c840"/>
+<text x="448" y="164" fill="#8b949e" text-anchor="middle" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">codex — ~/project-2</text>
+<text x="324" y="196" fill="#7ee787" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ codex</text>
+<text x="324" y="216" fill="#c9d1d9" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">&gt; add API tests</text>
+<text x="324" y="236" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">...</text>
+<g style="animation:w3 8s linear infinite"><text x="324" y="264" fill="#f2cc60" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">Approve command: npm test? (y/n)</text><rect x="324" y="274" width="8" height="13" fill="#f2cc60" class="blink"/></g>
+<g style="animation:w4 8s linear infinite"><text x="324" y="264" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">waiting for you...</text></g>
+<g style="animation:w5 8s linear infinite"><text x="324" y="264" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">waiting for you...</text></g>
+<rect x="308" y="146" width="244" height="154" rx="10" fill="none" stroke="#9a6700" stroke-width="2.5" style="animation:w6 8s linear infinite"/>
+<rect x="50" y="316" width="240" height="150" rx="8" fill="#1f2328"/>
+<rect x="50" y="316" width="240" height="24" rx="8" fill="#2d333b"/><rect x="50" y="332" width="240" height="8" fill="#2d333b"/>
+<circle cx="64" cy="328" r="4" fill="#ff5f57"/>
+<circle cx="77" cy="328" r="4" fill="#febc2e"/>
+<circle cx="90" cy="328" r="4" fill="#28c840"/>
+<text x="188" y="332" fill="#8b949e" text-anchor="middle" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">opencode — ~/project-3</text>
+<text x="64" y="364" fill="#7ee787" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ opencode</text>
+<text x="64" y="384" fill="#c9d1d9" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">&gt; upgrade dependencies</text>
+<text x="64" y="404" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">...</text>
+<g style="animation:w7 8s linear infinite"><text x="64" y="432" fill="#f2cc60" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">git diff not reviewed yet...</text><rect x="64" y="442" width="8" height="13" fill="#f2cc60" class="blink"/></g>
+<g style="animation:w8 8s linear infinite"><text x="64" y="432" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">waiting for you...</text></g>
+<g style="animation:w9 8s linear infinite"><text x="64" y="432" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">waiting for you...</text></g>
+<rect x="48" y="314" width="244" height="154" rx="10" fill="none" stroke="#9a6700" stroke-width="2.5" style="animation:w10 8s linear infinite"/>
+<rect x="310" y="316" width="240" height="150" rx="8" fill="#1f2328"/>
+<rect x="310" y="316" width="240" height="24" rx="8" fill="#2d333b"/><rect x="310" y="332" width="240" height="8" fill="#2d333b"/>
+<circle cx="324" cy="328" r="4" fill="#ff5f57"/>
+<circle cx="337" cy="328" r="4" fill="#febc2e"/>
+<circle cx="350" cy="328" r="4" fill="#28c840"/>
+<text x="448" y="332" fill="#8b949e" text-anchor="middle" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">grok — ~/project-4</text>
+<text x="324" y="364" fill="#7ee787" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ grok</text>
+<text x="324" y="384" fill="#c9d1d9" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">&gt; tidy the docs</text>
+<text x="324" y="404" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">...</text>
+<g style="animation:w11 8s linear infinite"><text x="324" y="432" fill="#f2cc60" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">where did we leave off?</text><rect x="324" y="442" width="8" height="13" fill="#f2cc60" class="blink"/></g>
+<g style="animation:w12 8s linear infinite"><text x="324" y="432" fill="#6e7681" style="font-size:12px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">waiting for you...</text></g>
+<rect x="308" y="314" width="244" height="154" rx="10" fill="none" stroke="#9a6700" stroke-width="2.5" style="animation:w13 8s linear infinite"/>
+<g style="animation:hop 8s ease-in-out infinite"><rect width="56" height="20" rx="10" fill="#9a6700"/><text x="28" y="14" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:11px">you</text></g>
+<path d="M582 295 H618" stroke="#afb8c1" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="630" y="100" width="540" height="390" rx="12" fill="#fff" stroke="#d0d7de"/>
+<text x="652" y="130" fill="#1a7f37" font-weight="700" style="font-size:15px">Now</text>
+<text x="700" y="130" fill="#6e7781" style="font-size:12px">One Caravel workbench: tasks run in parallel, and it asks you in one place</text>
+<rect x="650" y="148" width="500" height="318" rx="8" fill="#fff" stroke="#d0d7de"/>
+<rect x="650" y="148" width="500" height="30" rx="8" fill="#f6f8fa"/><rect x="650" y="170" width="500" height="8" fill="#f6f8fa"/><line x1="650" y1="178" x2="1150" y2="178" stroke="#d0d7de"/>
+<text x="664" y="168" fill="#1f2328" font-weight="700" style="font-size:12px">Caravel</text>
+<text x="1136" y="168" fill="#6e7781" text-anchor="end" style="font-size:11px">Workbench · 4 tasks in parallel</text>
+<rect x="662" y="194" width="476" height="44" rx="6" fill="#f6f8fa"/>
+<circle cx="678" cy="210" r="5" fill="#d97757"/>
+<text x="690" y="214" fill="#1f2328" font-weight="600" style="font-size:12px">Fix login validation</text>
+<text x="690" y="230" fill="#6e7781" style="font-size:11px">Claude</text>
+<rect x="880" y="212" width="150" height="6" rx="3" fill="#eaeef2"/>
+<rect x="880" y="212" width="150" height="6" rx="3" fill="#0969da" style="transform-box:fill-box;transform-origin:left;animation:p0 8s ease-out infinite"/>
+<g style="animation:w14 8s linear infinite"><text x="1126" y="220" fill="#0969da" text-anchor="end" font-weight="600" style="font-size:11px">Running</text></g>
+<g style="animation:w15 8s linear infinite"><text x="1126" y="220" fill="#1a7f37" text-anchor="end" font-weight="700" style="font-size:11px">Review</text></g>
+<rect x="662" y="246" width="476" height="44" rx="6" fill="#f6f8fa"/>
+<circle cx="678" cy="262" r="5" fill="#10a37f"/>
+<text x="690" y="266" fill="#1f2328" font-weight="600" style="font-size:12px">Add API tests</text>
+<text x="690" y="282" fill="#6e7781" style="font-size:11px">Codex</text>
+<rect x="880" y="264" width="150" height="6" rx="3" fill="#eaeef2"/>
+<rect x="880" y="264" width="150" height="6" rx="3" fill="#0969da" style="transform-box:fill-box;transform-origin:left;animation:p1 8s ease-out infinite"/>
+<g style="animation:w16 8s linear infinite"><text x="1126" y="272" fill="#0969da" text-anchor="end" font-weight="600" style="font-size:11px">Running</text></g>
+<g style="animation:w17 8s linear infinite"><text x="1126" y="272" fill="#1a7f37" text-anchor="end" font-weight="700" style="font-size:11px">Review</text></g>
+<rect x="662" y="298" width="476" height="44" rx="6" fill="#f6f8fa"/>
+<circle cx="678" cy="314" r="5" fill="#24292f"/>
+<text x="690" y="318" fill="#1f2328" font-weight="600" style="font-size:12px">Upgrade dependencies</text>
+<text x="690" y="334" fill="#6e7781" style="font-size:11px">OpenCode</text>
+<rect x="880" y="316" width="150" height="6" rx="3" fill="#eaeef2"/>
+<rect x="880" y="316" width="150" height="6" rx="3" fill="#9a6700" style="transform-box:fill-box;transform-origin:left;animation:p2 8s ease-out infinite"/>
+<g style="animation:w18 8s linear infinite"><text x="1126" y="324" fill="#0969da" text-anchor="end" font-weight="600" style="font-size:11px">Running</text></g>
+<g style="animation:w19 8s linear infinite"><text x="1126" y="324" fill="#9a6700" text-anchor="end" font-weight="700" style="font-size:11px">Needs input</text></g>
+<rect x="662" y="350" width="476" height="44" rx="6" fill="#f6f8fa"/>
+<circle cx="678" cy="366" r="5" fill="#57606a"/>
+<text x="690" y="370" fill="#1f2328" font-weight="600" style="font-size:12px">Tidy the docs</text>
+<text x="690" y="386" fill="#6e7781" style="font-size:11px">Grok</text>
+<rect x="880" y="368" width="150" height="6" rx="3" fill="#eaeef2"/>
+<rect x="880" y="368" width="150" height="6" rx="3" fill="#0969da" style="transform-box:fill-box;transform-origin:left;animation:p3 8s ease-out infinite"/>
+<g style="animation:w20 8s linear infinite"><text x="1126" y="376" fill="#0969da" text-anchor="end" font-weight="600" style="font-size:11px">Running</text></g>
+<g style="animation:w21 8s linear infinite"><text x="1126" y="376" fill="#1a7f37" text-anchor="end" font-weight="700" style="font-size:11px">Review</text></g>
+<rect x="662" y="408" width="476" height="44" rx="6" fill="#fff8e6" stroke="#f0d28a"/>
+<text x="678" y="427" fill="#9a6700" font-weight="700" style="font-size:12px">Everything that needs you, in one place</text>
+<text x="678" y="443" fill="#6e7781" style="font-size:11px">approval cards · follow-up input · Diff review · merge or push</text>
+<circle cx="1116" cy="430" r="6" fill="#9a6700" class="pulse"/>
+<rect x="30" y="512" width="1140" height="168" rx="12" fill="#fff" stroke="#d0d7de"/>
+<text x="150" y="534" fill="#cf222e" font-weight="700" style="font-size:12px">Before</text><text x="640" y="534" fill="#1a7f37" font-weight="700" style="font-size:12px">Now</text>
+<line x1="46" y1="544" x2="1154" y2="544" stroke="#eaeef2"/>
+<text x="50" y="566" fill="#1f2328" font-weight="700" style="font-size:12px">Switching</text>
+<text x="150" y="566" fill="#6e7781" style="font-size:12px">A terminal per agent, checked one by one from memory</text>
+<path d="M600 561 H624" stroke="#afb8c1" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="640" y="566" fill="#1f2328" style="font-size:12px">Every project and task in one list, status at a glance</text>
+<line x1="46" y1="578" x2="1154" y2="578" stroke="#eaeef2"/>
+<text x="50" y="600" fill="#1f2328" font-weight="700" style="font-size:12px">Approvals</text>
+<text x="150" y="600" fill="#6e7781" style="font-size:12px">Prompts sit in whichever terminal asked, until you notice</text>
+<path d="M600 595 H624" stroke="#afb8c1" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="640" y="600" fill="#1f2328" style="font-size:12px">Approvals and questions appear as cards in the task, with alerts</text>
+<line x1="46" y1="612" x2="1154" y2="612" stroke="#eaeef2"/>
+<text x="50" y="634" fill="#1f2328" font-weight="700" style="font-size:12px">Isolation</text>
+<text x="150" y="634" fill="#6e7781" style="font-size:12px">Branches and worktrees by hand; parallel edits collide</text>
+<path d="M600 629 H624" stroke="#afb8c1" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="640" y="634" fill="#1f2328" style="font-size:12px">Optional isolated mode runs each task in its own copy</text>
+<line x1="46" y1="646" x2="1154" y2="646" stroke="#eaeef2"/>
+<text x="50" y="668" fill="#1f2328" font-weight="700" style="font-size:12px">Delivery</text>
+<text x="150" y="668" fill="#6e7781" style="font-size:12px">git diff by hand; history scattered across terminals</text>
+<path d="M600 663 H624" stroke="#afb8c1" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+<text x="640" y="668" fill="#1f2328" style="font-size:12px">Built-in Diff review, merge and push; resume any session</text>
+</svg>

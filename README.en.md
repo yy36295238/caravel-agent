@@ -2,7 +2,6 @@
 
 **English** · [简体中文](README.md)
 
-<a href="https://caravel-site.pages.dev/en/"><img src="https://caravel-site.pages.dev/assets/og-en.png?v=2" width="100%" alt="Caravel"></a>
 
 # Caravel
 
@@ -28,7 +27,7 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
 
 macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model accounts<br>TRAE requires CLI 2.0 and an Enterprise Flagship account.
 
-[![Caravel workbench: tasks, agent conversations, and code review](https://caravel-site.pages.dev/assets/workbench-en.png?v=20589f435134)](https://caravel-site.pages.dev/en/)
+[![Caravel workbench (Plain theme): project task list, agent conversation and code review](docs/assets/workbench-plain-en.png)](https://caravel-site.pages.dev/en/)
 
 **Click the screenshot to explore the full workbench on the website.**<br>
 <sub>The demo uses the actual product interface and sample data. No installation required.</sub>
@@ -42,6 +41,12 @@ macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model ac
 - **Review and deliver**: inspect code diffs, request changes, then merge or push separate branches after review.
 
 Explore apps, schedules, workflows, and more on the [website](https://caravel-site.pages.dev/en/#possibilities), or [try them in the demo](https://caravel-site.pages.dev/demo/?lang=en).
+
+## How the way you work changes
+
+Before, each agent CLI had its own terminal, and approvals, progress and diffs meant visiting every window. In Caravel, tasks move forward in parallel in one workbench, and whatever needs you shows up in one place.
+
+![Before and after: agent CLIs in separate terminals versus one Caravel workbench running tasks in parallel with approvals and review in one place](docs/diagrams/caravel-workflow-en.svg)
 
 ## Architecture
 

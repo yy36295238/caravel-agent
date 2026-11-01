@@ -2,7 +2,6 @@
 
 [English](README.en.md) · **简体中文**
 
-<a href="https://caravel-site.pages.dev/"><img src="https://caravel-site.pages.dev/assets/og-zh-CN.png?v=2" width="100%" alt="Caravel"></a>
 
 # Caravel
 
@@ -28,7 +27,7 @@
 
 macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和模型账号<br>TRAE 需要 CLI 2.0 与企业版旗舰版账号。
 
-[![Caravel 工作台：全部任务、Agent 会话与代码验收](https://caravel-site.pages.dev/assets/workbench-zh-CN.png?v=ad7f5950761d)](https://caravel-site.pages.dev/)
+[![Caravel 工作台（素白主题）：项目任务列表、Agent 会话与代码验收](docs/assets/workbench-plain-zh-CN.png)](https://caravel-site.pages.dev/)
 
 **点击截图，访问官网并体验完整工作台。**<br>
 <sub>演示使用产品原版界面与示例数据，无需安装。</sub>
@@ -42,6 +41,12 @@ macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和�
 - **审查交付**：查看代码 Diff，继续修改，或在验收后合并、推送独立分支。
 
 我的应用、定时器、工作流和更多功能，前往 [官网查看](https://caravel-site.pages.dev/#possibilities) 或 [在线操作体验](https://caravel-site.pages.dev/demo/?lang=zh-CN)。
+
+## 工作方式的变化
+
+过去每个 Agent CLI 各开一个终端，授权、进度和 Diff 都要逐个窗口去找；在 Caravel 里，任务在一个工作台并行推进，需要你处理的事集中出现。
+
+![过去与现在：多个终端分别运行 Agent CLI，对比 Caravel 一个工作台并行推进任务并集中处理授权与验收](docs/diagrams/caravel-workflow-zh-CN.svg)
 
 ## 技术架构
 

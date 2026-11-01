@@ -107,14 +107,14 @@ text{font-family:"SF Mono",ui-monospace,Menlo,Consolas,"PingFang SC","Hiragino S
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 <rect x="0.5" y="0.5" width="1199" height="899" rx="10" fill="url(#bg)" stroke="#1c2836"/>
-<text x="390" y="41" fill="#e8eef5" text-anchor="middle" font-weight="700" font-size="11" letter-spacing="1.3">CARAVEL ARCHITECTURE</text>
+<text x="390" y="41" fill="#e8eef5" text-anchor="middle" font-weight="700" style="font-size:11px" letter-spacing="1.3">CARAVEL ARCHITECTURE</text>
 <text x="630" y="41" text-anchor="middle" font-weight="700" font-size="11" letter-spacing="1.3" fill="#e8eef5"><tspan fill="#5f7184">TAURI 2</tspan> · SVELTE 5 · RUST</text>
 <text x="845" y="41" text-anchor="middle" font-weight="700" font-size="11" letter-spacing="1.3" fill="#e8eef5">ACP v1 <tspan fill="#5f7184">ON</tspan> STDIO</text>
 <line x1="30" y1="56" x2="1170" y2="56" stroke="#1c2836"/>
-<rect x="318" y="73" width="8" height="8" fill="#6aa9ff"/><text x="333" y="81" fill="#5f7184" font-size="11">Frontend · entry</text>
-<rect x="478" y="73" width="8" height="8" fill="#7ee2a8"/><text x="493" y="81" fill="#5f7184" font-size="11">Rust backend</text>
-<rect x="620" y="73" width="8" height="8" fill="#f2c46d"/><text x="635" y="81" fill="#5f7184" font-size="11">Agent processes</text>
-<rect x="772" y="73" width="8" height="8" fill="#b69cff"/><text x="787" y="81" fill="#5f7184" font-size="11">Storage · orchestration</text>
+<rect x="318" y="73" width="8" height="8" fill="#6aa9ff"/><text x="333" y="81" fill="#5f7184" style="font-size:11px">Frontend · entry</text>
+<rect x="478" y="73" width="8" height="8" fill="#7ee2a8"/><text x="493" y="81" fill="#5f7184" style="font-size:11px">Rust backend</text>
+<rect x="620" y="73" width="8" height="8" fill="#f2c46d"/><text x="635" y="81" fill="#5f7184" style="font-size:11px">Agent processes</text>
+<rect x="772" y="73" width="8" height="8" fill="#b69cff"/><text x="787" y="81" fill="#5f7184" style="font-size:11px">Storage · orchestration</text>
 <path d="M280 172 H440" fill="none" stroke="#2a3a4d" stroke-width="1.2"/>
 <path d="M280 252 H312 V172" fill="none" stroke="#2a3a4d" stroke-width="1.2"/>
 <path d="M280 352 H346 V292 H390" fill="none" stroke="#2a3a4d" stroke-width="1.2"/>
