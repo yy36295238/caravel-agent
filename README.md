@@ -68,6 +68,12 @@ Caravel 在本机启动 Agent CLI 或协议适配器，由 Rust 后端管理每�
 
 图中聚焦普通任务执行；任务顾问复用同一套驱动。标题生成、Git 辅助和数据库分析等一次性能力另有 headless 调用入口，并非全部经过 ACP。本地优先不等于模型离线：发给模型的内容由 Agent 和所选服务处理。
 
+### 技术架构全景
+
+下图逐步演示一次任务如何从界面进入 Rust 任务核心，经 ACP、Codex App Server 或 CLI/JSONL 驱动本机 Agent，再统一落库并推送回界面；也展示了日程、飞书和手机端等其他入口。
+
+![Caravel 技术架构动态图：入口经 Tauri 命令层进入任务核心，AgentDriver 通过三类通路驱动 Agent，事件经 RunSink 落库并推送界面](docs/diagrams/caravel-architecture-zh-CN.svg)
+
 ## 开始使用
 
 1. [下载安装包](https://github.com/yy36295238/caravel-releases/releases/latest)：macOS 打开 `.dmg`，将 **Caravel** 拖入「应用程序」；Windows x64 下载并运行 `Caravel_*_x64-setup.exe`。
