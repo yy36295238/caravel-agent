@@ -20,10 +20,10 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
   &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/en/#film"><strong>Watch the film</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/yy36295238/caravel-releases/releases/latest"><strong>Download Caravel</strong></a>
+  <a href="https://github.com/yy36295238/caravel-agent/releases/latest"><strong>Download Caravel</strong></a>
 </p>
 
-[![Latest Release](https://img.shields.io/github/v/release/yy36295238/caravel-releases?display_name=tag&style=flat-square&label=release&color=416fae)](https://github.com/yy36295238/caravel-releases/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/yy36295238/caravel-agent?display_name=tag&style=flat-square&label=release&color=416fae)](https://github.com/yy36295238/caravel-agent/releases/latest)
 
 macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model accounts<br>TRAE requires CLI 2.0 and an Enterprise Flagship account.
 
@@ -56,7 +56,7 @@ The diagram steps through one task: the UI calls into the Rust task core, AgentD
 
 ## Get started
 
-1. [Download the installer](https://github.com/yy36295238/caravel-releases/releases/latest). On macOS, open the `.dmg` and drag **Caravel** into Applications. On Windows x64, download and run `Caravel_*_x64-setup.exe`.
+1. [Download the installer](https://github.com/yy36295238/caravel-agent/releases/latest). On macOS, open the `.dmg` and drag **Caravel** into Applications. On Windows x64, download and run `Caravel_*_x64-setup.exe`.
 2. Prepare Git and at least one supported agent CLI, installed and signed in or configured.
 3. Add a local project, create a task, choose an agent, and start the run.
 
@@ -97,4 +97,4 @@ The application source code remains private and is not provided, so Caravel is n
 
 This repository provides **macOS / Windows installers and release history**. Visit the [website](https://caravel-site.pages.dev/en/) for product information, the interactive demo, and FAQs.
 
-[Releases](https://github.com/yy36295238/caravel-releases/releases) · [Feature guide](docs/product-overview.en.md) · [FAQ](https://caravel-site.pages.dev/en/#faq)
+[Releases](https://github.com/yy36295238/caravel-agent/releases) · [Feature guide](docs/product-overview.en.md) · [FAQ](https://caravel-site.pages.dev/en/#faq)

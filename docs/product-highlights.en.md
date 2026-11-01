@@ -8,7 +8,7 @@ Caravel brings Claude Code, Codex, OpenCode, pi, Grok, TRAE, and Antigravity int
 
 You set goals and make decisions. Agents search, edit, verify, and execute. Permissions, product decisions, and final acceptance bring your attention back when it is needed.
 
-[Download Caravel for macOS / Windows](https://github.com/yy36295238/caravel-releases/releases/latest) · [Full feature guide](product-overview.en.md)
+[Download Caravel for macOS / Windows](https://github.com/yy36295238/caravel-agent/releases/latest) · [Full feature guide](product-overview.en.md)
 
 ---
 
@@ -197,7 +197,7 @@ Developers working across projects, frequent AI coding users managing many sessi
 ## Get started
 
 1. Install and sign in to at least one supported agent CLI.
-2. [Download Caravel for macOS / Windows](https://github.com/yy36295238/caravel-releases/releases/latest).
+2. [Download Caravel for macOS / Windows](https://github.com/yy36295238/caravel-agent/releases/latest).
 3. Add a local Git repository or project folder.
 4. Create a task, choose an agent, and start the run.
 5. Return for permission requests, decisions, and review.

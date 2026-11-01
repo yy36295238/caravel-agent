@@ -20,10 +20,10 @@
   &nbsp; · &nbsp;
   <a href="https://caravel-site.pages.dev/#film"><strong>观看短片</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/yy36295238/caravel-releases/releases/latest"><strong>下载 Caravel</strong></a>
+  <a href="https://github.com/yy36295238/caravel-agent/releases/latest"><strong>下载 Caravel</strong></a>
 </p>
 
-[![Latest Release](https://img.shields.io/github/v/release/yy36295238/caravel-releases?display_name=tag&style=flat-square&label=release&color=416fae)](https://github.com/yy36295238/caravel-releases/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/yy36295238/caravel-agent?display_name=tag&style=flat-square&label=release&color=416fae)](https://github.com/yy36295238/caravel-agent/releases/latest)
 
 macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和模型账号<br>TRAE 需要 CLI 2.0 与企业版旗舰版账号。
 
@@ -56,7 +56,7 @@ macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和�
 
 ## 开始使用
 
-1. [下载安装包](https://github.com/yy36295238/caravel-releases/releases/latest)：macOS 打开 `.dmg`，将 **Caravel** 拖入「应用程序」；Windows x64 下载并运行 `Caravel_*_x64-setup.exe`。
+1. [下载安装包](https://github.com/yy36295238/caravel-agent/releases/latest)：macOS 打开 `.dmg`，将 **Caravel** 拖入「应用程序」；Windows x64 下载并运行 `Caravel_*_x64-setup.exe`。
 2. 准备 Git 和至少一个已安装、完成登录或配置的受支持 Agent CLI。
 3. 添加本地项目，创建任务，选择 Agent 并开始运行。
 
@@ -97,4 +97,4 @@ Caravel 安装包以 [Apache License 2.0](LICENSE) 授权，个人和商业用�
 
 本仓库提供 **macOS / Windows 安装包与版本记录**。产品介绍、交互演示与常见问题请以 [官网](https://caravel-site.pages.dev/) 为主。
 
-[版本记录](https://github.com/yy36295238/caravel-releases/releases) · [完整功能说明](docs/product-overview.md) · [常见问题](https://caravel-site.pages.dev/#faq)
+[版本记录](https://github.com/yy36295238/caravel-agent/releases) · [完整功能说明](docs/product-overview.md) · [常见问题](https://caravel-site.pages.dev/#faq)

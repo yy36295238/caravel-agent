@@ -6,7 +6,7 @@
 
 **Caravel is a local-first workspace for multiple AI coding agents, built for developers working across projects and tasks. It supports macOS (Apple Silicon / Intel) and Windows x64.**
 
-Both platforms provide the complete app with all feature modules and retain existing application data. macOS and Windows x64 support signed in-app updates; older Windows clients require a manual upgrade to a version that supports automatic updates. Choose your platform on the [download page](https://github.com/yy36295238/caravel-releases/releases/latest). See the [installation help](https://caravel-site.pages.dev/?lang=en#install-help) for first-launch instructions.
+Both platforms provide the complete app with all feature modules and retain existing application data. macOS and Windows x64 support signed in-app updates; older Windows clients require a manual upgrade to a version that supports automatic updates. Choose your platform on the [download page](https://github.com/yy36295238/caravel-agent/releases/latest). See the [installation help](https://caravel-site.pages.dev/?lang=en#install-help) for first-launch instructions.
 
 Caravel brings Claude Code, Codex, OpenCode, pi, Grok, TRAE, Antigravity, and other coding agents into one desktop workbench. Delegate tasks, track progress, handle permissions, review code, and deliver changes in one place. Install or upgrade agents from Settings.
 
@@ -328,4 +328,4 @@ Developers using several coding agents, engineers working across projects, users
 
 **You decide; agents execute**: retain goal-setting, permission decisions, code review, and final acceptance while agents handle repetitive execution.
 
-[Download Caravel](https://github.com/yy36295238/caravel-releases/releases/latest) · [Website](https://caravel-site.pages.dev/?lang=en) · [Try the demo](https://caravel-site.pages.dev/demo/?lang=en)
+[Download Caravel](https://github.com/yy36295238/caravel-agent/releases/latest) · [Website](https://caravel-site.pages.dev/?lang=en) · [Try the demo](https://caravel-site.pages.dev/demo/?lang=en)
