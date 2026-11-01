@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="ttl dsc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" lang="zh-CN" role="img" aria-labelledby="ttl dsc">
 <title id="ttl">Caravel 技术架构</title>
 <desc id="dsc">Tauri 2 桌面应用：Svelte 前端经 Tauri 命令层进入 Rust 任务核心，AgentDriver 通过 ACP、Codex App Server 与 CLI/JSONL 三种通路驱动编码 Agent，事件统一为 AgentEvent 后由 RunSink 写入 SQLite 并推送前端。</desc>
 <defs>
