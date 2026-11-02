@@ -1,226 +1,335 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 618" width="1200" height="618" lang="zh-CN" role="img" aria-labelledby="ttl dsc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" lang="zh-CN" role="img" aria-labelledby="ttl dsc">
 <title id="ttl">过去与现在的工作方式</title>
-<desc id="dsc">过去：你坐在一圈终端前，每个 Agent CLI 一个窗口，一次只能看一个，其余窗口停下来等你。现在：你在 Caravel 船尾掌舵，Agent 船员并行干活；有人需要授权时举手，完成后把 Diff 交给你验收合并。</desc>
-<defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1f2328" flood-opacity=".14"/></filter><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f9ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+<desc id="dsc">过去：你坐在一圈终端前，每个 Agent CLI 一个窗口，一次只能看一个，其余窗口停下来等你。现在：同一个你只看一个 Caravel 窗口，四个 Agent 并行推进；有任务需要授权时提醒你并在任务内给出授权卡，完成后查看 Diff 并通过合并。</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#060a13"/><stop offset="1" stop-color="#0b1424"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0 H0 V32" fill="none" stroke="#ffffff" stroke-opacity=".04"/></pattern>
+<radialGradient id="halo"><stop offset="0" stop-color="#5ee7ff" stop-opacity=".16"/><stop offset="1" stop-color="#5ee7ff" stop-opacity="0"/></radialGradient>
+<radialGradient id="haloRed"><stop offset="0" stop-color="#ff5c7a" stop-opacity=".09"/><stop offset="1" stop-color="#ff5c7a" stop-opacity="0"/></radialGradient>
+<radialGradient id="haloCyan"><stop offset="0" stop-color="#5ee7ff" stop-opacity=".28"/><stop offset="1" stop-color="#5ee7ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="titleGrad" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#5ee7ff"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+<linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5ee7ff" stop-opacity=".7"/><stop offset=".5" stop-color="#4f8cff" stop-opacity=".25"/><stop offset="1" stop-color="#a78bfa" stop-opacity=".7"/></linearGradient>
+<linearGradient id="axisGrad"><stop offset="0" stop-color="#4f8cff"/><stop offset=".4" stop-color="#5ee7ff"/><stop offset=".7" stop-color="#ffc861"/><stop offset="1" stop-color="#3fdc97"/></linearGradient>
+<linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ee7ff" stop-opacity="0"/><stop offset=".5" stop-color="#5ee7ff" stop-opacity=".07"/><stop offset="1" stop-color="#5ee7ff" stop-opacity="0"/></linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="glowBig" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="glowText" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
 <style>
 text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Helvetica,Arial,sans-serif;font-size:12px}
 .blink{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
-.sweat{animation:sweat 1.6s ease-in infinite}@keyframes sweat{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(14px);opacity:0}}
+.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}
+.flow{animation:flow .8s linear infinite}@keyframes flow{to{stroke-dashoffset:-20}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 1.6s ease-out infinite}@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(2.2);opacity:0}}
+.breathe{transform-box:fill-box;transform-origin:center;animation:breathe 5s ease-in-out infinite}@keyframes breathe{50%{transform:scale(1.08);opacity:.75}}
+.scan{animation:scan 3.2s linear infinite}@keyframes scan{from{transform:translateY(0)}to{transform:translateY(226px)}}
+.shimmer{animation:shimmer 1.4s linear infinite}@keyframes shimmer{from{transform:translateX(-50px)}to{transform:translateX(188px)}}
+.zap{animation:zap .5s steps(2) infinite}@keyframes zap{50%{opacity:.2;transform:translateY(-2px)}}
 @keyframes s0{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
 @keyframes s1{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-@keyframes s2{0%,24.00%{opacity:0}25.00%,100%{opacity:1}}
-@keyframes s3{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s2{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes s3{0%,24.00%{opacity:0}25.00%,100%{opacity:1}}
 @keyframes s4{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-@keyframes s5{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-@keyframes s6{0%,49.00%{opacity:0}50.00%,100%{opacity:1}}
-@keyframes s7{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s8{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s9{0%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-@keyframes s10{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes s11{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes s12{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes s13{0%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s14{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-@keyframes s15{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-@keyframes s16{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s17{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes s18{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-@keyframes s19{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-@keyframes s20{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s21{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes s22{0%,3.00%{opacity:0}4.00%,100%{opacity:1}}
-@keyframes s23{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes s24{0%,5.00%{opacity:0}6.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s25{0%,74.00%{opacity:0}75.00%,88.00%{opacity:1}89.00%,100%{opacity:0}}
-@keyframes s26{0%,88.00%{opacity:0}89.00%,100%{opacity:1}}
-@keyframes s27{0%,5.00%{opacity:0}6.00%,100%{opacity:1}}
-@keyframes s28{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s29{0%,7.00%{opacity:0}8.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-@keyframes s30{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
-@keyframes s31{0%,62.00%{opacity:0}63.00%,100%{opacity:1}}
-@keyframes s32{0%,7.00%{opacity:0}8.00%,100%{opacity:1}}
-@keyframes s33{0%,9.00%{opacity:0}10.00%,100%{opacity:1}}
-@keyframes s34{0%,9.00%{opacity:0}10.00%,100%{opacity:1}}
-@keyframes s35{0%,11.00%{opacity:0}12.00%,100%{opacity:1}}
-@keyframes s36{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-@keyframes s37{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-@keyframes grow0{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.55)}100%{transform:scaleX(0.55)}}
-@keyframes grow1{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.85)}100%{transform:scaleX(0.85)}}
-@keyframes grow2{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.7)}100%{transform:scaleX(0.7)}}
-@keyframes grow3{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.62)}100%{transform:scaleX(0.62)}}
-@keyframes s38{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s39{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
-@keyframes s40{0%,62.00%{opacity:0}63.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s41{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
-@keyframes s42{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes s43{0%,74.00%{opacity:0}75.00%,88.00%{opacity:1}89.00%,100%{opacity:0}}
-@keyframes s44{0%,88.00%{opacity:0}89.00%,100%{opacity:1}}
-@keyframes f45{0%,52.00%{transform:translate(835px,354px);opacity:0}53.00%{transform:translate(835px,354px);opacity:1}62.00%{transform:translate(1082px,284px);opacity:1}63.00%,100%{transform:translate(1082px,284px);opacity:0}}
-@keyframes f46{0%,78.00%{transform:translate(835px,354px);opacity:0}79.00%{transform:translate(835px,354px);opacity:1}88.00%{transform:translate(1086px,324px);opacity:1}89.00%,100%{transform:translate(1086px,324px);opacity:0}}
-@keyframes c47{0%,62.00%{r:0;opacity:0}63.00%{r:3;opacity:.6}67.00%{r:16;opacity:0}100%{r:0;opacity:0}}
-@keyframes c48{0%,88.00%{r:0;opacity:0}89.00%{r:3;opacity:.6}93.00%{r:16;opacity:0}100%{r:0;opacity:0}}
-@keyframes s49{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes s5{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s6{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s7{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes s8{0%,49.00%{opacity:0}50.00%,100%{opacity:1}}
+@keyframes s9{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s10{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s11{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s12{0%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s13{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s14{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s15{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s16{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s17{0%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s19{0%,3.00%{opacity:0}4.00%,100%{opacity:1}}
+@keyframes s20{0%,6.00%{opacity:0}7.00%,100%{opacity:1}}
+@keyframes s21{0%,9.00%{opacity:0}10.00%,100%{opacity:1}}
+@keyframes s22{0%,12.00%{opacity:0}13.00%,100%{opacity:1}}
+@keyframes s23{0%,3.00%{opacity:0}4.00%,100%{opacity:1}}
+@keyframes s24{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s25{0%,5.00%{opacity:0}6.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s26{0%,5.00%{opacity:0}6.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s28{0%,74.00%{opacity:0}75.00%,88.00%{opacity:1}89.00%,100%{opacity:0}}
+@keyframes s29{0%,88.00%{opacity:0}89.00%,100%{opacity:1}}
+@keyframes s30{0%,6.00%{opacity:0}7.00%,100%{opacity:1}}
+@keyframes s31{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s32{0%,8.00%{opacity:0}9.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s33{0%,8.00%{opacity:0}9.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s35{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
+@keyframes s36{0%,62.00%{opacity:0}63.00%,100%{opacity:1}}
+@keyframes s37{0%,62.00%{opacity:0}63.00%,100%{opacity:1}}
+@keyframes s39{0%,9.00%{opacity:0}10.00%,100%{opacity:1}}
+@keyframes s40{0%,11.00%{opacity:0}12.00%,100%{opacity:1}}
+@keyframes s41{0%,11.00%{opacity:0}12.00%,100%{opacity:1}}
+@keyframes s43{0%,12.00%{opacity:0}13.00%,100%{opacity:1}}
+@keyframes s44{0%,14.00%{opacity:0}15.00%,100%{opacity:1}}
+@keyframes s45{0%,14.00%{opacity:0}15.00%,100%{opacity:1}}
+@keyframes s47{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes b48{0%,19.00%{r:0;opacity:0;stroke-width:3}20.00%{r:2;opacity:1;stroke-width:3}26.00%{r:30;opacity:0;stroke-width:.5}100%{r:0;opacity:0}}
+@keyframes s49{0%,19.00%{opacity:0}20.00%,24.00%{opacity:1}25.00%,100%{opacity:0}}
 @keyframes s50{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes grow0{0%,25.00%{transform:scaleX(.06)}49.00%{transform:scaleX(0.55)}100%{transform:scaleX(0.55)}}
+@keyframes grow1{0%,25.00%{transform:scaleX(.06)}49.00%{transform:scaleX(0.85)}100%{transform:scaleX(0.85)}}
+@keyframes grow2{0%,25.00%{transform:scaleX(.06)}49.00%{transform:scaleX(0.7)}100%{transform:scaleX(0.7)}}
+@keyframes grow3{0%,25.00%{transform:scaleX(.06)}49.00%{transform:scaleX(0.62)}100%{transform:scaleX(0.62)}}
 @keyframes s51{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s52{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-.steam{animation:steam 1.6s ease-out infinite}@keyframes steam{0%{opacity:0;transform:translateY(4px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-6px)}}
-.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}
+@keyframes s52{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
+@keyframes s53{0%,62.00%{opacity:0}63.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes toast54{0%,49.00%{transform:translateX(60px);opacity:0}53.00%{transform:translateX(0);opacity:1}62.00%{transform:translateX(0);opacity:1}65.00%,100%{transform:translateX(30px);opacity:0}}
+@keyframes s55{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s56{0%,74.00%{opacity:0}75.00%,88.00%{opacity:1}89.00%,100%{opacity:0}}
+@keyframes s57{0%,88.00%{opacity:0}89.00%,100%{opacity:1}}
+@keyframes f58{0%,52.00%{transform:translate(919px,410px);opacity:0}53.00%{transform:translate(919px,410px);opacity:1}62.00%{transform:translate(1091px,295px);opacity:1}63.00%,100%{transform:translate(1091px,295px);opacity:0}}
+@keyframes f59{0%,78.00%{transform:translate(919px,410px);opacity:0}79.00%{transform:translate(919px,410px);opacity:1}88.00%{transform:translate(1082px,335px);opacity:1}89.00%,100%{transform:translate(1082px,335px);opacity:0}}
+@keyframes b60{0%,62.00%{r:0;opacity:0;stroke-width:3}63.00%{r:2;opacity:1;stroke-width:3}69.00%{r:26;opacity:0;stroke-width:.5}100%{r:0;opacity:0}}
+@keyframes b61{0%,88.00%{r:0;opacity:0;stroke-width:3}89.00%{r:2;opacity:1;stroke-width:3}95.00%{r:34;opacity:0;stroke-width:.5}100%{r:0;opacity:0}}
+@keyframes pt62{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(46px,0px);opacity:0}100%{opacity:0}}
+@keyframes pt63{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(37.214781741247585px,17.633557568774194px);opacity:0}100%{opacity:0}}
+@keyframes pt64{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(14.214781741247583px,28.531695488854606px);opacity:0}100%{opacity:0}}
+@keyframes pt65{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(-14.214781741247577px,28.53169548885461px);opacity:0}100%{opacity:0}}
+@keyframes pt66{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(-37.21478174124758px,17.633557568774197px);opacity:0}100%{opacity:0}}
+@keyframes pt67{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(-46px,3.67394039744206e-15px);opacity:0}100%{opacity:0}}
+@keyframes pt68{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(-37.214781741247585px,-17.63355756877419px);opacity:0}100%{opacity:0}}
+@keyframes pt69{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(-14.214781741247588px,-28.531695488854606px);opacity:0}100%{opacity:0}}
+@keyframes pt70{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(14.214781741247572px,-28.53169548885461px);opacity:0}100%{opacity:0}}
+@keyframes pt71{0%,88.00%{transform:translate(0,0);opacity:0}89.00%{opacity:1}96.00%{transform:translate(37.21478174124758px,-17.6335575687742px);opacity:0}100%{opacity:0}}
+.axis{transform-box:fill-box;transform-origin:left;animation:axis 12s linear infinite}@keyframes axis{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.playhead{animation:playhead 12s linear infinite}@keyframes playhead{from{transform:translateX(0)}to{transform:translateX(1040px)}}
+@keyframes s73{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes s74{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes s75{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s76{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s77{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s78{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s79{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s80{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<rect x="0.5" y="0.5" width="1199" height="617" rx="14" fill="#ffffff" stroke="#d0d7de"/>
-<text x="600" y="46" fill="#1f2328" text-anchor="middle" font-weight="700" style="font-size:24px">你掌舵，Agent 并行</text>
-<text x="600" y="74" fill="#6e7781" text-anchor="middle" style="font-size:13px">同样是几个编码 Agent 一起干活，你的一天可以很不一样。</text>
-<rect x="30" y="96" width="450" height="420" rx="14" fill="#f6f8fa" stroke="#d0d7de"/>
-<text x="52" y="128" fill="#cf222e" font-weight="700" style="font-size:16px">过去</text>
-<text x="96" y="128" fill="#6e7781" style="font-size:13px">你守着一圈终端，一次只能看一个</text>
-<rect x="60" y="152" width="170" height="92" rx="8" fill="#1f2328"/>
-<path d="M60 160 a8 8 0 0 1 8 -8 h154 a8 8 0 0 1 8 8 v12 h-170 z" fill="#2d333b"/>
-<circle cx="72" cy="162" r="3.2" fill="#ff5f57"/>
-<circle cx="82" cy="162" r="3.2" fill="#febc2e"/>
-<circle cx="92" cy="162" r="3.2" fill="#28c840"/>
-<text x="206" y="166" fill="#8b949e" text-anchor="end" style="font-size:10px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">claude</text>
-<text x="72" y="192" fill="#7ee787" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ claude</text>
-<g style="animation:s0 12s linear infinite"><text x="72" y="214" fill="#f2cc60" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">Allow edit? (y/n)</text><rect x="72" y="222" width="7" height="12" fill="#f2cc60" class="blink"/></g>
-<rect x="57" y="149" width="176" height="98" rx="10" fill="none" stroke="#bf8700" stroke-width="2.5" style="animation:s1 12s linear infinite"/>
-<g style="animation:s2 12s linear infinite"><text x="72" y="214" fill="#6e7681" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">……又停下来等你</text><circle cx="226" cy="156" r="9" fill="#cf222e"/><text x="226" y="160" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:12px">!</text></g>
-<rect x="280" y="152" width="170" height="92" rx="8" fill="#1f2328"/>
-<path d="M280 160 a8 8 0 0 1 8 -8 h154 a8 8 0 0 1 8 8 v12 h-170 z" fill="#2d333b"/>
-<circle cx="292" cy="162" r="3.2" fill="#ff5f57"/>
-<circle cx="302" cy="162" r="3.2" fill="#febc2e"/>
-<circle cx="312" cy="162" r="3.2" fill="#28c840"/>
-<text x="426" y="166" fill="#8b949e" text-anchor="end" style="font-size:10px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">codex</text>
-<text x="292" y="192" fill="#7ee787" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ codex</text>
-<g style="animation:s3 12s linear infinite"><text x="292" y="214" fill="#f2cc60" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">Run npm test? (y/n)</text><rect x="292" y="222" width="7" height="12" fill="#f2cc60" class="blink"/></g>
-<rect x="277" y="149" width="176" height="98" rx="10" fill="none" stroke="#bf8700" stroke-width="2.5" style="animation:s4 12s linear infinite"/>
-<g style="animation:s5 12s linear infinite"><circle cx="446" cy="156" r="9" fill="#cf222e"/><text x="446" y="160" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:12px">!</text><text x="292" y="214" fill="#6e7681" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">等你切回来……</text></g>
-<g style="animation:s6 12s linear infinite"><text x="292" y="214" fill="#6e7681" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">……又停下来等你</text><circle cx="446" cy="156" r="9" fill="#cf222e"/><text x="446" y="160" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:12px">!</text></g>
-<rect x="60" y="264" width="170" height="92" rx="8" fill="#1f2328"/>
-<path d="M60 272 a8 8 0 0 1 8 -8 h154 a8 8 0 0 1 8 8 v12 h-170 z" fill="#2d333b"/>
-<circle cx="72" cy="274" r="3.2" fill="#ff5f57"/>
-<circle cx="82" cy="274" r="3.2" fill="#febc2e"/>
-<circle cx="92" cy="274" r="3.2" fill="#28c840"/>
-<text x="206" y="278" fill="#8b949e" text-anchor="end" style="font-size:10px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">opencode</text>
-<text x="72" y="304" fill="#7ee787" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ opencode</text>
-<g style="animation:s7 12s linear infinite"><text x="72" y="326" fill="#f2cc60" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">改完了，看下 diff？</text><rect x="72" y="334" width="7" height="12" fill="#f2cc60" class="blink"/></g>
-<rect x="57" y="261" width="176" height="98" rx="10" fill="none" stroke="#bf8700" stroke-width="2.5" style="animation:s8 12s linear infinite"/>
-<g style="animation:s9 12s linear infinite"><circle cx="226" cy="268" r="9" fill="#cf222e"/><text x="226" y="272" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:12px">!</text><text x="72" y="326" fill="#6e7681" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">等你切回来……</text></g>
-<g style="animation:s10 12s linear infinite"><text x="72" y="326" fill="#6e7681" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">……又停下来等你</text><circle cx="226" cy="268" r="9" fill="#cf222e"/><text x="226" y="272" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:12px">!</text></g>
-<rect x="280" y="264" width="170" height="92" rx="8" fill="#1f2328"/>
-<path d="M280 272 a8 8 0 0 1 8 -8 h154 a8 8 0 0 1 8 8 v12 h-170 z" fill="#2d333b"/>
-<circle cx="292" cy="274" r="3.2" fill="#ff5f57"/>
-<circle cx="302" cy="274" r="3.2" fill="#febc2e"/>
-<circle cx="312" cy="274" r="3.2" fill="#28c840"/>
-<text x="426" y="278" fill="#8b949e" text-anchor="end" style="font-size:10px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">grok</text>
-<text x="292" y="304" fill="#7ee787" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ grok</text>
-<g style="animation:s11 12s linear infinite"><text x="292" y="326" fill="#f2cc60" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">上次说到哪了？</text><rect x="292" y="334" width="7" height="12" fill="#f2cc60" class="blink"/></g>
-<rect x="277" y="261" width="176" height="98" rx="10" fill="none" stroke="#bf8700" stroke-width="2.5" style="animation:s12 12s linear infinite"/>
-<g style="animation:s13 12s linear infinite"><circle cx="446" cy="268" r="9" fill="#cf222e"/><text x="446" y="272" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:12px">!</text><text x="292" y="326" fill="#6e7681" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">等你切回来……</text></g>
-<line x1="255" y1="376" x2="145" y2="248" stroke="#bf8700" stroke-width="1.6" stroke-dasharray="4 4" style="animation:s14 12s linear infinite"/>
-<line x1="255" y1="376" x2="365" y2="248" stroke="#bf8700" stroke-width="1.6" stroke-dasharray="4 4" style="animation:s15 12s linear infinite"/>
-<line x1="255" y1="376" x2="145" y2="360" stroke="#bf8700" stroke-width="1.6" stroke-dasharray="4 4" style="animation:s16 12s linear infinite"/>
-<line x1="255" y1="376" x2="365" y2="360" stroke="#bf8700" stroke-width="1.6" stroke-dasharray="4 4" style="animation:s17 12s linear infinite"/>
-<rect x="240" y="406" width="30" height="42" rx="10" fill="#57606a"/>
-<path d="M242 412 Q225 434 237 442" stroke="#57606a" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M268 412 Q285 434 273 442" stroke="#57606a" stroke-width="8" fill="none" stroke-linecap="round"/>
-<circle cx="255" cy="392" r="14" fill="#f2c9a0"/>
-<path d="M241 390 Q242 374 255 375 Q269 375 269 390 Q255 382 241 390 Z" fill="#3b2f2a"/>
-<g style="animation:s18 12s linear infinite"><circle cx="245" cy="390" r="1.7" fill="#1f2328"/><circle cx="255" cy="390" r="1.7" fill="#1f2328"/></g>
-<g style="animation:s19 12s linear infinite"><circle cx="255" cy="390" r="1.7" fill="#1f2328"/><circle cx="265" cy="390" r="1.7" fill="#1f2328"/></g>
-<g style="animation:s20 12s linear infinite"><circle cx="245" cy="394" r="1.7" fill="#1f2328"/><circle cx="255" cy="394" r="1.7" fill="#1f2328"/></g>
-<g style="animation:s21 12s linear infinite"><circle cx="255" cy="394" r="1.7" fill="#1f2328"/><circle cx="265" cy="394" r="1.7" fill="#1f2328"/></g>
-<path d="M250 402 Q255 399 260 402" stroke="#1f2328" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-<path d="M272 382 q3 5 0 8 q-3 -3 0 -8 z" fill="#54aeff" class="sweat"/>
-<rect x="135" y="448" width="240" height="12" rx="4" fill="#8c6d52"/><rect x="145" y="460" width="8" height="22" fill="#8c6d52"/><rect x="357" y="460" width="8" height="22" fill="#8c6d52"/>
-<rect x="219" y="428" width="72" height="20" rx="3" fill="#d0d7de"/><rect x="211" y="446" width="88" height="4" rx="2" fill="#afb8c1"/>
-<rect x="325" y="430" width="16" height="18" rx="3" fill="#fff" stroke="#d0d7de"/><path d="M341 435 q7 0 7 5 q0 5 -7 5" fill="none" stroke="#d0d7de" stroke-width="2"/>
-<text x="255" y="500" fill="#6e7781" text-anchor="middle" style="font-size:12px">授权、进度、改动都在不同窗口里，你看到哪个才推进哪个</text>
-<rect x="500" y="96" width="670" height="420" rx="14" fill="#ffffff" stroke="#d0d7de"/>
-<text x="522" y="128" fill="#1a7f37" font-weight="700" style="font-size:16px">现在</text>
-<text x="566" y="128" fill="#6e7781" style="font-size:13px">同一个你，只看一个 Caravel 窗口；任务并行推进，需要你时它来找你</text>
-<rect x="530" y="142" width="610" height="232" rx="10" fill="#fff" stroke="#d0d7de" filter="url(#shadow)"/>
-<path d="M530 152 a10 10 0 0 1 10 -10 h590 a10 10 0 0 1 10 10 v14 h-610 z" fill="#f6f8fa"/><line x1="530" y1="166" x2="1140" y2="166" stroke="#d0d7de"/>
-<circle cx="544" cy="154" r="4" fill="#ff5f57"/>
-<circle cx="556" cy="154" r="4" fill="#febc2e"/>
-<circle cx="568" cy="154" r="4" fill="#28c840"/>
-<text x="835" y="158" fill="#6e7781" text-anchor="middle" font-weight="600" style="font-size:11px">Caravel</text>
-<rect x="530" y="167" width="92" height="207" fill="#fafbfc"/><line x1="622" y1="167" x2="622" y2="374" stroke="#eaeef2"/>
-<rect x="538" y="176" width="76" height="20" rx="5" fill="#eaeef2"/><text x="576" y="190" fill="#1f2328" text-anchor="middle" font-weight="600" style="font-size:10.5px">+ 新建任务</text>
-<rect x="538" y="204" width="76" height="20" rx="5" fill="#eaeef2"/>
-<rect x="544" y="210" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="218" fill="#1f2328" font-weight="700" style="font-size:10.5px">工作台</text>
-<rect x="544" y="236" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="244" fill="#6e7781" font-weight="400" style="font-size:10.5px">会话台</text>
-<rect x="544" y="262" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="270" fill="#6e7781" font-weight="400" style="font-size:10.5px">定时器</text>
-<rect x="544" y="288" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="296" fill="#6e7781" font-weight="400" style="font-size:10.5px">工作流</text>
-<rect x="544" y="314" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="322" fill="#6e7781" font-weight="400" style="font-size:10.5px">副本库</text>
-<line x1="828" y1="167" x2="828" y2="374" stroke="#eaeef2"/>
+<rect width="1200" height="640" rx="16" fill="url(#bg)"/>
+<rect width="1200" height="640" rx="16" fill="url(#grid)" opacity=".55"/>
+<circle cx="860" cy="250" r="260" fill="url(#halo)" class="breathe"/>
+<circle cx="250" cy="300" r="220" fill="url(#haloRed)" class="breathe" style="animation-delay:-2s"/>
+<text x="600" y="50" fill="url(#titleGrad)" text-anchor="middle" font-weight="800" style="font-size:26px;letter-spacing:1px">你掌舵，Agent 并行</text>
+<text x="600" y="78" fill="#8b98a9" text-anchor="middle" style="font-size:13px;">同样是几个编码 Agent 一起干活，你的一天可以很不一样</text>
+<rect x="30" y="100" width="450" height="420" rx="16" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.09)"/>
+<rect x="50" y="119" width="46" height="22" rx="11" fill="#ff5c7a" fill-opacity=".14" stroke="#ff5c7a" stroke-opacity=".6"/><text x="73" y="135" fill="#ff5c7a" text-anchor="middle" font-weight="800" style="font-size:12px;">过去</text>
+<text x="108" y="135" fill="#8b98a9" style="font-size:13px;">你守着一圈终端，一次只能看一个</text>
+<line x1="255" y1="382" x2="142" y2="254" stroke="#ffc861" stroke-width="1.6" stroke-dasharray="3 5" class="flow" style="animation:s0 12s linear infinite"/>
+<g transform="rotate(-1.5 142 206)">
+<rect x="51" y="155" width="182" height="102" rx="11" fill="none" stroke="#ffc861" stroke-width="2" filter="url(#glow)" style="animation:s1 12s linear infinite"/>
+<rect x="54" y="158" width="176" height="96" rx="9" fill="#0a111d" stroke="rgba(255,255,255,0.09)"/>
+<path d="M54 167 a9 9 0 0 1 9 -9 h158 a9 9 0 0 1 9 9 v11 h-176 z" fill="#121c2b"/>
+<circle cx="66" cy="168" r="3" fill="#ff5f57" opacity=".85"/>
+<circle cx="76" cy="168" r="3" fill="#febc2e" opacity=".85"/>
+<circle cx="86" cy="168" r="3" fill="#28c840" opacity=".85"/>
+<text x="204" y="172" fill="#8b98a9" text-anchor="end" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">claude</text>
+<text x="66" y="200" fill="#3fdc97" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ claude</text>
+<g style="animation:s2 12s linear infinite"><text x="66" y="222" fill="#ffc861" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">Allow edit? (y/n)</text><rect x="66" y="230" width="7" height="12" fill="#ffc861" class="blink"/></g>
+<g style="animation:s3 12s linear infinite"><text x="66" y="222" fill="#3a4a5e" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">……又停下来等你</text><circle cx="224" cy="164" r="9" fill="#ff5c7a" filter="url(#glow)"/><text x="224" y="168" fill="#fff" text-anchor="middle" font-weight="800" style="font-size:12px;">!</text><circle cx="224" cy="164" r="9" fill="none" stroke="#ff5c7a" class="ping"/></g>
+</g>
+<line x1="255" y1="382" x2="368" y2="250" stroke="#ffc861" stroke-width="1.6" stroke-dasharray="3 5" class="flow" style="animation:s4 12s linear infinite"/>
+<g transform="rotate(1.2 368 202)">
+<rect x="277" y="151" width="182" height="102" rx="11" fill="none" stroke="#ffc861" stroke-width="2" filter="url(#glow)" style="animation:s5 12s linear infinite"/>
+<rect x="280" y="154" width="176" height="96" rx="9" fill="#0a111d" stroke="rgba(255,255,255,0.09)"/>
+<path d="M280 163 a9 9 0 0 1 9 -9 h158 a9 9 0 0 1 9 9 v11 h-176 z" fill="#121c2b"/>
+<circle cx="292" cy="164" r="3" fill="#ff5f57" opacity=".85"/>
+<circle cx="302" cy="164" r="3" fill="#febc2e" opacity=".85"/>
+<circle cx="312" cy="164" r="3" fill="#28c840" opacity=".85"/>
+<text x="430" y="168" fill="#8b98a9" text-anchor="end" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">codex</text>
+<text x="292" y="196" fill="#3fdc97" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ codex</text>
+<g style="animation:s6 12s linear infinite"><text x="292" y="218" fill="#ffc861" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">Run npm test? (y/n)</text><rect x="292" y="226" width="7" height="12" fill="#ffc861" class="blink"/></g>
+<g style="animation:s7 12s linear infinite"><text x="292" y="218" fill="#3a4a5e" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">等你切回来……</text><circle cx="450" cy="160" r="9" fill="#ff5c7a" filter="url(#glow)"/><text x="450" y="164" fill="#fff" text-anchor="middle" font-weight="800" style="font-size:12px;">!</text><circle cx="450" cy="160" r="9" fill="none" stroke="#ff5c7a" class="ping"/></g>
+<g style="animation:s8 12s linear infinite"><text x="292" y="218" fill="#3a4a5e" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">……又停下来等你</text><circle cx="450" cy="160" r="9" fill="#ff5c7a" filter="url(#glow)"/><text x="450" y="164" fill="#fff" text-anchor="middle" font-weight="800" style="font-size:12px;">!</text><circle cx="450" cy="160" r="9" fill="none" stroke="#ff5c7a" class="ping"/></g>
+</g>
+<line x1="255" y1="382" x2="148" y2="368" stroke="#ffc861" stroke-width="1.6" stroke-dasharray="3 5" class="flow" style="animation:s9 12s linear infinite"/>
+<g transform="rotate(1 148 320)">
+<rect x="57" y="269" width="182" height="102" rx="11" fill="none" stroke="#ffc861" stroke-width="2" filter="url(#glow)" style="animation:s10 12s linear infinite"/>
+<rect x="60" y="272" width="176" height="96" rx="9" fill="#0a111d" stroke="rgba(255,255,255,0.09)"/>
+<path d="M60 281 a9 9 0 0 1 9 -9 h158 a9 9 0 0 1 9 9 v11 h-176 z" fill="#121c2b"/>
+<circle cx="72" cy="282" r="3" fill="#ff5f57" opacity=".85"/>
+<circle cx="82" cy="282" r="3" fill="#febc2e" opacity=".85"/>
+<circle cx="92" cy="282" r="3" fill="#28c840" opacity=".85"/>
+<text x="210" y="286" fill="#8b98a9" text-anchor="end" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">opencode</text>
+<text x="72" y="314" fill="#3fdc97" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ opencode</text>
+<g style="animation:s11 12s linear infinite"><text x="72" y="336" fill="#ffc861" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">改完了，看下 diff？</text><rect x="72" y="344" width="7" height="12" fill="#ffc861" class="blink"/></g>
+<g style="animation:s12 12s linear infinite"><text x="72" y="336" fill="#3a4a5e" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">等你切回来……</text><circle cx="230" cy="278" r="9" fill="#ff5c7a" filter="url(#glow)"/><text x="230" y="282" fill="#fff" text-anchor="middle" font-weight="800" style="font-size:12px;">!</text><circle cx="230" cy="278" r="9" fill="none" stroke="#ff5c7a" class="ping"/></g>
+<g style="animation:s13 12s linear infinite"><text x="72" y="336" fill="#3a4a5e" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">……又停下来等你</text><circle cx="230" cy="278" r="9" fill="#ff5c7a" filter="url(#glow)"/><text x="230" y="282" fill="#fff" text-anchor="middle" font-weight="800" style="font-size:12px;">!</text><circle cx="230" cy="278" r="9" fill="none" stroke="#ff5c7a" class="ping"/></g>
+</g>
+<line x1="255" y1="382" x2="362" y2="372" stroke="#ffc861" stroke-width="1.6" stroke-dasharray="3 5" class="flow" style="animation:s14 12s linear infinite"/>
+<g transform="rotate(-1.2 362 324)">
+<rect x="271" y="273" width="182" height="102" rx="11" fill="none" stroke="#ffc861" stroke-width="2" filter="url(#glow)" style="animation:s15 12s linear infinite"/>
+<rect x="274" y="276" width="176" height="96" rx="9" fill="#0a111d" stroke="rgba(255,255,255,0.09)"/>
+<path d="M274 285 a9 9 0 0 1 9 -9 h158 a9 9 0 0 1 9 9 v11 h-176 z" fill="#121c2b"/>
+<circle cx="286" cy="286" r="3" fill="#ff5f57" opacity=".85"/>
+<circle cx="296" cy="286" r="3" fill="#febc2e" opacity=".85"/>
+<circle cx="306" cy="286" r="3" fill="#28c840" opacity=".85"/>
+<text x="424" y="290" fill="#8b98a9" text-anchor="end" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">grok</text>
+<text x="286" y="318" fill="#3fdc97" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ grok</text>
+<g style="animation:s16 12s linear infinite"><text x="286" y="340" fill="#ffc861" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">上次说到哪了？</text><rect x="286" y="348" width="7" height="12" fill="#ffc861" class="blink"/></g>
+<g style="animation:s17 12s linear infinite"><text x="286" y="340" fill="#3a4a5e" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">等你切回来……</text><circle cx="444" cy="282" r="9" fill="#ff5c7a" filter="url(#glow)"/><text x="444" y="286" fill="#fff" text-anchor="middle" font-weight="800" style="font-size:12px;">!</text><circle cx="444" cy="282" r="9" fill="none" stroke="#ff5c7a" class="ping"/></g>
+</g>
+<g>
+<path d="M221 472 Q223 426 255 424 Q287 426 289 472 Z" fill="url(#fig18)" stroke="#ff9aa9" stroke-opacity=".55"/>
+<circle cx="255" cy="400" r="17" fill="url(#fig18)" stroke="#ff9aa9" stroke-opacity=".7"/>
+<circle cx="250" cy="399" r="1.8" fill="#ff9aa9"/><circle cx="260" cy="399" r="1.8" fill="#ff9aa9"/><path d="M249 409 Q255 405 261 409" stroke="#ff9aa9" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+<defs><linearGradient id="fig18" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9aa9" stop-opacity=".35"/><stop offset="1" stop-color="#ff9aa9" stop-opacity=".04"/></linearGradient></defs>
+</g>
+<g class="zap"><path d="M277 378 l6 -6 l-2 6 l6 -5" stroke="#ff5c7a" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M233 378 l-6 -6 l2 6 l-6 -5" stroke="#ff5c7a" stroke-width="1.8" fill="none" stroke-linecap="round"/></g>
+<rect x="221" y="450" width="68" height="20" rx="3" fill="#0e1828" stroke="#ff5c7a" stroke-opacity=".5"/><rect x="229" y="454" width="52" height="12" rx="2" fill="#ff5c7a" fill-opacity=".18"/>
+<line x1="125" y1="472" x2="385" y2="472" stroke="url(#deskGrad-ff5c7a)" stroke-width="2"/>
+<defs><linearGradient id="deskGrad-ff5c7a"><stop offset="0" stop-color="#ff5c7a" stop-opacity="0"/><stop offset=".5" stop-color="#ff5c7a" stop-opacity=".9"/><stop offset="1" stop-color="#ff5c7a" stop-opacity="0"/></linearGradient></defs>
+<text x="255" y="502" fill="#8b98a9" text-anchor="middle" style="font-size:12px;">授权、进度、改动散在各个窗口，你看到哪个才推进哪个</text>
+<rect x="500" y="100" width="670" height="420" rx="16" fill="rgba(255,255,255,0.035)" stroke="url(#edgeGrad)" stroke-width="1.2"/>
+<rect x="520" y="119" width="46" height="22" rx="11" fill="#3fdc97" fill-opacity=".14" stroke="#3fdc97" stroke-opacity=".6"/><text x="543" y="135" fill="#3fdc97" text-anchor="middle" font-weight="800" style="font-size:12px;">现在</text>
+<text x="578" y="135" fill="#8b98a9" style="font-size:13px;">同一个你，只看一个 Caravel 窗口；任务并行推进，需要你时它来找你</text>
+<g style="animation:s19 12s linear infinite">
+<path d="M560 196 C596 196, 640 208, 694 208" fill="none" stroke="#ff8a5c" stroke-opacity=".25" stroke-width="1.4"/>
+<path d="M560 196 C596 196, 640 208, 694 208" fill="none" stroke="#ff8a5c" stroke-width="2" stroke-dasharray="6 14" class="flow" filter="url(#glow)"/>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="0s" repeatCount="indefinite" path="M560 196 C596 196, 640 208, 694 208"/></circle>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="-0.7s" repeatCount="indefinite" path="M560 196 C596 196, 640 208, 694 208"/></circle>
+<circle cx="546" cy="196" r="14" fill="#ff8a5c" fill-opacity=".16" stroke="#ff8a5c" filter="url(#glow)"/><circle cx="546" cy="196" r="5" fill="#ff8a5c" class="pulse" style="animation-delay:0s"/>
+<circle cx="546" cy="196" r="14" fill="none" stroke="#ff8a5c" class="ping" style="animation-delay:0s"/>
+<text x="546" y="223" fill="#ff8a5c" text-anchor="middle" font-weight="700" style="font-size:9.5px;">Claude</text>
+</g>
+<g style="animation:s20 12s linear infinite">
+<path d="M560 248 C596 248, 640 254, 694 254" fill="none" stroke="#3fdc97" stroke-opacity=".25" stroke-width="1.4"/>
+<path d="M560 248 C596 248, 640 254, 694 254" fill="none" stroke="#3fdc97" stroke-width="2" stroke-dasharray="6 14" class="flow" filter="url(#glow)"/>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="-0.3s" repeatCount="indefinite" path="M560 248 C596 248, 640 254, 694 254"/></circle>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="-1s" repeatCount="indefinite" path="M560 248 C596 248, 640 254, 694 254"/></circle>
+<circle cx="546" cy="248" r="14" fill="#3fdc97" fill-opacity=".16" stroke="#3fdc97" filter="url(#glow)"/><circle cx="546" cy="248" r="5" fill="#3fdc97" class="pulse" style="animation-delay:-0.3s"/>
+<circle cx="546" cy="248" r="14" fill="none" stroke="#3fdc97" class="ping" style="animation-delay:-0.5s"/>
+<text x="546" y="275" fill="#3fdc97" text-anchor="middle" font-weight="700" style="font-size:9.5px;">Codex</text>
+</g>
+<g style="animation:s21 12s linear infinite">
+<path d="M560 300 C596 300, 640 300, 694 300" fill="none" stroke="#5ee7ff" stroke-opacity=".25" stroke-width="1.4"/>
+<path d="M560 300 C596 300, 640 300, 694 300" fill="none" stroke="#5ee7ff" stroke-width="2" stroke-dasharray="6 14" class="flow" filter="url(#glow)"/>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="-0.6s" repeatCount="indefinite" path="M560 300 C596 300, 640 300, 694 300"/></circle>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="-1.2999999999999998s" repeatCount="indefinite" path="M560 300 C596 300, 640 300, 694 300"/></circle>
+<circle cx="546" cy="300" r="14" fill="#5ee7ff" fill-opacity=".16" stroke="#5ee7ff" filter="url(#glow)"/><circle cx="546" cy="300" r="5" fill="#5ee7ff" class="pulse" style="animation-delay:-0.6s"/>
+<circle cx="546" cy="300" r="14" fill="none" stroke="#5ee7ff" class="ping" style="animation-delay:-1s"/>
+<text x="546" y="327" fill="#5ee7ff" text-anchor="middle" font-weight="700" style="font-size:9.5px;">OpenCode</text>
+</g>
 <g style="animation:s22 12s linear infinite">
-<rect x="630" y="176" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
-<rect x="630" y="176" width="190" height="42" rx="6" fill="#f3f4f6" stroke="#8250df" stroke-width="1.5" style="animation:s23 12s linear infinite"/>
-<text x="640" y="193" fill="#1f2328" font-weight="700" style="font-size:11.5px">修复登录校验</text>
-<circle cx="644" cy="207" r="4" fill="#d97757"/><text x="652" y="211" fill="#6e7781" style="font-size:10px">Claude</text>
-<g style="animation:s24 12s linear infinite"><circle cx="766" cy="207" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="211" fill="#0969da" font-weight="600" style="font-size:10px">运行中</text></g>
-<g style="animation:s25 12s linear infinite"><circle cx="766" cy="207" r="3.5" fill="#8250df"/><text x="774" y="211" fill="#8250df" font-weight="600" style="font-size:10px">待验收</text></g>
-<g style="animation:s26 12s linear infinite"><circle cx="766" cy="207" r="3.5" fill="#1a7f37"/><text x="774" y="211" fill="#1a7f37" font-weight="600" style="font-size:10px">已完成</text></g>
+<path d="M560 352 C596 352, 640 346, 694 346" fill="none" stroke="#a78bfa" stroke-opacity=".25" stroke-width="1.4"/>
+<path d="M560 352 C596 352, 640 346, 694 346" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="6 14" class="flow" filter="url(#glow)"/>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="-0.8999999999999999s" repeatCount="indefinite" path="M560 352 C596 352, 640 346, 694 346"/></circle>
+<circle r="2.6" fill="#fff"><animateMotion dur="1.4s" begin="-1.5999999999999999s" repeatCount="indefinite" path="M560 352 C596 352, 640 346, 694 346"/></circle>
+<circle cx="546" cy="352" r="14" fill="#a78bfa" fill-opacity=".16" stroke="#a78bfa" filter="url(#glow)"/><circle cx="546" cy="352" r="5" fill="#a78bfa" class="pulse" style="animation-delay:-0.8999999999999999s"/>
+<circle cx="546" cy="352" r="14" fill="none" stroke="#a78bfa" class="ping" style="animation-delay:-1.5s"/>
+<text x="546" y="379" fill="#a78bfa" text-anchor="middle" font-weight="700" style="font-size:9.5px;">Grok</text>
 </g>
-<g style="animation:s27 12s linear infinite">
-<rect x="630" y="224" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
-<rect x="630" y="224" width="190" height="42" rx="6" fill="#f3f4f6" stroke="#bf8700" stroke-width="1.5" style="animation:s28 12s linear infinite"/>
-<text x="640" y="241" fill="#1f2328" font-weight="700" style="font-size:11.5px">补充接口测试</text>
-<circle cx="644" cy="255" r="4" fill="#10a37f"/><text x="652" y="259" fill="#6e7781" style="font-size:10px">Codex</text>
-<g style="animation:s29 12s linear infinite"><circle cx="766" cy="255" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="259" fill="#0969da" font-weight="600" style="font-size:10px">运行中</text></g>
-<g style="animation:s30 12s linear infinite"><circle cx="766" cy="255" r="3.5" fill="#bf8700"/><text x="774" y="259" fill="#bf8700" font-weight="600" style="font-size:10px">待确认</text></g>
-<g style="animation:s31 12s linear infinite"><circle cx="766" cy="255" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="259" fill="#0969da" font-weight="600" style="font-size:10px">运行中</text></g>
+<rect x="611" y="153" width="536" height="228" rx="12" fill="none" stroke="url(#edgeGrad)" stroke-width="2" filter="url(#glowBig)" opacity=".7"/>
+<rect x="612" y="154" width="534" height="226" rx="11" fill="#0b1322" stroke="rgba(255,255,255,0.09)"/>
+<path d="M612 165 a11 11 0 0 1 11 -11 h512 a11 11 0 0 1 11 11 v13 h-534 z" fill="#101a2b"/><line x1="612" y1="178" x2="1146" y2="178" stroke="rgba(255,255,255,0.09)"/>
+<circle cx="626" cy="166" r="3.6" fill="#ff5f57"/>
+<circle cx="638" cy="166" r="3.6" fill="#febc2e"/>
+<circle cx="650" cy="166" r="3.6" fill="#28c840"/>
+<text x="879" y="170" fill="#8b98a9" text-anchor="middle" font-weight="700" style="font-size:11px;letter-spacing:1px">Caravel</text>
+<clipPath id="win"><rect x="612" y="179" width="534" height="201" rx="10"/></clipPath>
+<g clip-path="url(#win)"><rect x="612" y="154" width="534" height="40" fill="url(#scanGrad)" class="scan"/></g>
+<rect x="612" y="179" width="78" height="201" fill="#0d1626"/><line x1="690" y1="179" x2="690" y2="380" stroke="rgba(255,255,255,0.09)"/>
+<rect x="619" y="187" width="64" height="20" rx="6" fill="#4f8cff" fill-opacity=".2" stroke="#4f8cff" stroke-opacity=".5"/><text x="651" y="201" fill="#cfe0ff" text-anchor="middle" font-weight="700" style="font-size:10px;">+ 新建任务</text>
+<rect x="619" y="215" width="64" height="20" rx="6" fill="rgba(255,255,255,.06)"/><rect x="619" y="218" width="2.5" height="14" rx="1" fill="#5ee7ff"/>
+<rect x="626" y="221" width="7" height="7" rx="2" fill="none" stroke="#5ee7ff"/><text x="639" y="229" fill="#e6edf3" font-weight="700" style="font-size:10px;">工作台</text>
+<rect x="626" y="247" width="7" height="7" rx="2" fill="none" stroke="#3a4a5e"/><text x="639" y="255" fill="#8b98a9" font-weight="400" style="font-size:10px;">会话台</text>
+<rect x="626" y="273" width="7" height="7" rx="2" fill="none" stroke="#3a4a5e"/><text x="639" y="281" fill="#8b98a9" font-weight="400" style="font-size:10px;">定时器</text>
+<rect x="626" y="299" width="7" height="7" rx="2" fill="none" stroke="#3a4a5e"/><text x="639" y="307" fill="#8b98a9" font-weight="400" style="font-size:10px;">工作流</text>
+<rect x="626" y="325" width="7" height="7" rx="2" fill="none" stroke="#3a4a5e"/><text x="639" y="333" fill="#8b98a9" font-weight="400" style="font-size:10px;">副本库</text>
+<line x1="878" y1="179" x2="878" y2="380" stroke="rgba(255,255,255,0.09)"/>
+<g style="animation:s23 12s linear infinite">
+<rect x="697" y="188" width="174" height="40" rx="7" fill="rgba(255,255,255,.035)" stroke="rgba(255,255,255,0.09)"/>
+<rect x="697" y="188" width="174" height="40" rx="7" fill="#a78bfa" fill-opacity=".1" stroke="#a78bfa" stroke-width="1.5" filter="url(#glow)" style="animation:s24 12s linear infinite"/>
+<text x="706" y="204" fill="#e6edf3" font-weight="700" style="font-size:11px;">修复登录校验</text>
+<circle cx="710" cy="217" r="3.5" fill="#ff8a5c" filter="url(#glow)"/><text x="718" y="221" fill="#8b98a9" style="font-size:9.5px;">Claude</text>
+<g style="animation:s25 12s linear infinite"><rect x="806" y="209" width="58" height="16" rx="8" fill="#4f8cff" fill-opacity=".14" stroke="#4f8cff" stroke-opacity=".5"/><circle cx="815" cy="217" r="2.8" fill="#4f8cff" class="pulse"/><text x="839" y="220.5" fill="#4f8cff" text-anchor="middle" font-weight="700" style="font-size:9.5px;">运行中</text></g>
+<g style="animation:s26 12s linear infinite"><clipPath id="row027"><rect x="698" y="224" width="172" height="3"/></clipPath><g clip-path="url(#row027)"><rect x="698" y="225" width="50" height="2" fill="#ff8a5c" class="shimmer" style="animation-delay:0s"/></g></g>
+<g style="animation:s28 12s linear infinite"><rect x="806" y="209" width="58" height="16" rx="8" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-opacity=".5"/><circle cx="815" cy="217" r="2.8" fill="#a78bfa"/><text x="839" y="220.5" fill="#a78bfa" text-anchor="middle" font-weight="700" style="font-size:9.5px;">待验收</text></g>
+<g style="animation:s29 12s linear infinite"><rect x="806" y="209" width="58" height="16" rx="8" fill="#3fdc97" fill-opacity=".14" stroke="#3fdc97" stroke-opacity=".5"/><circle cx="815" cy="217" r="2.8" fill="#3fdc97"/><text x="839" y="220.5" fill="#3fdc97" text-anchor="middle" font-weight="700" style="font-size:9.5px;">已完成</text></g>
 </g>
-<g style="animation:s32 12s linear infinite">
-<rect x="630" y="272" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
-<text x="640" y="289" fill="#1f2328" font-weight="700" style="font-size:11.5px">升级依赖</text>
-<circle cx="644" cy="303" r="4" fill="#424a53"/><text x="652" y="307" fill="#6e7781" style="font-size:10px">OpenCode</text>
-<g style="animation:s33 12s linear infinite"><circle cx="766" cy="303" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="307" fill="#0969da" font-weight="600" style="font-size:10px">运行中</text></g>
+<g style="animation:s30 12s linear infinite">
+<rect x="697" y="234" width="174" height="40" rx="7" fill="rgba(255,255,255,.035)" stroke="rgba(255,255,255,0.09)"/>
+<rect x="697" y="234" width="174" height="40" rx="7" fill="#ffc861" fill-opacity=".1" stroke="#ffc861" stroke-width="1.5" filter="url(#glow)" style="animation:s31 12s linear infinite"/>
+<text x="706" y="250" fill="#e6edf3" font-weight="700" style="font-size:11px;">补充接口测试</text>
+<circle cx="710" cy="263" r="3.5" fill="#3fdc97" filter="url(#glow)"/><text x="718" y="267" fill="#8b98a9" style="font-size:9.5px;">Codex</text>
+<g style="animation:s32 12s linear infinite"><rect x="806" y="255" width="58" height="16" rx="8" fill="#4f8cff" fill-opacity=".14" stroke="#4f8cff" stroke-opacity=".5"/><circle cx="815" cy="263" r="2.8" fill="#4f8cff" class="pulse"/><text x="839" y="266.5" fill="#4f8cff" text-anchor="middle" font-weight="700" style="font-size:9.5px;">运行中</text></g>
+<g style="animation:s33 12s linear infinite"><clipPath id="row134"><rect x="698" y="270" width="172" height="3"/></clipPath><g clip-path="url(#row134)"><rect x="698" y="271" width="50" height="2" fill="#3fdc97" class="shimmer" style="animation-delay:-0.35s"/></g></g>
+<g style="animation:s35 12s linear infinite"><rect x="806" y="255" width="58" height="16" rx="8" fill="#ffc861" fill-opacity=".14" stroke="#ffc861" stroke-opacity=".5"/><circle cx="815" cy="263" r="2.8" fill="#ffc861" class="pulse"/><text x="839" y="266.5" fill="#ffc861" text-anchor="middle" font-weight="700" style="font-size:9.5px;">待确认</text></g>
+<g style="animation:s36 12s linear infinite"><rect x="806" y="255" width="58" height="16" rx="8" fill="#4f8cff" fill-opacity=".14" stroke="#4f8cff" stroke-opacity=".5"/><circle cx="815" cy="263" r="2.8" fill="#4f8cff" class="pulse"/><text x="839" y="266.5" fill="#4f8cff" text-anchor="middle" font-weight="700" style="font-size:9.5px;">运行中</text></g>
+<g style="animation:s37 12s linear infinite"><clipPath id="row138"><rect x="698" y="270" width="172" height="3"/></clipPath><g clip-path="url(#row138)"><rect x="698" y="271" width="50" height="2" fill="#3fdc97" class="shimmer" style="animation-delay:-0.35s"/></g></g>
 </g>
-<g style="animation:s34 12s linear infinite">
-<rect x="630" y="320" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
-<text x="640" y="337" fill="#1f2328" font-weight="700" style="font-size:11.5px">整理文档</text>
-<circle cx="644" cy="351" r="4" fill="#6639ba"/><text x="652" y="355" fill="#6e7781" style="font-size:10px">Grok</text>
-<g style="animation:s35 12s linear infinite"><circle cx="766" cy="351" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="355" fill="#0969da" font-weight="600" style="font-size:10px">运行中</text></g>
+<g style="animation:s39 12s linear infinite">
+<rect x="697" y="280" width="174" height="40" rx="7" fill="rgba(255,255,255,.035)" stroke="rgba(255,255,255,0.09)"/>
+<text x="706" y="296" fill="#e6edf3" font-weight="700" style="font-size:11px;">升级依赖</text>
+<circle cx="710" cy="309" r="3.5" fill="#5ee7ff" filter="url(#glow)"/><text x="718" y="313" fill="#8b98a9" style="font-size:9.5px;">OpenCode</text>
+<g style="animation:s40 12s linear infinite"><rect x="806" y="301" width="58" height="16" rx="8" fill="#4f8cff" fill-opacity=".14" stroke="#4f8cff" stroke-opacity=".5"/><circle cx="815" cy="309" r="2.8" fill="#4f8cff" class="pulse"/><text x="839" y="312.5" fill="#4f8cff" text-anchor="middle" font-weight="700" style="font-size:9.5px;">运行中</text></g>
+<g style="animation:s41 12s linear infinite"><clipPath id="row242"><rect x="698" y="316" width="172" height="3"/></clipPath><g clip-path="url(#row242)"><rect x="698" y="317" width="50" height="2" fill="#5ee7ff" class="shimmer" style="animation-delay:-0.7s"/></g></g>
 </g>
-<g style="animation:s36 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">新建任务</text><rect x="842" y="202" width="284" height="30" rx="6" fill="#fff" stroke="#d0d7de"/><text x="852" y="221" fill="#6e7781" style="font-size:11px">4 个项目，各派一个任务</text><rect x="842" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#d97757"/><circle cx="853" cy="253" r="4" fill="#d97757"/><text x="860" y="257" fill="#1f2328" style="font-size:10px">Claude</text><rect x="904" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#10a37f"/><circle cx="915" cy="253" r="4" fill="#10a37f"/><text x="922" y="257" fill="#1f2328" style="font-size:10px">Codex</text><rect x="966" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#424a53"/><circle cx="977" cy="253" r="4" fill="#424a53"/><text x="984" y="257" fill="#1f2328" style="font-size:10px">OpenC.</text><rect x="1028" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#6639ba"/><circle cx="1039" cy="253" r="4" fill="#6639ba"/><text x="1046" y="257" fill="#1f2328" style="font-size:10px">Grok</text><rect x="1056" y="328" width="70" height="22" rx="6" fill="#0969da" stroke="#0969da"/><text x="1091" y="343" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:10.5px">派发</text></g>
-<g style="animation:s37 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">4 个任务同时运行</text><text x="842" y="218" fill="#6e7781" style="font-size:10.5px">Claude</text><rect x="906" y="211" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="211" width="220" height="7" rx="3.5" fill="#d97757" style="transform-box:fill-box;transform-origin:left;animation:grow0 12s ease-out infinite"/><text x="842" y="252" fill="#6e7781" style="font-size:10.5px">Codex</text><rect x="906" y="245" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="245" width="220" height="7" rx="3.5" fill="#10a37f" style="transform-box:fill-box;transform-origin:left;animation:grow1 12s ease-out infinite"/><text x="842" y="286" fill="#6e7781" style="font-size:10.5px">OpenCode</text><rect x="906" y="279" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="279" width="220" height="7" rx="3.5" fill="#424a53" style="transform-box:fill-box;transform-origin:left;animation:grow2 12s ease-out infinite"/><text x="842" y="320" fill="#6e7781" style="font-size:10.5px">Grok</text><rect x="906" y="313" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="313" width="220" height="7" rx="3.5" fill="#6639ba" style="transform-box:fill-box;transform-origin:left;animation:grow3 12s ease-out infinite"/><text x="842" y="356" fill="#6e7781" style="font-size:10.5px">可选独立副本，互不改到一起</text></g>
-<g style="animation:s38 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">补充接口测试 · Codex</text><rect x="842" y="204" width="284" height="104" rx="8" fill="#fff8c5" stroke="#d4a72c"/><text x="854" y="224" fill="#7d4e00" font-weight="700" style="font-size:11.5px">请求执行命令</text><rect x="854" y="234" width="260" height="24" rx="4" fill="#fff"/><text x="862" y="250" fill="#1f2328" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ npm test</text></g>
-<g style="animation:s39 12s linear infinite"><rect x="986" y="274" width="60" height="22" rx="6" fill="#fff" stroke="#d0d7de"/><text x="1016" y="289" fill="#1f2328" text-anchor="middle" font-weight="700" style="font-size:10.5px">拒绝</text><rect x="1054" y="274" width="60" height="22" rx="6" fill="#1a7f37" stroke="#1a7f37"/><text x="1084" y="289" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:10.5px">允许</text></g>
-<g style="animation:s40 12s linear infinite"><rect x="854" y="274" width="260" height="22" rx="6" fill="#dafbe1"/><text x="864" y="289" fill="#1a7f37" font-weight="700" style="font-size:10.5px">已允许，Codex 继续运行</text></g>
-<g style="animation:s41 12s linear infinite"><rect x="944" y="338" width="186" height="30" rx="8" fill="#fff" stroke="#bf8700" filter="url(#shadow)"/><circle cx="960" cy="353" r="5" fill="#bf8700" class="pulse"/><text x="972" y="357" fill="#7d4e00" font-weight="700" style="font-size:11px">Codex 需要你确认</text></g>
-<g style="animation:s42 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">修复登录校验 · Claude</text><rect x="842" y="202" width="284" height="96" rx="6" fill="#fff" stroke="#d0d7de"/><text x="852" y="220" fill="#6e7781" font-weight="700" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">auth.ts</text><rect x="843" y="228" width="282" height="20" fill="#ffebe9"/><text x="852" y="242" fill="#cf222e" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">- if (!email) return</text><rect x="843" y="248" width="282" height="20" fill="#dafbe1"/><text x="852" y="262" fill="#1a7f37" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">+ if (!email?.trim()) {</text><rect x="843" y="268" width="282" height="20" fill="#dafbe1"/><text x="852" y="282" fill="#1a7f37" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">+   return error('邮箱必填')</text></g>
-<g style="animation:s43 12s linear infinite"><rect x="1030" y="314" width="96" height="22" rx="6" fill="#1f2328" stroke="#1f2328"/><text x="1078" y="329" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:10.5px">通过并合并</text></g>
-<g style="animation:s44 12s linear infinite"><rect x="842" y="314" width="284" height="22" rx="6" fill="#dafbe1"/><text x="852" y="329" fill="#1a7f37" font-weight="700" style="font-size:10.5px">已合并到 main</text></g>
-<g style="animation:f45 12s ease-in-out infinite"><path d="M0 0 L0 16 L4.5 12 L7.5 19 L10 18 L7 11 L13 11 Z" fill="#fff" stroke="#1f2328" stroke-width="1.3" stroke-linejoin="round"/></g>
-<g style="animation:f46 12s ease-in-out infinite"><path d="M0 0 L0 16 L4.5 12 L7.5 19 L10 18 L7 11 L13 11 Z" fill="#fff" stroke="#1f2328" stroke-width="1.3" stroke-linejoin="round"/></g>
-<circle cx="1082" cy="284" r="0" fill="none" stroke="#0969da" stroke-width="2" style="animation:c47 12s linear infinite"/>
-<circle cx="1086" cy="324" r="0" fill="none" stroke="#0969da" stroke-width="2" style="animation:c48 12s linear infinite"/>
-<line x1="835" y1="376" x2="835" y2="378" stroke="#1a7f37" stroke-width="1.6" stroke-dasharray="4 4"/>
-<path d="M822 412 Q805 434 817 442" stroke="#57606a" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M848 412 Q865 434 853 442" stroke="#57606a" stroke-width="8" fill="none" stroke-linecap="round"/>
-<rect x="820" y="406" width="30" height="42" rx="10" fill="#57606a"/>
-<circle cx="835" cy="392" r="14" fill="#f2c9a0"/>
-<path d="M821 390 Q822 374 835 375 Q849 375 849 390 Q835 382 821 390 Z" fill="#3b2f2a"/>
-<circle cx="830" cy="390" r="1.7" fill="#1f2328"/><circle cx="840" cy="390" r="1.7" fill="#1f2328"/>
-<path d="M829 398 Q835 404 841 398" stroke="#1f2328" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-<rect x="715" y="448" width="240" height="12" rx="4" fill="#8c6d52"/><rect x="725" y="460" width="8" height="22" fill="#8c6d52"/><rect x="937" y="460" width="8" height="22" fill="#8c6d52"/>
-<rect x="799" y="428" width="72" height="20" rx="3" fill="#d0d7de"/><rect x="791" y="446" width="88" height="4" rx="2" fill="#afb8c1"/>
-<rect x="905" y="430" width="16" height="18" rx="3" fill="#fff" stroke="#d0d7de"/><path d="M921 435 q7 0 7 5 q0 5 -7 5" fill="none" stroke="#d0d7de" stroke-width="2"/>
-<path d="M909 426 q-4 -6 0 -12 q4 -6 0 -12" fill="none" stroke="#afb8c1" stroke-width="1.6" stroke-linecap="round" class="steam" style="animation-delay:0s"/>
-<path d="M916 426 q-4 -6 0 -12 q4 -6 0 -12" fill="none" stroke="#afb8c1" stroke-width="1.6" stroke-linecap="round" class="steam" style="animation-delay:-0.8s"/>
-<text x="835" y="500" fill="#6e7781" text-anchor="middle" style="font-size:12px">全部任务在一个列表里；授权、追问和 Diff 验收会主动找到你</text>
-<rect x="34" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="34" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s49 12s linear infinite"/>
-<text x="50" y="561" fill="#0969da" font-weight="700" style="font-size:13px">① 分派</text>
-<text x="50" y="582" fill="#6e7781" style="font-size:11.5px">在一个窗口里给多个项目派任务，选好 Agent</text>
-<rect x="319" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="319" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s50 12s linear infinite"/>
-<text x="335" y="561" fill="#0969da" font-weight="700" style="font-size:13px">② 并行</text>
-<text x="335" y="582" fill="#6e7781" style="font-size:11.5px">任务同时运行，可选独立副本互不干扰</text>
-<rect x="604" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="604" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s51 12s linear infinite"/>
-<text x="620" y="561" fill="#0969da" font-weight="700" style="font-size:13px">③ 举手</text>
-<text x="620" y="582" fill="#6e7781" style="font-size:11.5px">需要你时有提醒，授权卡就在任务里</text>
-<rect x="889" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="889" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s52 12s linear infinite"/>
-<text x="905" y="561" fill="#0969da" font-weight="700" style="font-size:13px">④ 交付</text>
-<text x="905" y="582" fill="#6e7781" style="font-size:11.5px">看 Diff，一键通过并合并或推送分支</text>
+<g style="animation:s43 12s linear infinite">
+<rect x="697" y="326" width="174" height="40" rx="7" fill="rgba(255,255,255,.035)" stroke="rgba(255,255,255,0.09)"/>
+<text x="706" y="342" fill="#e6edf3" font-weight="700" style="font-size:11px;">整理文档</text>
+<circle cx="710" cy="355" r="3.5" fill="#a78bfa" filter="url(#glow)"/><text x="718" y="359" fill="#8b98a9" style="font-size:9.5px;">Grok</text>
+<g style="animation:s44 12s linear infinite"><rect x="806" y="347" width="58" height="16" rx="8" fill="#4f8cff" fill-opacity=".14" stroke="#4f8cff" stroke-opacity=".5"/><circle cx="815" cy="355" r="2.8" fill="#4f8cff" class="pulse"/><text x="839" y="358.5" fill="#4f8cff" text-anchor="middle" font-weight="700" style="font-size:9.5px;">运行中</text></g>
+<g style="animation:s45 12s linear infinite"><clipPath id="row346"><rect x="698" y="362" width="172" height="3"/></clipPath><g clip-path="url(#row346)"><rect x="698" y="363" width="50" height="2" fill="#a78bfa" class="shimmer" style="animation-delay:-1.0499999999999998s"/></g></g>
+</g>
+<g style="animation:s47 12s linear infinite"><text x="892" y="201" fill="#e6edf3" font-weight="800" style="font-size:12.5px;">新建任务</text><rect x="892" y="212" width="240" height="28" rx="7" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,0.09)"/><text x="902" y="230" fill="#8b98a9" style="font-size:10.5px;">4 个项目，各派一个任务</text><rect x="1022" y="220" width="1.5" height="12" fill="#5ee7ff" class="blink"/><rect x="892" y="250" width="116" height="22" rx="11" fill="#ff8a5c" fill-opacity=".12" stroke="#ff8a5c" stroke-opacity=".7"/><circle cx="904" cy="261" r="3.5" fill="#ff8a5c"/><text x="914" y="265" fill="#e6edf3" font-weight="600" style="font-size:10px;">Claude</text><rect x="1014" y="250" width="116" height="22" rx="11" fill="#3fdc97" fill-opacity=".12" stroke="#3fdc97" stroke-opacity=".7"/><circle cx="1026" cy="261" r="3.5" fill="#3fdc97"/><text x="1036" y="265" fill="#e6edf3" font-weight="600" style="font-size:10px;">Codex</text><rect x="892" y="278" width="116" height="22" rx="11" fill="#5ee7ff" fill-opacity=".12" stroke="#5ee7ff" stroke-opacity=".7"/><circle cx="904" cy="289" r="3.5" fill="#5ee7ff"/><text x="914" y="293" fill="#e6edf3" font-weight="600" style="font-size:10px;">OpenCode</text><rect x="1014" y="278" width="116" height="22" rx="11" fill="#a78bfa" fill-opacity=".12" stroke="#a78bfa" stroke-opacity=".7"/><circle cx="1026" cy="289" r="3.5" fill="#a78bfa"/><text x="1036" y="293" fill="#e6edf3" font-weight="600" style="font-size:10px;">Grok</text><rect x="1060" y="340" width="72" height="22" rx="7" fill="#5ee7ff" fill-opacity="0.9" stroke="#5ee7ff" stroke-opacity="1" filter="url(#glow)"/><text x="1096" y="355" fill="#061018" text-anchor="middle" font-weight="800" style="font-size:10.5px;">派发</text></g>
+<g style="animation:s49 12s linear infinite"><circle cx="1096" cy="351" r="0" fill="none" stroke="#5ee7ff" style="animation:b48 12s ease-out infinite"/></g>
+<g style="animation:s50 12s linear infinite"><text x="892" y="201" fill="#e6edf3" font-weight="800" style="font-size:12.5px;">4 个任务同时运行</text><text x="892" y="229" fill="#8b98a9" style="font-size:10px;">Claude</text><rect x="954" y="222" width="178" height="7" rx="3.5" fill="rgba(255,255,255,.06)"/><rect x="954" y="222" width="178" height="7" rx="3.5" fill="#ff8a5c" filter="url(#glow)" style="transform-box:fill-box;transform-origin:left;animation:grow0 12s ease-out infinite"/><text x="892" y="259" fill="#8b98a9" style="font-size:10px;">Codex</text><rect x="954" y="252" width="178" height="7" rx="3.5" fill="rgba(255,255,255,.06)"/><rect x="954" y="252" width="178" height="7" rx="3.5" fill="#3fdc97" filter="url(#glow)" style="transform-box:fill-box;transform-origin:left;animation:grow1 12s ease-out infinite"/><text x="892" y="289" fill="#8b98a9" style="font-size:10px;">OpenCode</text><rect x="954" y="282" width="178" height="7" rx="3.5" fill="rgba(255,255,255,.06)"/><rect x="954" y="282" width="178" height="7" rx="3.5" fill="#5ee7ff" filter="url(#glow)" style="transform-box:fill-box;transform-origin:left;animation:grow2 12s ease-out infinite"/><text x="892" y="319" fill="#8b98a9" style="font-size:10px;">Grok</text><rect x="954" y="312" width="178" height="7" rx="3.5" fill="rgba(255,255,255,.06)"/><rect x="954" y="312" width="178" height="7" rx="3.5" fill="#a78bfa" filter="url(#glow)" style="transform-box:fill-box;transform-origin:left;animation:grow3 12s ease-out infinite"/><rect x="892" y="344" width="240" height="20" rx="6" fill="#5ee7ff" fill-opacity=".08"/><text x="900" y="358" fill="#5ee7ff" style="font-size:9.5px;">可选独立副本，改动互不干扰</text></g>
+<g style="animation:s51 12s linear infinite"><text x="892" y="201" fill="#e6edf3" font-weight="800" style="font-size:12.5px;">补充接口测试 · Codex</text><rect x="892" y="212" width="240" height="106" rx="9" fill="#ffc861" fill-opacity=".08" stroke="#ffc861" stroke-opacity=".7" filter="url(#glow)"/><text x="904" y="232" fill="#ffc861" font-weight="800" style="font-size:11px;">请求执行命令</text><rect x="904" y="242" width="216" height="24" rx="5" fill="#060a13"/><text x="912" y="258" fill="#3fdc97" style="font-size:11px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ npm test</text></g>
+<g style="animation:s52 12s linear infinite"><rect x="996" y="284" width="58" height="22" rx="7" fill="transparent" fill-opacity="1" stroke="#8b98a9" stroke-opacity="0.5"/><text x="1025" y="299" fill="#e6edf3" text-anchor="middle" font-weight="800" style="font-size:10.5px;">拒绝</text><rect x="1062" y="284" width="58" height="22" rx="7" fill="#3fdc97" fill-opacity="0.9" stroke="#3fdc97" stroke-opacity="1" filter="url(#glow)"/><text x="1091" y="299" fill="#061018" text-anchor="middle" font-weight="800" style="font-size:10.5px;">允许</text></g>
+<g style="animation:s53 12s linear infinite"><rect x="904" y="284" width="216" height="22" rx="7" fill="#3fdc97" fill-opacity=".15" stroke="#3fdc97" stroke-opacity=".6"/><text x="914" y="299" fill="#3fdc97" font-weight="800" style="font-size:10.5px;">已允许，Codex 继续运行</text></g>
+<g style="animation:toast54 12s cubic-bezier(.2,.8,.2,1) infinite"><rect x="946" y="344" width="188" height="28" rx="9" fill="#1a1607" stroke="#ffc861" filter="url(#glow)"/><circle cx="962" cy="358" r="4.5" fill="#ffc861" class="pulse"/><text x="974" y="362" fill="#ffc861" font-weight="800" style="font-size:10.5px;">Codex 需要你确认</text></g>
+<g style="animation:s55 12s linear infinite"><text x="892" y="201" fill="#e6edf3" font-weight="800" style="font-size:12.5px;">修复登录校验 · Claude</text><rect x="892" y="212" width="240" height="98" rx="8" fill="#060a13" stroke="rgba(255,255,255,0.09)"/><text x="902" y="229" fill="#8b98a9" font-weight="700" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">auth.ts</text><text x="1122" y="229" fill="#8b98a9" text-anchor="end" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">+2 −1</text><rect x="893" y="237" width="238" height="22" fill="#ff5c7a" fill-opacity=".12"/><text x="902" y="252" fill="#ff5c7a" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">- if (!email) return</text><rect x="893" y="259" width="238" height="22" fill="#3fdc97" fill-opacity=".12"/><text x="902" y="274" fill="#3fdc97" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">+ if (!email?.trim()) {</text><rect x="893" y="281" width="238" height="22" fill="#3fdc97" fill-opacity=".12"/><text x="902" y="296" fill="#3fdc97" style="font-size:10px;" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">+   return error('邮箱必填')</text></g>
+<g style="animation:s56 12s linear infinite"><rect x="1032" y="324" width="100" height="22" rx="7" fill="#a78bfa" fill-opacity="0.9" stroke="#a78bfa" stroke-opacity="1" filter="url(#glow)"/><text x="1082" y="339" fill="#061018" text-anchor="middle" font-weight="800" style="font-size:10.5px;">通过并合并</text></g>
+<g style="animation:s57 12s linear infinite"><rect x="892" y="324" width="240" height="22" rx="7" fill="#3fdc97" fill-opacity=".15" stroke="#3fdc97" stroke-opacity=".6"/><text x="902" y="339" fill="#3fdc97" font-weight="800" style="font-size:10.5px;">已合并到 main</text></g>
+<g style="animation:f58 12s cubic-bezier(.6,0,.3,1) infinite"><path d="M0 0 L0 16 L4.5 12 L7.5 19 L10 18 L7 11 L13 11 Z" fill="#fff" stroke="#060a13" stroke-width="1.2" stroke-linejoin="round" filter="url(#glow)"/></g>
+<g style="animation:f59 12s cubic-bezier(.6,0,.3,1) infinite"><path d="M0 0 L0 16 L4.5 12 L7.5 19 L10 18 L7 11 L13 11 Z" fill="#fff" stroke="#060a13" stroke-width="1.2" stroke-linejoin="round" filter="url(#glow)"/></g>
+<circle cx="1091" cy="295" r="0" fill="none" stroke="#3fdc97" style="animation:b60 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="0" fill="none" stroke="#3fdc97" style="animation:b61 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#3fdc97" style="animation:pt62 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#5ee7ff" style="animation:pt63 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#a78bfa" style="animation:pt64 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#3fdc97" style="animation:pt65 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#5ee7ff" style="animation:pt66 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#a78bfa" style="animation:pt67 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#3fdc97" style="animation:pt68 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#5ee7ff" style="animation:pt69 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#a78bfa" style="animation:pt70 12s ease-out infinite"/>
+<circle cx="1082" cy="335" r="2.2" fill="#3fdc97" style="animation:pt71 12s ease-out infinite"/>
+<circle cx="879" cy="432" r="58" fill="url(#haloCyan)" class="breathe"/>
+<line x1="879" y1="394" x2="879" y2="382" stroke="#5ee7ff" stroke-width="1.6" stroke-dasharray="3 5" class="flow"/>
+<g>
+<path d="M845 484 Q847 438 879 436 Q911 438 913 484 Z" fill="url(#fig72)" stroke="#5ee7ff" stroke-opacity=".55"/>
+<circle cx="879" cy="412" r="17" fill="url(#fig72)" stroke="#5ee7ff" stroke-opacity=".7"/>
+<path d="M872 411 q2.5 -3 5 0 M881 411 q2.5 -3 5 0" stroke="#5ee7ff" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M873 418 Q879 423 885 418" stroke="#5ee7ff" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+<defs><linearGradient id="fig72" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5ee7ff" stop-opacity=".35"/><stop offset="1" stop-color="#5ee7ff" stop-opacity=".04"/></linearGradient></defs>
+</g>
+<rect x="845" y="462" width="68" height="20" rx="3" fill="#0e1828" stroke="#5ee7ff" stroke-opacity=".5"/><rect x="853" y="466" width="52" height="12" rx="2" fill="#5ee7ff" fill-opacity=".18"/>
+<line x1="749" y1="484" x2="1009" y2="484" stroke="url(#deskGrad-5ee7ff)" stroke-width="2"/>
+<defs><linearGradient id="deskGrad-5ee7ff"><stop offset="0" stop-color="#5ee7ff" stop-opacity="0"/><stop offset=".5" stop-color="#5ee7ff" stop-opacity=".9"/><stop offset="1" stop-color="#5ee7ff" stop-opacity="0"/></linearGradient></defs>
+<text x="835" y="502" fill="#8b98a9" text-anchor="middle" style="font-size:12px;">全部任务在一个列表里；授权、追问和 Diff 验收会主动找到你</text>
+<line x1="80" y1="556" x2="1120" y2="556" stroke="#3a4a5e" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="556" x2="1120" y2="556" stroke="url(#axisGrad)" stroke-width="2.5" stroke-linecap="round" class="axis" filter="url(#glow)"/>
+<g class="playhead"><circle cx="80" cy="556" r="9" fill="#5ee7ff" fill-opacity=".25" filter="url(#glowBig)"/><circle cx="80" cy="556" r="4" fill="#fff"/></g>
+<circle cx="210" cy="556" r="6" fill="#0b1424" stroke="#3a4a5e" stroke-width="2"/>
+<g style="animation:s73 12s linear infinite"><circle cx="210" cy="556" r="7" fill="#4f8cff" filter="url(#glow)"/><circle cx="210" cy="556" r="7" fill="none" stroke="#4f8cff" class="ping"/></g>
+<text x="210" y="586" fill="#8b98a9" text-anchor="middle" font-weight="800" style="font-size:13px;">01  分派</text>
+<g style="animation:s74 12s linear infinite"><text x="210" y="586" fill="#4f8cff" text-anchor="middle" font-weight="800" style="font-size:13px;" filter="url(#glowText)">01  分派</text></g>
+<text x="210" y="606" fill="#8b98a9" text-anchor="middle" style="font-size:11px;">一个窗口给多个项目派任务</text>
+<circle cx="470" cy="556" r="6" fill="#0b1424" stroke="#3a4a5e" stroke-width="2"/>
+<g style="animation:s75 12s linear infinite"><circle cx="470" cy="556" r="7" fill="#5ee7ff" filter="url(#glow)"/><circle cx="470" cy="556" r="7" fill="none" stroke="#5ee7ff" class="ping"/></g>
+<text x="470" y="586" fill="#8b98a9" text-anchor="middle" font-weight="800" style="font-size:13px;">02  并行</text>
+<g style="animation:s76 12s linear infinite"><text x="470" y="586" fill="#5ee7ff" text-anchor="middle" font-weight="800" style="font-size:13px;" filter="url(#glowText)">02  并行</text></g>
+<text x="470" y="606" fill="#8b98a9" text-anchor="middle" style="font-size:11px;">同时运行，可选独立副本</text>
+<circle cx="730" cy="556" r="6" fill="#0b1424" stroke="#3a4a5e" stroke-width="2"/>
+<g style="animation:s77 12s linear infinite"><circle cx="730" cy="556" r="7" fill="#ffc861" filter="url(#glow)"/><circle cx="730" cy="556" r="7" fill="none" stroke="#ffc861" class="ping"/></g>
+<text x="730" y="586" fill="#8b98a9" text-anchor="middle" font-weight="800" style="font-size:13px;">03  举手</text>
+<g style="animation:s78 12s linear infinite"><text x="730" y="586" fill="#ffc861" text-anchor="middle" font-weight="800" style="font-size:13px;" filter="url(#glowText)">03  举手</text></g>
+<text x="730" y="606" fill="#8b98a9" text-anchor="middle" style="font-size:11px;">有提醒，授权卡就在任务里</text>
+<circle cx="990" cy="556" r="6" fill="#0b1424" stroke="#3a4a5e" stroke-width="2"/>
+<g style="animation:s79 12s linear infinite"><circle cx="990" cy="556" r="7" fill="#3fdc97" filter="url(#glow)"/><circle cx="990" cy="556" r="7" fill="none" stroke="#3fdc97" class="ping"/></g>
+<text x="990" y="586" fill="#8b98a9" text-anchor="middle" font-weight="800" style="font-size:13px;">04  交付</text>
+<g style="animation:s80 12s linear infinite"><text x="990" y="586" fill="#3fdc97" text-anchor="middle" font-weight="800" style="font-size:13px;" filter="url(#glowText)">04  交付</text></g>
+<text x="990" y="606" fill="#8b98a9" text-anchor="middle" style="font-size:11px;">看 Diff，通过并合并或推送</text>
 </svg>
