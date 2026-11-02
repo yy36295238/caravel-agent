@@ -1,18 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 618" width="1200" height="618" lang="en" role="img" aria-labelledby="ttl dsc">
 <title id="ttl">Before and after Caravel</title>
 <desc id="dsc">Before: you sit in front of a ring of terminals, one per agent CLI, and only the one you look at moves. Now: you steer Caravel while agent crew work in parallel; they raise a hand for approvals and hand you the diff to review and merge.</desc>
-<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f9ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
+<defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1f2328" flood-opacity=".14"/></filter><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f9ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
 <style>
 text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Helvetica,Arial,sans-serif;font-size:12px}
 .blink{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 .sweat{animation:sweat 1.6s ease-in infinite}@keyframes sweat{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(14px);opacity:0}}
-.rock{animation:rock 4s ease-in-out infinite}@keyframes rock{50%{transform:translateY(4px)}}
-.waves{animation:wave 3s linear infinite}.waves2{animation:wave 4.5s linear infinite reverse}@keyframes wave{to{transform:translateX(-40px)}}
-.bob{animation:bob 1.2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-3px)}}
-.wheel{animation:wheel 6s ease-in-out infinite}@keyframes wheel{50%{transform:rotate(40deg)}}
-.flag{animation:flag 1.4s ease-in-out infinite;transform-box:fill-box;transform-origin:left}@keyframes flag{50%{transform:scaleX(.8)}}
-.sail{animation:sail 4s ease-in-out infinite;transform-box:fill-box;transform-origin:left}@keyframes sail{50%{transform:scaleX(1.04)}}
-.blinkeye{animation:eye 4s steps(1) infinite;transform-box:fill-box;transform-origin:center}@keyframes eye{96%{transform:scaleY(.2)}}
 @keyframes s0{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
 @keyframes s1{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
 @keyframes s2{0%,24.00%{opacity:0}25.00%,100%{opacity:1}}
@@ -35,27 +28,43 @@ text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans G
 @keyframes s19{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
 @keyframes s20{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
 @keyframes s21{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes p0{0%,25%{transform:scaleX(0)}78.00%,100%{transform:scaleX(1)}}
-@keyframes p1{0%,25%{transform:scaleX(0)}98.00%,100%{transform:scaleX(1)}}
-@keyframes p2{0%,25%{transform:scaleX(0)}90.00%,100%{transform:scaleX(1)}}
-@keyframes p3{0%,25%{transform:scaleX(0)}86.00%,100%{transform:scaleX(1)}}
-@keyframes f22{0%,1.00%{transform:translate(622px,292px);opacity:0}2.00%{transform:translate(622px,292px);opacity:1}22.00%{transform:translate(726px,274px);opacity:1}23.00%,100%{transform:translate(726px,274px);opacity:0}}
-@keyframes f23{0%,4.00%{transform:translate(622px,292px);opacity:0}5.00%{transform:translate(622px,292px);opacity:1}22.00%{transform:translate(846px,274px);opacity:1}23.00%,100%{transform:translate(846px,274px);opacity:0}}
-@keyframes f24{0%,7.00%{transform:translate(622px,292px);opacity:0}8.00%{transform:translate(622px,292px);opacity:1}22.00%{transform:translate(936px,274px);opacity:1}23.00%,100%{transform:translate(936px,274px);opacity:0}}
-@keyframes f25{0%,10.00%{transform:translate(622px,292px);opacity:0}11.00%{transform:translate(622px,292px);opacity:1}22.00%{transform:translate(1046px,274px);opacity:1}23.00%,100%{transform:translate(1046px,274px);opacity:0}}
-@keyframes s26{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-@keyframes s27{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s22{0%,3.00%{opacity:0}4.00%,100%{opacity:1}}
+@keyframes s23{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s24{0%,5.00%{opacity:0}6.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s25{0%,74.00%{opacity:0}75.00%,88.00%{opacity:1}89.00%,100%{opacity:0}}
+@keyframes s26{0%,88.00%{opacity:0}89.00%,100%{opacity:1}}
+@keyframes s27{0%,5.00%{opacity:0}6.00%,100%{opacity:1}}
 @keyframes s28{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s29{0%,49.00%{opacity:0}50.00%,59.00%{opacity:1}60.00%,100%{opacity:0}}
-@keyframes f30{0%,57.00%{transform:translate(850px,276px);opacity:0}58.00%{transform:translate(850px,276px);opacity:1}65.00%{transform:translate(606px,242px);opacity:1}66.00%,100%{transform:translate(606px,242px);opacity:0}}
-@keyframes s31{0%,65.00%{opacity:0}66.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s32{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
-@keyframes f33{0%,78.00%{transform:translate(722px,326px);opacity:0}79.00%{transform:translate(722px,326px);opacity:1}87.00%{transform:translate(594px,240px);opacity:1}88.00%,100%{transform:translate(594px,240px);opacity:0}}
-@keyframes s34{0%,87.00%{opacity:0}88.00%,100%{opacity:1}}
-@keyframes s35{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-@keyframes s36{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-@keyframes s37{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-@keyframes s38{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s29{0%,7.00%{opacity:0}8.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s30{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
+@keyframes s31{0%,62.00%{opacity:0}63.00%,100%{opacity:1}}
+@keyframes s32{0%,7.00%{opacity:0}8.00%,100%{opacity:1}}
+@keyframes s33{0%,9.00%{opacity:0}10.00%,100%{opacity:1}}
+@keyframes s34{0%,9.00%{opacity:0}10.00%,100%{opacity:1}}
+@keyframes s35{0%,11.00%{opacity:0}12.00%,100%{opacity:1}}
+@keyframes s36{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes s37{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes grow0{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.55)}100%{transform:scaleX(0.55)}}
+@keyframes grow1{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.85)}100%{transform:scaleX(0.85)}}
+@keyframes grow2{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.7)}100%{transform:scaleX(0.7)}}
+@keyframes grow3{0%,25.00%{transform:scaleX(.08)}49.00%{transform:scaleX(0.62)}100%{transform:scaleX(0.62)}}
+@keyframes s38{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s39{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
+@keyframes s40{0%,62.00%{opacity:0}63.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s41{0%,49.00%{opacity:0}50.00%,62.00%{opacity:1}63.00%,100%{opacity:0}}
+@keyframes s42{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+@keyframes s43{0%,74.00%{opacity:0}75.00%,88.00%{opacity:1}89.00%,100%{opacity:0}}
+@keyframes s44{0%,88.00%{opacity:0}89.00%,100%{opacity:1}}
+@keyframes f45{0%,52.00%{transform:translate(835px,354px);opacity:0}53.00%{transform:translate(835px,354px);opacity:1}62.00%{transform:translate(1082px,284px);opacity:1}63.00%,100%{transform:translate(1082px,284px);opacity:0}}
+@keyframes f46{0%,78.00%{transform:translate(835px,354px);opacity:0}79.00%{transform:translate(835px,354px);opacity:1}88.00%{transform:translate(1086px,324px);opacity:1}89.00%,100%{transform:translate(1086px,324px);opacity:0}}
+@keyframes c47{0%,62.00%{r:0;opacity:0}63.00%{r:3;opacity:.6}67.00%{r:16;opacity:0}100%{r:0;opacity:0}}
+@keyframes c48{0%,88.00%{r:0;opacity:0}89.00%{r:3;opacity:.6}93.00%{r:16;opacity:0}100%{r:0;opacity:0}}
+@keyframes s49{0%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+@keyframes s50{0%,24.00%{opacity:0}25.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+@keyframes s51{0%,49.00%{opacity:0}50.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+@keyframes s52{0%,74.00%{opacity:0}75.00%,100%{opacity:1}}
+.steam{animation:steam 1.6s ease-out infinite}@keyframes steam{0%{opacity:0;transform:translateY(4px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-6px)}}
+.pulse{animation:pulse 1.2s ease-in-out infinite}@keyframes pulse{50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 <rect x="0.5" y="0.5" width="1199" height="617" rx="14" fill="#ffffff" stroke="#d0d7de"/>
@@ -124,108 +133,94 @@ text{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans G
 <rect x="219" y="428" width="72" height="20" rx="3" fill="#d0d7de"/><rect x="211" y="446" width="88" height="4" rx="2" fill="#afb8c1"/>
 <rect x="325" y="430" width="16" height="18" rx="3" fill="#fff" stroke="#d0d7de"/><path d="M341 435 q7 0 7 5 q0 5 -7 5" fill="none" stroke="#d0d7de" stroke-width="2"/>
 <text x="255" y="500" fill="#6e7781" text-anchor="middle" style="font-size:12px">Only the window you are looking at moves forward</text>
-<clipPath id="sea"><rect x="500" y="96" width="670" height="420" rx="14"/></clipPath>
-<rect x="500" y="96" width="670" height="420" rx="14" fill="url(#sky)" stroke="#d0d7de"/>
+<rect x="500" y="96" width="670" height="420" rx="14" fill="#ffffff" stroke="#d0d7de"/>
 <text x="522" y="128" fill="#1a7f37" font-weight="700" style="font-size:16px">Now</text>
-<text x="570" y="128" fill="#6e7781" style="font-size:13px">You steer Caravel; agent crew work on their own and raise a hand when they need you</text>
-<g clip-path="url(#sea)"><g class="rock"><line x1="800" y1="396" x2="800" y2="158" stroke="#8c6d52" stroke-width="4"/>
-<path d="M803 166 Q870 216 864 292 L803 292 Z" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" class="sail"/>
-<path d="M797 188 Q748 236 752 292 L797 292 Z" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" class="sail"/>
-<path d="M800 158 l28 7 l-28 7 z" fill="#cf222e" class="flag"/>
-<line x1="970" y1="396" x2="970" y2="158" stroke="#8c6d52" stroke-width="4"/>
-<path d="M973 166 Q1040 216 1034 292 L973 292 Z" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" class="sail"/>
-<path d="M967 188 Q918 236 922 292 L967 292 Z" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" class="sail"/>
-<path d="M500 0" fill="none"/>
-<rect x="560" y="362" width="96" height="34" rx="4" fill="#a47148"/>
-<path d="M550 396 L1130 396 Q1118 448 1060 454 L620 454 Q566 448 550 396 Z" fill="#8c5a3c"/>
-<rect x="550" y="396" width="580" height="7" fill="#6e4530"/>
-<text x="840" y="434" fill="#f6e7d8" text-anchor="middle" font-weight="700" style="font-size:14px">CARAVEL</text>
-<g class="wheel" style="transform-origin:650px 344px"><circle cx="650" cy="344" r="16" fill="none" stroke="#6e4530" stroke-width="4"/><line x1="650" y1="322" x2="650" y2="366" stroke="#6e4530" stroke-width="3" transform="rotate(0 650 344)"/><line x1="650" y1="322" x2="650" y2="366" stroke="#6e4530" stroke-width="3" transform="rotate(45 650 344)"/><line x1="650" y1="322" x2="650" y2="366" stroke="#6e4530" stroke-width="3" transform="rotate(90 650 344)"/><line x1="650" y1="322" x2="650" y2="366" stroke="#6e4530" stroke-width="3" transform="rotate(135 650 344)"/><circle cx="650" cy="344" r="4" fill="#6e4530"/></g>
-<g>
-<rect x="603" y="332" width="7" height="30" rx="3" fill="#30363d"/><rect x="614" y="332" width="7" height="30" rx="3" fill="#30363d"/>
-<rect x="598" y="296" width="28" height="40" rx="10" fill="#0969da"/>
-<circle cx="612" cy="282" r="13" fill="#f2c9a0"/>
-<path d="M599 280 Q600 265 612 266 Q625 266 625 280 Q618 272 599 280 Z" fill="#3b2f2a"/>
-<circle cx="616" cy="282" r="1.6" fill="#1f2328"/><circle cx="621" cy="282" r="1.6" fill="#1f2328"/>
-<path d="M615 289 Q619 292 622 289" stroke="#1f2328" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-
+<text x="570" y="128" fill="#6e7781" style="font-size:13px">Same you, one Caravel window: tasks run in parallel and come to you when needed</text>
+<rect x="530" y="142" width="610" height="232" rx="10" fill="#fff" stroke="#d0d7de" filter="url(#shadow)"/>
+<path d="M530 152 a10 10 0 0 1 10 -10 h590 a10 10 0 0 1 10 10 v14 h-610 z" fill="#f6f8fa"/><line x1="530" y1="166" x2="1140" y2="166" stroke="#d0d7de"/>
+<circle cx="544" cy="154" r="4" fill="#ff5f57"/>
+<circle cx="556" cy="154" r="4" fill="#febc2e"/>
+<circle cx="568" cy="154" r="4" fill="#28c840"/>
+<text x="835" y="158" fill="#6e7781" text-anchor="middle" font-weight="600" style="font-size:11px">Caravel</text>
+<rect x="530" y="167" width="92" height="207" fill="#fafbfc"/><line x1="622" y1="167" x2="622" y2="374" stroke="#eaeef2"/>
+<rect x="538" y="176" width="76" height="20" rx="5" fill="#eaeef2"/><text x="576" y="190" fill="#1f2328" text-anchor="middle" font-weight="600" style="font-size:10.5px">+ New task</text>
+<rect x="538" y="204" width="76" height="20" rx="5" fill="#eaeef2"/>
+<rect x="544" y="210" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="218" fill="#1f2328" font-weight="700" style="font-size:10.5px">Workbench</text>
+<rect x="544" y="236" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="244" fill="#6e7781" font-weight="400" style="font-size:10.5px">Sessions</text>
+<rect x="544" y="262" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="270" fill="#6e7781" font-weight="400" style="font-size:10.5px">Schedules</text>
+<rect x="544" y="288" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="296" fill="#6e7781" font-weight="400" style="font-size:10.5px">Workflows</text>
+<rect x="544" y="314" width="8" height="8" rx="2" fill="none" stroke="#6e7781"/><text x="558" y="322" fill="#6e7781" font-weight="400" style="font-size:10.5px">Copies</text>
+<line x1="828" y1="167" x2="828" y2="374" stroke="#eaeef2"/>
+<g style="animation:s22 12s linear infinite">
+<rect x="630" y="176" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
+<rect x="630" y="176" width="190" height="42" rx="6" fill="#f3f4f6" stroke="#8250df" stroke-width="1.5" style="animation:s23 12s linear infinite"/>
+<text x="640" y="193" fill="#1f2328" font-weight="700" style="font-size:11.5px">Fix login validation</text>
+<circle cx="644" cy="207" r="4" fill="#d97757"/><text x="652" y="211" fill="#6e7781" style="font-size:10px">Claude</text>
+<g style="animation:s24 12s linear infinite"><circle cx="766" cy="207" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="211" fill="#0969da" font-weight="600" style="font-size:10px">Running</text></g>
+<g style="animation:s25 12s linear infinite"><circle cx="766" cy="207" r="3.5" fill="#8250df"/><text x="774" y="211" fill="#8250df" font-weight="600" style="font-size:10px">Review</text></g>
+<g style="animation:s26 12s linear infinite"><circle cx="766" cy="207" r="3.5" fill="#1a7f37"/><text x="774" y="211" fill="#1a7f37" font-weight="600" style="font-size:10px">Done</text></g>
 </g>
-<rect x="584" y="372" width="56" height="18" rx="9" fill="#0969da"/><text x="612" y="385" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:12px">You</text>
-<g class="bob" style="animation-delay:0s"><g>
-<line x1="740" y1="332" x2="740" y2="324" stroke="#d97757" stroke-width="2"/><circle cx="740" cy="322" r="3" fill="#d97757"/>
-<rect x="725" y="332" width="30" height="24" rx="8" fill="#d97757"/>
-<rect x="730" y="338" width="20" height="11" rx="5" fill="#fff"/>
-<circle cx="736" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/><circle cx="744" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/>
-<rect x="727" y="358" width="26" height="30" rx="7" fill="#d97757" fill-opacity=".85"/>
-<rect x="730" y="388" width="7" height="8" rx="2" fill="#30363d"/><rect x="743" y="388" width="7" height="8" rx="2" fill="#30363d"/>
-</g></g>
-<text x="740" y="418" fill="#f6e7d8" text-anchor="middle" font-weight="700" style="font-size:11px">Claude</text>
-<rect x="712" y="304" width="56" height="6" rx="3" fill="#ffffff" stroke="#d0d7de"/>
-<rect x="712" y="304" width="56" height="6" rx="3" fill="#d97757" style="transform-box:fill-box;transform-origin:left;animation:p0 12s ease-in-out infinite"/>
-<g class="bob" style="animation-delay:-0.4s"><g>
-<line x1="860" y1="332" x2="860" y2="324" stroke="#10a37f" stroke-width="2"/><circle cx="860" cy="322" r="3" fill="#10a37f"/>
-<rect x="845" y="332" width="30" height="24" rx="8" fill="#10a37f"/>
-<rect x="850" y="338" width="20" height="11" rx="5" fill="#fff"/>
-<circle cx="856" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/><circle cx="864" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/>
-<rect x="847" y="358" width="26" height="30" rx="7" fill="#10a37f" fill-opacity=".85"/>
-<rect x="850" y="388" width="7" height="8" rx="2" fill="#30363d"/><rect x="863" y="388" width="7" height="8" rx="2" fill="#30363d"/>
-</g></g>
-<text x="860" y="418" fill="#f6e7d8" text-anchor="middle" font-weight="700" style="font-size:11px">Codex</text>
-<rect x="832" y="304" width="56" height="6" rx="3" fill="#ffffff" stroke="#d0d7de"/>
-<rect x="832" y="304" width="56" height="6" rx="3" fill="#10a37f" style="transform-box:fill-box;transform-origin:left;animation:p1 12s ease-in-out infinite"/>
-<g class="bob" style="animation-delay:-0.8s"><g>
-<line x1="950" y1="332" x2="950" y2="324" stroke="#424a53" stroke-width="2"/><circle cx="950" cy="322" r="3" fill="#424a53"/>
-<rect x="935" y="332" width="30" height="24" rx="8" fill="#424a53"/>
-<rect x="940" y="338" width="20" height="11" rx="5" fill="#fff"/>
-<circle cx="946" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/><circle cx="954" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/>
-<rect x="937" y="358" width="26" height="30" rx="7" fill="#424a53" fill-opacity=".85"/>
-<rect x="940" y="388" width="7" height="8" rx="2" fill="#30363d"/><rect x="953" y="388" width="7" height="8" rx="2" fill="#30363d"/>
-</g></g>
-<text x="950" y="418" fill="#f6e7d8" text-anchor="middle" font-weight="700" style="font-size:11px">OpenCode</text>
-<rect x="922" y="304" width="56" height="6" rx="3" fill="#ffffff" stroke="#d0d7de"/>
-<rect x="922" y="304" width="56" height="6" rx="3" fill="#424a53" style="transform-box:fill-box;transform-origin:left;animation:p2 12s ease-in-out infinite"/>
-<g class="bob" style="animation-delay:-1.2000000000000002s"><g>
-<line x1="1060" y1="332" x2="1060" y2="324" stroke="#6639ba" stroke-width="2"/><circle cx="1060" cy="322" r="3" fill="#6639ba"/>
-<rect x="1045" y="332" width="30" height="24" rx="8" fill="#6639ba"/>
-<rect x="1050" y="338" width="20" height="11" rx="5" fill="#fff"/>
-<circle cx="1056" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/><circle cx="1064" cy="343.5" r="2" fill="#1f2328" class="blinkeye"/>
-<rect x="1047" y="358" width="26" height="30" rx="7" fill="#6639ba" fill-opacity=".85"/>
-<rect x="1050" y="388" width="7" height="8" rx="2" fill="#30363d"/><rect x="1063" y="388" width="7" height="8" rx="2" fill="#30363d"/>
-</g></g>
-<text x="1060" y="418" fill="#f6e7d8" text-anchor="middle" font-weight="700" style="font-size:11px">Grok</text>
-<rect x="1032" y="304" width="56" height="6" rx="3" fill="#ffffff" stroke="#d0d7de"/>
-<rect x="1032" y="304" width="56" height="6" rx="3" fill="#6639ba" style="transform-box:fill-box;transform-origin:left;animation:p3 12s ease-in-out infinite"/>
-<g style="animation:f22 12s ease-in-out infinite"><rect width="28" height="20" rx="3" fill="#fff" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="7" x2="22" y2="7" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="13" x2="17" y2="13" stroke="#0969da" stroke-width="1.5"/></g>
-<g style="animation:f23 12s ease-in-out infinite"><rect width="28" height="20" rx="3" fill="#fff" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="7" x2="22" y2="7" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="13" x2="17" y2="13" stroke="#0969da" stroke-width="1.5"/></g>
-<g style="animation:f24 12s ease-in-out infinite"><rect width="28" height="20" rx="3" fill="#fff" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="7" x2="22" y2="7" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="13" x2="17" y2="13" stroke="#0969da" stroke-width="1.5"/></g>
-<g style="animation:f25 12s ease-in-out infinite"><rect width="28" height="20" rx="3" fill="#fff" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="7" x2="22" y2="7" stroke="#0969da" stroke-width="1.5"/><line x1="6" y1="13" x2="17" y2="13" stroke="#0969da" stroke-width="1.5"/></g>
-<g style="animation:s26 12s linear infinite"><g><rect x="551.4" y="232" width="137.2" height="26" rx="13" fill="#fff" stroke="#0969da"/><path d="M615 258 L620 265 L625 258 Z" fill="#fff" stroke="#0969da"/><rect x="614" y="256" width="12" height="3" fill="#fff"/><text x="620" y="249" fill="#0969da" text-anchor="middle" font-weight="600" style="font-size:12px">Hand out 4 tasks</text></g></g>
-<g style="animation:s27 12s linear infinite"><g><rect x="820.6" y="258" width="158.8" height="26" rx="13" fill="#fff" stroke="#d0d7de"/><path d="M895 284 L900 291 L905 284 Z" fill="#fff" stroke="#d0d7de"/><rect x="894" y="282" width="12" height="3" fill="#fff"/><text x="900" y="275" fill="#1f2328" text-anchor="middle" font-weight="600" style="font-size:12px">Working in parallel</text></g></g>
-<g style="animation:s28 12s linear infinite"><path d="M874 360 L886 326" stroke="#10a37f" stroke-width="5" stroke-linecap="round"/><path d="M886 326 l0 -16 l16 5 l-16 5 z" fill="#bf8700"/></g>
-<g style="animation:s29 12s linear infinite"><g><rect x="787.8" y="258" width="144.4" height="26" rx="13" fill="#fff8c5" stroke="#bf8700"/><path d="M855 284 L860 291 L865 284 Z" fill="#fff8c5" stroke="#bf8700"/><rect x="854" y="282" width="12" height="3" fill="#fff8c5"/><text x="860" y="275" fill="#7d4e00" text-anchor="middle" font-weight="600" style="font-size:12px">Approve: npm test</text></g></g>
-<g style="animation:f30 12s ease-in-out infinite"><rect width="34" height="22" rx="4" fill="#fff8c5" stroke="#bf8700" stroke-width="1.5"/><text x="17" y="15" fill="#7d4e00" text-anchor="middle" font-weight="700" style="font-size:13px">?</text></g>
-<g style="animation:s31 12s linear infinite"><g><rect x="580.2" y="232" width="79.6" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37"/><path d="M615 258 L620 265 L625 258 Z" fill="#dafbe1" stroke="#1a7f37"/><rect x="614" y="256" width="12" height="3" fill="#dafbe1"/><text x="620" y="249" fill="#1a7f37" text-anchor="middle" font-weight="600" style="font-size:12px">Approved</text></g></g>
-<g style="animation:s32 12s linear infinite"><g><rect x="660.6" y="258" width="158.8" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37"/><path d="M735 284 L740 291 L745 284 Z" fill="#dafbe1" stroke="#1a7f37"/><rect x="734" y="282" width="12" height="3" fill="#dafbe1"/><text x="740" y="275" fill="#1a7f37" text-anchor="middle" font-weight="600" style="font-size:12px">Done. Please review</text></g></g>
-<g style="animation:f33 12s ease-in-out infinite"><rect width="40" height="26" rx="4" fill="#fff" stroke="#1a7f37" stroke-width="1.5"/><text x="20" y="17" fill="#1a7f37" text-anchor="middle" font-weight="700" style="font-size:11px">Diff</text></g>
-<g style="animation:s34 12s linear infinite"><g><rect x="558.6" y="232" width="122.8" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37"/><path d="M615 258 L620 265 L625 258 Z" fill="#dafbe1" stroke="#1a7f37"/><rect x="614" y="256" width="12" height="3" fill="#dafbe1"/><text x="620" y="249" fill="#1a7f37" text-anchor="middle" font-weight="600" style="font-size:12px">Review · merge</text></g></g></g>
-<g class="waves"><path d="M420 442 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 q10 -9 20 0 t20 0 V642 H420 Z" fill="#54aeff" fill-opacity=".35"/></g>
-<g class="waves2"><path d="M420 456 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 q10 -7 20 0 t20 0 V656 H420 Z" fill="#0969da" fill-opacity=".3"/></g>
-<rect x="500" y="470" width="670" height="420" fill="#0969da" fill-opacity=".25"/></g>
-<text x="835" y="500" fill="#fff" text-anchor="middle" font-weight="600" style="font-size:12px">Tasks move forward together; approvals, follow-up input and diff review come to you</text>
+<g style="animation:s27 12s linear infinite">
+<rect x="630" y="224" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
+<rect x="630" y="224" width="190" height="42" rx="6" fill="#f3f4f6" stroke="#bf8700" stroke-width="1.5" style="animation:s28 12s linear infinite"/>
+<text x="640" y="241" fill="#1f2328" font-weight="700" style="font-size:11.5px">Add API tests</text>
+<circle cx="644" cy="255" r="4" fill="#10a37f"/><text x="652" y="259" fill="#6e7781" style="font-size:10px">Codex</text>
+<g style="animation:s29 12s linear infinite"><circle cx="766" cy="255" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="259" fill="#0969da" font-weight="600" style="font-size:10px">Running</text></g>
+<g style="animation:s30 12s linear infinite"><circle cx="766" cy="255" r="3.5" fill="#bf8700"/><text x="774" y="259" fill="#bf8700" font-weight="600" style="font-size:10px">Needs you</text></g>
+<g style="animation:s31 12s linear infinite"><circle cx="766" cy="255" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="259" fill="#0969da" font-weight="600" style="font-size:10px">Running</text></g>
+</g>
+<g style="animation:s32 12s linear infinite">
+<rect x="630" y="272" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
+<text x="640" y="289" fill="#1f2328" font-weight="700" style="font-size:11.5px">Upgrade dependencies</text>
+<circle cx="644" cy="303" r="4" fill="#424a53"/><text x="652" y="307" fill="#6e7781" style="font-size:10px">OpenCode</text>
+<g style="animation:s33 12s linear infinite"><circle cx="766" cy="303" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="307" fill="#0969da" font-weight="600" style="font-size:10px">Running</text></g>
+</g>
+<g style="animation:s34 12s linear infinite">
+<rect x="630" y="320" width="190" height="42" rx="6" fill="#fff" stroke="#eaeef2"/>
+<text x="640" y="337" fill="#1f2328" font-weight="700" style="font-size:11.5px">Tidy the docs</text>
+<circle cx="644" cy="351" r="4" fill="#6639ba"/><text x="652" y="355" fill="#6e7781" style="font-size:10px">Grok</text>
+<g style="animation:s35 12s linear infinite"><circle cx="766" cy="351" r="3.5" fill="#0969da" class="pulse"/><text x="774" y="355" fill="#0969da" font-weight="600" style="font-size:10px">Running</text></g>
+</g>
+<g style="animation:s36 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">New task</text><rect x="842" y="202" width="284" height="30" rx="6" fill="#fff" stroke="#d0d7de"/><text x="852" y="221" fill="#6e7781" style="font-size:11px">One task for each of 4 projects</text><rect x="842" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#d97757"/><circle cx="853" cy="253" r="4" fill="#d97757"/><text x="860" y="257" fill="#1f2328" style="font-size:10px">Claude</text><rect x="904" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#10a37f"/><circle cx="915" cy="253" r="4" fill="#10a37f"/><text x="922" y="257" fill="#1f2328" style="font-size:10px">Codex</text><rect x="966" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#424a53"/><circle cx="977" cy="253" r="4" fill="#424a53"/><text x="984" y="257" fill="#1f2328" style="font-size:10px">OpenC.</text><rect x="1028" y="242" width="56" height="22" rx="11" fill="#fff" stroke="#6639ba"/><circle cx="1039" cy="253" r="4" fill="#6639ba"/><text x="1046" y="257" fill="#1f2328" style="font-size:10px">Grok</text><rect x="1056" y="328" width="70" height="22" rx="6" fill="#0969da" stroke="#0969da"/><text x="1091" y="343" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:10.5px">Start</text></g>
+<g style="animation:s37 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">4 tasks running at once</text><text x="842" y="218" fill="#6e7781" style="font-size:10.5px">Claude</text><rect x="906" y="211" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="211" width="220" height="7" rx="3.5" fill="#d97757" style="transform-box:fill-box;transform-origin:left;animation:grow0 12s ease-out infinite"/><text x="842" y="252" fill="#6e7781" style="font-size:10.5px">Codex</text><rect x="906" y="245" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="245" width="220" height="7" rx="3.5" fill="#10a37f" style="transform-box:fill-box;transform-origin:left;animation:grow1 12s ease-out infinite"/><text x="842" y="286" fill="#6e7781" style="font-size:10.5px">OpenCode</text><rect x="906" y="279" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="279" width="220" height="7" rx="3.5" fill="#424a53" style="transform-box:fill-box;transform-origin:left;animation:grow2 12s ease-out infinite"/><text x="842" y="320" fill="#6e7781" style="font-size:10.5px">Grok</text><rect x="906" y="313" width="220" height="7" rx="3.5" fill="#eaeef2"/><rect x="906" y="313" width="220" height="7" rx="3.5" fill="#6639ba" style="transform-box:fill-box;transform-origin:left;animation:grow3 12s ease-out infinite"/><text x="842" y="356" fill="#6e7781" style="font-size:10.5px">Optional isolated copies keep edits apart</text></g>
+<g style="animation:s38 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">Add API tests · Codex</text><rect x="842" y="204" width="284" height="104" rx="8" fill="#fff8c5" stroke="#d4a72c"/><text x="854" y="224" fill="#7d4e00" font-weight="700" style="font-size:11.5px">Wants to run a command</text><rect x="854" y="234" width="260" height="24" rx="4" fill="#fff"/><text x="862" y="250" fill="#1f2328" style="font-size:11px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">$ npm test</text></g>
+<g style="animation:s39 12s linear infinite"><rect x="986" y="274" width="60" height="22" rx="6" fill="#fff" stroke="#d0d7de"/><text x="1016" y="289" fill="#1f2328" text-anchor="middle" font-weight="700" style="font-size:10.5px">Deny</text><rect x="1054" y="274" width="60" height="22" rx="6" fill="#1a7f37" stroke="#1a7f37"/><text x="1084" y="289" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:10.5px">Allow</text></g>
+<g style="animation:s40 12s linear infinite"><rect x="854" y="274" width="260" height="22" rx="6" fill="#dafbe1"/><text x="864" y="289" fill="#1a7f37" font-weight="700" style="font-size:10.5px">Allowed. Codex keeps going</text></g>
+<g style="animation:s41 12s linear infinite"><rect x="944" y="338" width="186" height="30" rx="8" fill="#fff" stroke="#bf8700" filter="url(#shadow)"/><circle cx="960" cy="353" r="5" fill="#bf8700" class="pulse"/><text x="972" y="357" fill="#7d4e00" font-weight="700" style="font-size:11px">Codex needs your approval</text></g>
+<g style="animation:s42 12s linear infinite"><text x="842" y="190" fill="#1f2328" font-weight="700" style="font-size:13px">Fix login validation · Claude</text><rect x="842" y="202" width="284" height="96" rx="6" fill="#fff" stroke="#d0d7de"/><text x="852" y="220" fill="#6e7781" font-weight="700" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">auth.ts</text><rect x="843" y="228" width="282" height="20" fill="#ffebe9"/><text x="852" y="242" fill="#cf222e" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">- if (!email) return</text><rect x="843" y="248" width="282" height="20" fill="#dafbe1"/><text x="852" y="262" fill="#1a7f37" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">+ if (!email?.trim()) {</text><rect x="843" y="268" width="282" height="20" fill="#dafbe1"/><text x="852" y="282" fill="#1a7f37" style="font-size:10.5px" font-family="SF Mono,ui-monospace,Menlo,Consolas,monospace">+   return error('email required')</text></g>
+<g style="animation:s43 12s linear infinite"><rect x="1030" y="314" width="96" height="22" rx="6" fill="#1f2328" stroke="#1f2328"/><text x="1078" y="329" fill="#fff" text-anchor="middle" font-weight="700" style="font-size:10.5px">Approve &amp; merge</text></g>
+<g style="animation:s44 12s linear infinite"><rect x="842" y="314" width="284" height="22" rx="6" fill="#dafbe1"/><text x="852" y="329" fill="#1a7f37" font-weight="700" style="font-size:10.5px">Merged into main</text></g>
+<g style="animation:f45 12s ease-in-out infinite"><path d="M0 0 L0 16 L4.5 12 L7.5 19 L10 18 L7 11 L13 11 Z" fill="#fff" stroke="#1f2328" stroke-width="1.3" stroke-linejoin="round"/></g>
+<g style="animation:f46 12s ease-in-out infinite"><path d="M0 0 L0 16 L4.5 12 L7.5 19 L10 18 L7 11 L13 11 Z" fill="#fff" stroke="#1f2328" stroke-width="1.3" stroke-linejoin="round"/></g>
+<circle cx="1082" cy="284" r="0" fill="none" stroke="#0969da" stroke-width="2" style="animation:c47 12s linear infinite"/>
+<circle cx="1086" cy="324" r="0" fill="none" stroke="#0969da" stroke-width="2" style="animation:c48 12s linear infinite"/>
+<line x1="835" y1="376" x2="835" y2="378" stroke="#1a7f37" stroke-width="1.6" stroke-dasharray="4 4"/>
+<path d="M822 412 Q805 434 817 442" stroke="#57606a" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M848 412 Q865 434 853 442" stroke="#57606a" stroke-width="8" fill="none" stroke-linecap="round"/>
+<rect x="820" y="406" width="30" height="42" rx="10" fill="#57606a"/>
+<circle cx="835" cy="392" r="14" fill="#f2c9a0"/>
+<path d="M821 390 Q822 374 835 375 Q849 375 849 390 Q835 382 821 390 Z" fill="#3b2f2a"/>
+<circle cx="830" cy="390" r="1.7" fill="#1f2328"/><circle cx="840" cy="390" r="1.7" fill="#1f2328"/>
+<path d="M829 398 Q835 404 841 398" stroke="#1f2328" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<rect x="715" y="448" width="240" height="12" rx="4" fill="#8c6d52"/><rect x="725" y="460" width="8" height="22" fill="#8c6d52"/><rect x="937" y="460" width="8" height="22" fill="#8c6d52"/>
+<rect x="799" y="428" width="72" height="20" rx="3" fill="#d0d7de"/><rect x="791" y="446" width="88" height="4" rx="2" fill="#afb8c1"/>
+<rect x="905" y="430" width="16" height="18" rx="3" fill="#fff" stroke="#d0d7de"/><path d="M921 435 q7 0 7 5 q0 5 -7 5" fill="none" stroke="#d0d7de" stroke-width="2"/>
+<path d="M909 426 q-4 -6 0 -12 q4 -6 0 -12" fill="none" stroke="#afb8c1" stroke-width="1.6" stroke-linecap="round" class="steam" style="animation-delay:0s"/>
+<path d="M916 426 q-4 -6 0 -12 q4 -6 0 -12" fill="none" stroke="#afb8c1" stroke-width="1.6" stroke-linecap="round" class="steam" style="animation-delay:-0.8s"/>
+<text x="835" y="500" fill="#6e7781" text-anchor="middle" style="font-size:12px">Every task in one list; approvals, questions and diff review come to you</text>
 <rect x="34" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="34" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s35 12s linear infinite"/>
+<rect x="34" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s49 12s linear infinite"/>
 <text x="50" y="561" fill="#0969da" font-weight="700" style="font-size:13px">1 Hand out</text>
 <text x="50" y="582" fill="#6e7781" style="font-size:11.5px">Create tasks and pick an agent for each</text>
 <rect x="319" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="319" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s36 12s linear infinite"/>
+<rect x="319" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s50 12s linear infinite"/>
 <text x="335" y="561" fill="#0969da" font-weight="700" style="font-size:13px">2 In parallel</text>
 <text x="335" y="582" fill="#6e7781" style="font-size:11.5px">Tasks run at once, in isolated copies if you like</text>
 <rect x="604" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="604" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s37 12s linear infinite"/>
+<rect x="604" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s51 12s linear infinite"/>
 <text x="620" y="561" fill="#0969da" font-weight="700" style="font-size:13px">3 Raise a hand</text>
-<text x="620" y="582" fill="#6e7781" style="font-size:11.5px">Approvals and questions arrive as cards</text>
+<text x="620" y="582" fill="#6e7781" style="font-size:11.5px">An alert, then an approval card in the task</text>
 <rect x="889" y="536" width="277" height="62" rx="10" fill="#fff" stroke="#d0d7de"/>
-<rect x="889" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s38 12s linear infinite"/>
+<rect x="889" y="536" width="277" height="62" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5" style="animation:s52 12s linear infinite"/>
 <text x="905" y="561" fill="#0969da" font-weight="700" style="font-size:13px">4 Deliver</text>
 <text x="905" y="582" fill="#6e7781" style="font-size:11.5px">Review the diff, then merge or push</text>
 </svg>
