@@ -48,6 +48,14 @@ Before, each agent CLI had its own terminal, and approvals, progress and diffs m
 
 ![Before and after: agent CLIs in separate terminals versus one Caravel workbench running tasks in parallel with approvals and review in one place](docs/diagrams/caravel-workflow-en.svg)
 
+## Product feature map
+
+Explore Caravel across four layers: entry points, applications, agents, and infrastructure, with safety and controls spanning every layer.
+
+[![Caravel product feature map (Chinese): entry points, task management, automation, developer tools, personal productivity, agents, and infrastructure](docs/diagrams/caravel-product-map-zh-CN.png)](docs/diagrams/caravel-product-map-zh-CN.png)
+
+Click to view the full-resolution image (Chinese). Feature counts reflect the snapshot when this diagram was created; see the [feature guide](docs/product-overview.en.md) for current capabilities.
+
 ## Architecture
 
 The diagram steps through one task: the UI calls into the Rust task core, AgentDriver runs local agents over ACP, Codex App Server or CLI/JSONL, and normalized events are stored and pushed back to the UI. It also shows the other entry points: schedules, Feishu and phone/web.

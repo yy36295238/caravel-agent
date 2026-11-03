@@ -48,6 +48,14 @@ macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和�
 
 ![过去与现在：多个终端分别运行 Agent CLI，对比 Caravel 一个工作台并行推进任务并集中处理授权与验收](docs/diagrams/caravel-workflow-zh-CN.svg)
 
+## 产品功能架构
+
+从触达层、应用层、Agent 层到基础层，一张图了解 Caravel 的功能分布，以及贯穿各层的安全与管控。
+
+[![Caravel 产品功能架构图：用户入口、任务指挥中心、自动化编排、开发工具、个人效率、Agent 接入与基础支撑](docs/diagrams/caravel-product-map-zh-CN.png)](docs/diagrams/caravel-product-map-zh-CN.png)
+
+点击图片查看高清原图。图中功能数量为制图时快照，当前能力以[完整功能说明](docs/product-overview.md)为准。
+
 ## 技术架构
 
 下图逐步演示一次任务如何从界面进入 Rust 任务核心，经 ACP、Codex App Server 或 CLI/JSONL 驱动本机 Agent，再统一落库并推送回界面；也展示了日程、飞书和手机端等其他入口。
