@@ -165,6 +165,8 @@ Browse, search, and edit project files.
 
 Connect to MySQL, PostgreSQL, SQLite, MongoDB, or Redis to query and edit data.
 
+- Import basic direct connections from Navicat NCX, DBeaver, and DataGrip. Preview and select entries, complete credentials, assign a group, and inspect individual results. Limits are 200 connections and 2 MiB of configuration files per batch. Source passwords and system keychains are not read; unsupported tunnels and advanced settings are flagged. New connections are read-only with MCP disabled, and saving neither connects automatically nor overwrites existing connections.
+
 - Browse objects, filter and page through data, open local SQLite files, query MongoDB documents, and manage Redis keys.
 - Opening tables or views by double-click, the data context-menu action, or the command palette inserts a SELECT with `WHERE 1=1` for adding filters; it does not execute the query automatically.
 - MySQL connections without a selected database automatically select the only visible non-system database before becoming ready and expand it in the object tree. Reconnection restores that scope; existing selections remain intact, and multiple visible databases require explicit selection. Watched databases limit display and automatic selection without changing account permissions.
@@ -257,6 +259,8 @@ Agents can execute independently while you retain control over key permissions a
 ### 12. Settings
 
 Manage preferences and the execution environment.
+
+- **Problem reports**: Submit up to 5,000 characters and five PNG/JPEG/GIF/WebP images, up to 5 MB each, from desktop settings. Select, paste, drop, and preview images. Only the entered content, selected images, app version, and operating system are sent. Failed submissions retain content, and retrying the same content avoids duplicate reports. Drafts survive switching settings categories but are discarded when leaving settings or restarting; web access directs users to the desktop app.
 
 - **Agents**: General settings bring together the default agent, permissions, run modes, automatic titles, and idle timeout; agent details manage enablement, models, and transport. Browsing settings does not change the default agent. Search models by name or ID and manage whitelists and blacklists, with enabled entries shown first. Select an enabled model in the Default column and save to preselect it in new-task and other supported entry points, without overriding existing tasks or explicit choices. Disabling, deleting, or blacklisting the default falls back to the next enabled model. Blacklisting disables a model; restoring it requires manual enablement. Discovery retains list preferences, and task and app model pickers exclude blacklisted entries. Save or discard model edits together, retaining unsaved changes across settings scopes. CLI model discovery marks configured models absent from the current catalog as undetected, which does not mean they are unavailable; keep them or remove them in bulk and save. Codex reads the full model catalog, display names, and supported reasoning efforts from the local CLI. Settings and task controls prioritize detected effort levels. Failed or empty discovery reports an error without marking existing models as missing.
 - **Claude transport**: stable CLI and experimental ACP remain available and use the native local `claude` command. The `reclaude` launch option has been removed, and previous launch-command preferences no longer apply.
