@@ -12,13 +12,13 @@
 **Claude Code · Codex · OpenCode · pi · Grok · TRAE · Antigravity**
 
 <p>
-  <a href="https://caravel-site.pages.dev/"><strong>访问官网 ↗</strong></a>
+  <a href="https://www.caravelai.top/"><strong>访问官网 ↗</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://caravel-site.pages.dev/demo/?lang=zh-CN"><strong>在线体验</strong></a>
+  <a href="https://www.caravelai.top/demo/?lang=zh-CN"><strong>在线体验</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://caravel-site.pages.dev/zh-CN/docs/"><strong>产品手册</strong></a>
+  <a href="https://www.caravelai.top/zh-CN/docs/"><strong>产品手册</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://caravel-site.pages.dev/#film"><strong>观看短片</strong></a>
+  <a href="https://www.caravelai.top/#film"><strong>观看短片</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yy36295238/caravel-agent/releases/latest"><strong>下载 Caravel</strong></a>
 </p>
@@ -27,7 +27,7 @@
 
 macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和模型账号<br>TRAE 需要 CLI 2.0 与企业版旗舰版账号。
 
-[![Caravel 工作台（素白主题）：项目任务列表、Agent 会话与代码验收](docs/assets/workbench-plain-zh-CN.png)](https://caravel-site.pages.dev/)
+[![Caravel 工作台（素白主题）：项目任务列表、Agent 会话与代码验收](docs/assets/workbench-plain-zh-CN.png)](https://www.caravelai.top/)
 
 **点击截图，访问官网并体验完整工作台。**<br>
 <sub>演示使用产品原版界面与示例数据，无需安装。</sub>
@@ -40,7 +40,7 @@ macOS（Apple Silicon / Intel）与 Windows x64 · 使用你自己的 Agent 和�
 - **集中跟进**：查看执行状态，接续会话，在需要时确认权限或调整方向。
 - **审查交付**：查看代码 Diff，继续修改，或在验收后合并、推送独立分支。
 
-我的应用、定时器、工作流和更多功能，前往 [官网查看](https://caravel-site.pages.dev/#possibilities) 或 [在线操作体验](https://caravel-site.pages.dev/demo/?lang=zh-CN)。
+我的应用、定时器、工作流和更多功能，前往 [官网查看](https://www.caravelai.top/#possibilities) 或 [在线操作体验](https://www.caravelai.top/demo/?lang=zh-CN)。
 
 ## 工作方式的变化
 
@@ -91,7 +91,7 @@ macOS 与 Windows 均提供包含全部功能模块的 Caravel 通用版。macOS
 xattr -dr com.apple.quarantine /Applications/Caravel.app
 ```
 
-此命令仅移除 Caravel 的下载隔离属性。其他安装问题见 [官网安装帮助](https://caravel-site.pages.dev/#install-help)。
+此命令仅移除 Caravel 的下载隔离属性。其他安装问题见 [官网安装帮助](https://www.caravelai.top/#install-help)。
 
 </details>
 
@@ -103,6 +103,6 @@ Caravel 安装包以 [Apache License 2.0](LICENSE) 授权，个人和商业用�
 
 ---
 
-本仓库提供 **macOS / Windows 安装包与版本记录**。产品介绍、交互演示与常见问题请以 [官网](https://caravel-site.pages.dev/) 为主。
+本仓库提供 **macOS / Windows 安装包与版本记录**。产品介绍、交互演示与常见问题请以 [官网](https://www.caravelai.top/) 为主。
 
-[版本记录](https://github.com/yy36295238/caravel-agent/releases) · [完整功能说明](docs/product-overview.md) · [常见问题](https://caravel-site.pages.dev/#faq)
+[版本记录](https://github.com/yy36295238/caravel-agent/releases) · [完整功能说明](docs/product-overview.md) · [常见问题](https://www.caravelai.top/#faq)

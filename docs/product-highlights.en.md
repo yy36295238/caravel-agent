@@ -204,4 +204,4 @@ Developers working across projects, frequent AI coding users managing many sessi
 4. Create a task, choose an agent, and start the run.
 5. Return for permission requests, decisions, and review.
 
-[Visit the website](https://caravel-site.pages.dev/?lang=en) · [Try the demo](https://caravel-site.pages.dev/demo/?lang=en)
+[Visit the website](https://www.caravelai.top/?lang=en) · [Try the demo](https://www.caravelai.top/demo/?lang=en)

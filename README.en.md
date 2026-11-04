@@ -12,13 +12,13 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
 **Claude Code · Codex · OpenCode · pi · Grok · TRAE · Antigravity**
 
 <p>
-  <a href="https://caravel-site.pages.dev/en/"><strong>Visit website ↗</strong></a>
+  <a href="https://www.caravelai.top/en/"><strong>Visit website ↗</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://caravel-site.pages.dev/demo/?lang=en"><strong>Try the demo</strong></a>
+  <a href="https://www.caravelai.top/demo/?lang=en"><strong>Try the demo</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://caravel-site.pages.dev/zh-CN/docs/"><strong>User guide</strong></a>
+  <a href="https://www.caravelai.top/zh-CN/docs/"><strong>User guide</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://caravel-site.pages.dev/en/#film"><strong>Watch the film</strong></a>
+  <a href="https://www.caravelai.top/en/#film"><strong>Watch the film</strong></a>
   &nbsp; · &nbsp;
   <a href="https://github.com/yy36295238/caravel-agent/releases/latest"><strong>Download Caravel</strong></a>
 </p>
@@ -27,7 +27,7 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
 
 macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model accounts<br>TRAE requires CLI 2.0 and an Enterprise Flagship account.
 
-[![Caravel workbench (Plain theme): project task list, agent conversation and code review](docs/assets/workbench-plain-en.png)](https://caravel-site.pages.dev/en/)
+[![Caravel workbench (Plain theme): project task list, agent conversation and code review](docs/assets/workbench-plain-en.png)](https://www.caravelai.top/en/)
 
 **Click the screenshot to explore the full workbench on the website.**<br>
 <sub>The demo uses the actual product interface and sample data. No installation required.</sub>
@@ -40,7 +40,7 @@ macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model ac
 - **Follow up in one place**: track execution, continue conversations, grant permissions, and adjust direction when needed.
 - **Review and deliver**: inspect code diffs, request changes, then merge or push separate branches after review.
 
-Explore apps, schedules, workflows, and more on the [website](https://caravel-site.pages.dev/en/#possibilities), or [try them in the demo](https://caravel-site.pages.dev/demo/?lang=en).
+Explore apps, schedules, workflows, and more on the [website](https://www.caravelai.top/en/#possibilities), or [try them in the demo](https://www.caravelai.top/demo/?lang=en).
 
 ## How the way you work changes
 
@@ -91,7 +91,7 @@ Open Terminal on your Mac, run this command, and reopen Caravel:
 xattr -dr com.apple.quarantine /Applications/Caravel.app
 ```
 
-This command only removes Caravel’s download quarantine attribute. See the [installation help](https://caravel-site.pages.dev/en/#install-help) for more details.
+This command only removes Caravel’s download quarantine attribute. See the [installation help](https://www.caravelai.top/en/#install-help) for more details.
 
 </details>
 
@@ -103,6 +103,6 @@ The application source code remains private and is not provided, so Caravel is n
 
 ---
 
-This repository provides **macOS / Windows installers and release history**. Visit the [website](https://caravel-site.pages.dev/en/) for product information, the interactive demo, and FAQs.
+This repository provides **macOS / Windows installers and release history**. Visit the [website](https://www.caravelai.top/en/) for product information, the interactive demo, and FAQs.
 
-[Releases](https://github.com/yy36295238/caravel-agent/releases) · [Feature guide](docs/product-overview.en.md) · [FAQ](https://caravel-site.pages.dev/en/#faq)
+[Releases](https://github.com/yy36295238/caravel-agent/releases) · [Feature guide](docs/product-overview.en.md) · [FAQ](https://www.caravelai.top/en/#faq)
