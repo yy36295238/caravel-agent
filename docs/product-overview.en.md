@@ -91,7 +91,7 @@ The filter bar groups session sync, view, and split controls under “More actio
 - Copy files from Finder or File Explorer and paste them as attachments when creating tasks or continuing conversations, preserving filenames and removing duplicate paths. Workflows, to-dos, and inbox notes share the same attachment support. Desktop context menus paste text, images, and files into the active input area without sending attachments to another pane or dialog.
 - Stop a task at any time or take over in a terminal. Stopping reclaims processes for all unfinished runs of that task and reports an error if a process cannot exit.
 
-An advisor with messages can be converted into a regular task in its source workspace, preserving its conversation, active run, permissions, drafts, and actual project directories. Usage is then counted independently. Conversion does not create a copy or take ownership of the source copy’s cleanup; pending advice drafts must be handled first.
+An advisor with messages can be converted into a regular task in its source workspace after confirmation; canceling or pressing Esc only closes the confirmation dialog. Conversion preserves its conversation, active run, permissions, drafts, and actual project directories. Usage is then counted independently. Conversion does not create a copy or take ownership of the source copy’s cleanup; pending advice drafts must be handled first.
 
 #### Collaboration teams within a task (experimental)
 
