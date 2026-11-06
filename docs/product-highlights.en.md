@@ -4,7 +4,7 @@
 
 > **Turn time spent waiting for AI into work progressing in parallel.**
 
-Caravel brings Claude Code, Codex, OpenCode, pi, Grok, TRAE, and Antigravity into a coordinated workspace where their work can be assigned, tracked, guided, and reviewed.
+Caravel brings Claude Code, Codex, OpenCode, Pi, Grok, TRAE, and Antigravity into a coordinated workspace where their work can be assigned, tracked, guided, and reviewed.
 
 You set goals and make decisions. Agents search, edit, verify, and execute. Permissions, product decisions, and final acceptance bring your attention back when it is needed.
 
@@ -63,7 +63,7 @@ Use a list to scan tasks, a board to follow stages, or split views to watch seve
 
 After enabling team selection, desktop tasks can also use a saved collaboration team. The lead agent assigns work according to members’ roles and notes, workers execute one at a time in the shared directory, and the lead reviews their results against the plan. The collaboration panel brings assignments, member progress replies, usage, and acceptance evidence together, with member filters and collected deliverables that open directly; a worker returning or a conversation ending does not automatically mean the whole request is delivered. Pixel cabin and modern office themes offer the same status and conversation controls, with permissions, stopping, and final confirmation available to the user.
 
-You can also send one goal to 2–8 agent and model configurations to compare approaches. Enable multiple-task creation to run each in an isolated copy by default, continue and review each task separately, and keep them together in a workbench group. This option is off by default and is separate from collaboration teams.
+You can also send one goal to 2–8 agent and model configurations to compare approaches. Enable multiple-task creation to run in the current workspace by default or choose isolated copies, continue and review each task separately, and keep them together in a workbench group. This option is off by default and is separate from collaboration teams.
 
 ## 2. Spend attention where it matters
 

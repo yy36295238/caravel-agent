@@ -9,7 +9,7 @@
 
 本地优先的多 AI 编码 Agent 工作台，把项目、任务、会话和代码验收放在一起。
 
-**Claude Code · Codex · OpenCode · pi · Grok · TRAE · Antigravity**
+**Claude Code · Codex · OpenCode · Pi · Grok · TRAE · Antigravity**
 
 <p>
   <a href="https://www.caravelai.top/"><strong>访问官网 ↗</strong></a>

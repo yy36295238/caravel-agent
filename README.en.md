@@ -9,7 +9,7 @@
 
 A local-first workspace for multiple AI coding agents. Projects, tasks, conversations, and code reviews in one place.
 
-**Claude Code · Codex · OpenCode · pi · Grok · TRAE · Antigravity**
+**Claude Code · Codex · OpenCode · Pi · Grok · TRAE · Antigravity**
 
 <p>
   <a href="https://www.caravelai.top/en/"><strong>Visit website ↗</strong></a>
