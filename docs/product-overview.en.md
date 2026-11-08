@@ -131,6 +131,14 @@ Keep and find historical tasks in one place.
 
 - Diffs with a repository path can open the file’s containing directory or a directory from the tree in the system file manager, falling back to an existing parent when the path was deleted.
 
+#### Local task MCP and CLI
+
+- While the desktop app is running, local AI clients and terminal scripts can use task MCP or the `caravel` command to list workspaces, filter tasks, and read incremental events and results for a specific run. Keeping the run ID prevents later messages from changing the query target; a finished run does not imply success or acceptance.
+- Access is off by default. The local CLI authorizes existing workspace directories with read-only access unless execution is explicitly enabled. Execution can create, continue, and stop ordinary tasks in the original workspace, with approval-requesting permissions for new runs. Busy tasks or tasks awaiting approval reject external follow-up messages. Archived tasks, teams, active workflows, permission responses, merging, and deletion remain desktop operations.
+- A separate token can be rotated or revoked. Linked projects and saved task references must be within the authorized scope; task-private directories are excluded. Only authenticated local non-browser clients are accepted, with authorization separate from Feishu and database MCP. Workspace scope limits interface access and is not an agent filesystem sandbox.
+- `caravel model list` reads saved model IDs, installation and enabled status, reasoning options, and default effort without calling a model or detecting new models. Creation and follow-up messages validate explicit model and reasoning choices. A reasoning override requires a model; omitting both preserves the agent defaults.
+- The first launch of a release build installs the user CLI and adds it to the terminal PATH while preserving existing configuration and avoiding duplicates. Reopen the terminal to use it. Development builds do not change the user PATH; a full executable path remains available if automatic configuration fails or the shell is unsupported.
+
 ### 3. Schedules
 
 Automate work that runs daily, weekly, at intervals, or just once.
