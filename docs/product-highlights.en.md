@@ -190,7 +190,7 @@ Developers working across projects, frequent AI coding users managing many sessi
 - Antigravity requires the official CLI and a working account or API configuration; the first ACP connection may require a separate browser sign-in.
 - TRAE requires CLI 2.0 and an Enterprise Flagship account.
 - Git workspaces require Git.
-- Windows also needs Git for Windows and Node.js.
+- Windows also needs Git for Windows and Node.js; Linux needs Git and Node.js from the package manager, and Linux packages are updated manually.
 - Use a specialist IDE for breakpoint debugging, profiling, complex type navigation, and large manual refactors.
 - Model-service data handling depends on the selected agent and provider.
 - Caravel reduces the need to keep every development tool running at once; specialist tools remain useful when needed.

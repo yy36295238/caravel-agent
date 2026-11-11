@@ -195,6 +195,7 @@ Agent CLI 仍需实际运行。Claude、Codex 等任务产生的进程资源，�
 - Antigravity 需要官方 CLI 和可用的账号或 API 配置；首次 ACP 连接可能需要独立浏览器登录；
 - TRAE 需要 CLI 2.0 与企业版旗舰版账号；
 - Git 工作区仍需 Git；
+- Windows 另需 Git for Windows 与 Node.js，Linux 需用系统包管理器安装 Git 与 Node.js，Linux 安装包需手动下载更新；
 - 断点调试、性能分析、复杂类型导航和大型人工重构仍建议使用专业 IDE；
 - Agent 访问模型服务时的数据处理方式，取决于对应 Agent 和模型供应商；
 - Caravel 的价值不是彻底卸载所有开发工具，而是减少它们必须同时常驻的时间；

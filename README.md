@@ -68,7 +68,7 @@ macOS（Apple Silicon / Intel）、Windows x64 与 Linux x64 · 使用你自己�
 2. 准备 Git 和至少一个已安装、完成登录或配置的受支持 Agent CLI。
 3. 添加本地项目，创建任务，选择 Agent 并开始运行。
 
-macOS 与 Windows 均提供包含全部功能模块的 Caravel 通用版。macOS 与 Windows x64 支持应用内签名更新；旧 Windows 客户端需先手动安装支持自动更新的版本。Windows 安装前准备 Git for Windows、Node.js 和 Agent CLI。Windows 安装包尚未使用 Authenticode 签名，如遇 SmartScreen 提示，确认来自本仓库 Releases 后，点击「更多信息 → 仍要运行」。下载页注明各平台安装包的实际版本，Linux 通过下载新包手动更新。任务与会话保存在本机；Agent 调用在线模型或使用外部集成时仍会联网。
+macOS、Windows 与 Linux 均提供包含全部功能模块的 Caravel 通用版。macOS 与 Windows x64 支持应用内签名更新；旧 Windows 客户端需先手动安装支持自动更新的版本。Windows 安装前准备 Git for Windows、Node.js 和 Agent CLI，Linux 用系统包管理器安装 Git、Node.js 和 Agent CLI。Windows 安装包尚未使用 Authenticode 签名，如遇 SmartScreen 提示，确认来自本仓库 Releases 后，点击「更多信息 → 仍要运行」。下载页注明各平台安装包的实际版本，Linux 通过下载新包手动更新。任务与会话保存在本机；Agent 调用在线模型或使用外部集成时仍会联网。
 
 正式版会向 Caravel 自有服务器发送随机安装及事件标识、版本、系统/架构和启动、更新事件时间，用于安装与活跃统计；不包含会话、代码、路径、账号或硬件标识。统计独立于自动更新开关，开发版不上报；数据按安装数据目录去重，不代表准确人数或设备数。
 
