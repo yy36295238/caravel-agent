@@ -8,7 +8,7 @@ Caravel 不是又一个 AI 聊天窗口，也不只是多个 Agent 的启动器�
 
 你负责目标和判断，Agent 负责搜索、修改、验证和执行；只有遇到授权、业务决策和最终验收时，Caravel 才把注意力还给你。
 
-[下载 Caravel（macOS / Windows）](https://github.com/yy36295238/caravel-agent/releases/latest) · [查看完整功能](product-overview.md)
+[下载 Caravel（macOS / Windows / Linux）](https://github.com/yy36295238/caravel-agent/releases/latest) · [查看完整功能](product-overview.md)
 
 ---
 
@@ -205,7 +205,7 @@ Agent CLI 仍需实际运行。Claude、Codex 等任务产生的进程资源，�
 ## 开始把 AI 从聊天工具变成执行团队
 
 1. 安装并登录至少一个受支持的 Agent CLI。
-2. [下载 Caravel（macOS / Windows）](https://github.com/yy36295238/caravel-agent/releases/latest)。
+2. [下载 Caravel（macOS / Windows / Linux）](https://github.com/yy36295238/caravel-agent/releases/latest)。
 3. 注册一个本地 Git 仓库或项目文件夹。
 4. 创建任务、选择 Agent，然后继续做你自己的事。
 5. Caravel 提醒你时，回来做确认、决策和验收。

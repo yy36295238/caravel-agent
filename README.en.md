@@ -25,7 +25,7 @@ A local-first workspace for multiple AI coding agents. Projects, tasks, conversa
 
 [![Latest Release](https://img.shields.io/github/v/release/yy36295238/caravel-agent?display_name=tag&style=flat-square&label=release&color=416fae)](https://github.com/yy36295238/caravel-agent/releases/latest)
 
-macOS (Apple Silicon / Intel) and Windows x64 · Use your own agent and model accounts<br>TRAE requires CLI 2.0 and an Enterprise Flagship account.
+macOS (Apple Silicon / Intel), Windows x64, and Linux x64 · Use your own agent and model accounts<br>TRAE requires CLI 2.0 and an Enterprise Flagship account.
 
 [![Caravel workbench (Plain theme): project task list, agent conversation and code review](docs/assets/workbench-plain-en.png)](https://www.caravelai.top/en/)
 
@@ -64,11 +64,11 @@ The diagram steps through one task: the UI calls into the Rust task core, AgentD
 
 ## Get started
 
-1. [Download the installer](https://github.com/yy36295238/caravel-agent/releases/latest). On macOS, open the `.dmg` and drag **Caravel** into Applications. On Windows x64, download and run `Caravel_*_x64-setup.exe`.
+1. [Download the installer](https://github.com/yy36295238/caravel-agent/releases/latest). On macOS, open the `.dmg` and drag **Caravel** into Applications. On Windows x64, download and run `Caravel_*_x64-setup.exe`. On Linux x64, choose AppImage or deb.
 2. Prepare Git and at least one supported agent CLI, installed and signed in or configured.
 3. Add a local project, create a task, choose an agent, and start the run.
 
-Both platforms provide the complete Caravel app with all feature modules. macOS and Windows x64 support signed in-app updates. Older Windows clients need a manual upgrade to a version with automatic update support. Windows requires Git for Windows, Node.js, and an agent CLI. The Windows installer is not yet Authenticode-signed: if SmartScreen appears, verify that it came from this repository’s Releases, then choose “More info → Run anyway”. Tasks and conversations stay on your machine; online model calls and external integrations still use the network.
+Both platforms provide the complete Caravel app with all feature modules. macOS and Windows x64 support signed in-app updates. Older Windows clients need a manual upgrade to a version with automatic update support. Windows requires Git for Windows, Node.js, and an agent CLI. The Windows installer is not yet Authenticode-signed: if SmartScreen appears, verify that it came from this repository’s Releases, then choose “More info → Run anyway”. The download page identifies each platform’s actual package version; Linux updates require downloading a new package. Tasks and conversations stay on your machine; online model calls and external integrations still use the network.
 
 Release builds send random installation and event IDs, version, OS/architecture, and startup/update event times to Caravel’s own servers for installation and activity statistics. This excludes conversations, code, paths, accounts, and hardware identifiers. Statistics run independently of automatic-update settings; development builds do not report. Counts represent application data directories, not exact people or devices.
 
@@ -103,6 +103,6 @@ The application source code remains private and is not provided, so Caravel is n
 
 ---
 
-This repository provides **macOS / Windows installers and release history**. Visit the [website](https://www.caravelai.top/en/) for product information, the interactive demo, and FAQs.
+This repository provides **macOS / Windows / Linux installers and release history**. Visit the [website](https://www.caravelai.top/en/) for product information, the interactive demo, and FAQs.
 
 [Releases](https://github.com/yy36295238/caravel-agent/releases) · [Feature guide](docs/product-overview.en.md) · [FAQ](https://www.caravelai.top/en/#faq)

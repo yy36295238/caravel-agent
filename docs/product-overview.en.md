@@ -4,9 +4,9 @@
 
 ## Product positioning
 
-**Caravel is a local-first workspace for multiple AI coding agents, built for developers working across projects and tasks. It supports macOS (Apple Silicon / Intel) and Windows x64.**
+**Caravel is a local-first workspace for multiple AI coding agents, built for developers working across projects and tasks. It supports macOS (Apple Silicon / Intel), Windows x64, and Linux x64.**
 
-Both platforms provide the complete app with all feature modules and retain existing application data. macOS and Windows x64 support signed in-app updates; older Windows clients require a manual upgrade to a version that supports automatic updates. Choose your platform on the [download page](https://github.com/yy36295238/caravel-agent/releases/latest). See the [installation help](https://www.caravelai.top/?lang=en#install-help) for first-launch instructions.
+macOS and Windows provide the complete app with all feature modules and retain existing application data. Linux x64 offers AppImage / deb downloads and requires manual package updates. Package versions may differ by platform; check the version shown on the download page. macOS and Windows x64 support signed in-app updates; older Windows clients require a manual upgrade to a version that supports automatic updates. Choose your platform on the [download page](https://github.com/yy36295238/caravel-agent/releases/latest). See the [installation help](https://www.caravelai.top/?lang=en#install-help) for first-launch instructions.
 
 Caravel brings Claude Code, Codex, OpenCode, Pi, Grok, TRAE, Antigravity, and other coding agents into one desktop workbench. Delegate tasks, track progress, handle permissions, review code, and deliver changes in one place. Install or upgrade agents from Settings.
 
@@ -49,7 +49,7 @@ Import historical CLI sessions by agent and date range: Today, Last week (the de
 
 Create and manage AI agent tasks with list, board, and split views. In split views, expand or collapse agent, workspace, Git, and usage details. The input grows with its content, and controls move to a separate row in narrow panes. Switch the task list between the default two-line layout and a compact single-line layout, with your preference saved locally. Compact rows retain the agent icon, title, task badges, status dot, elapsed running time, and resume control.
 
-The filter bar offers one-click list and board switching, split controls, and session sync, grouped under “More actions” when space is limited. Workbench and Sessions offer This week, Last 7 days, and This month filters by update time. Weeks start on local Monday, and each range ends today. Non-default date and status filters are highlighted; Reset restores Today, all statuses, and any tag while preserving search text. Favorites filtering remains in the task library, where an agent dropdown selects all agents or one agent. In list view, press `⌘F` (`Ctrl+F` on Windows/Linux) to search the current conversation, see match counts, and navigate with `Enter / Shift+Enter`. Matching keywords receive a background highlight; keywords in the current matching message use the accent color, and navigation scrolls to visible matching text when available. Press `Esc` to close and clear highlights. Split views search the focused conversation; workflow tasks support the same controls.
+The filter bar offers one-click list and board switching, split controls, and session sync, grouped under “More actions” when space is limited. Workbench and Sessions offer This week, Last 7 days, and This month filters by update time. Weeks start on local Monday, and each range ends today. Non-default date and status filters are highlighted; Reset restores Today, all statuses, and any tag while preserving search text. Favorites filtering remains in the task library, where an agent dropdown selects all agents or one agent. In list view, press `⌘F` (`Ctrl+F` on Windows/Linux) to search the current conversation, see match counts, and navigate with `Enter / Shift+Enter`. Matching keywords receive a background highlight; keywords in the current matching message use the accent color, and navigation scrolls to visible matching text when available. Press `Esc` to close and clear highlights. Split views search the focused conversation; workflow tasks and task quick previews support the same controls. Combine keywords with `#tag` to match part of a tag name.
 
 - Manage Claude Code, Codex, OpenCode, Pi, Grok, TRAE, and Antigravity together. Invocation controls combine a brand icon, agent dropdown, and model selection; Settings retains full enablement controls.
 - Desktop tasks, split views, previews, and Sessions can open a compact always-on-top task window for reading, sending messages, and stopping the current run. It reuses the original conversation; closing it or pressing Esc only hides the window. On macOS it can follow full-screen Spaces, and ⌘⇧J toggles the bound window. This entry is unavailable on the web. Open ordinary tasks through More → Open in small window; session details keep the header button. Showing or focusing the window resynchronizes the main window’s saved theme.
@@ -157,7 +157,7 @@ Automate work that runs daily, weekly, at intervals, or just once.
 - Agent tasks, local scripts, and script trials without a selected workspace use an automatically created, reusable schedule workspace rather than the first project you added. An unavailable explicitly selected workspace requires reselection; reminders need no workspace.
 - Optionally catch up on runs missed while the computer was unavailable.
 - Run a schedule immediately to inspect its behavior.
-- Review run history and output, with optional notification cards. Open the full task in a dialog from the schedule list or run details without leaving the page, including failed tasks with no output.
+- Review run history, output, and failure reasons, preserving a separate snapshot of the initial agent run for each trigger, with optional notification cards. Open the full task in a dialog from the schedule list or run details without leaving the page, including failed tasks with no output.
 - Pause, edit, or delete schedules; use list or card views and see the next run time.
 
 ### 4. Editor
@@ -165,6 +165,7 @@ Automate work that runs daily, weekly, at intervals, or just once.
 Browse, search, and edit project files.
 
 - Multiple tabs, syntax highlighting, and autosave.
+- Click a committed line in the author gutter of the editor, file preview, or Diff to see the full commit message, author, date, and file changes, or copy the complete commit hash.
 - Reveal the current file in the explorer: clear search filters, expand parent folders, and scroll to and focus the file. The main editor and standalone window can switch to a matching root or open the file’s parent folder; embedded workspace views only reveal files within that workspace, and drafts cannot be revealed.
 - The desktop editor previews MP4, MOV, WebM, MKV, and AVI videos by reading local files on demand. Playback depends on system codec support, with an external-app fallback; web and mobile clients retain file information.
 - Markdown (including embedded SVG images), Mermaid, and image previews; open pasted file or directory paths. Markdown in the editor and file quick preview supports local images referenced relative to the document directory, by absolute path, or by file URL, up to 20 MiB per image.
