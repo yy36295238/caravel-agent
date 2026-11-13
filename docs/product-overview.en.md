@@ -247,7 +247,7 @@ Assess effectiveness, cost, and opportunities to improve.
 
 Keep personal tools inside the workbench.
 
-- Describe a small tool and have AI build it, such as a daily report helper or dashboard.
+- Describe a small tool, such as a daily report helper or dashboard. App Studio instructions distinguish questions and discussion from development requests: answer questions first, clarify unclear intent, and create or modify files only after an explicit development request. Clearly authorized work does not require repeated confirmation.
 - When creating an app, search and select multiple skills for the current agent; the first generation includes those skill instructions and the MCP servers they depend on
 - Choose Follow Caravel or Independent design when creating or refining an app: use the host theme or custom colors, typography, layout, and controls. Each app saves its preference for the next generation or refinement; existing pages are not restyled immediately.
 - Add a website or local webpage as a linked app and open it in a window.
@@ -330,7 +330,7 @@ Follow tasks and handle key decisions away from your computer, without configuri
 Use a phone browser on the same local network to follow Caravel on your computer. Viewing is available after pairing; task actions stay off until you enable them.
 
 - Enable mobile access separately in Settings and pair with a QR code or link. Disconnect this device from the phone’s Me page.
-- See run summaries, items that need you, workspaces, and conversations. The task list defaults to today, with options for the past 7 days or all time. Thinking and tool steps collapse into a one-line summary, with changes and task details on separate pages.
+- See run summaries, items that need you, workspaces, and conversations. The task list defaults to today, with options for the past 7 days or all time. Without a workspace filter, the list, counts, and attention items match the desktop Workbench scope and exclude scheduled and Sessions tasks. Desktop-pinned tasks appear first. Selecting a workspace also includes tasks linked through recorded development branches, with workspace counts using the same scope. Historical task references can still find scheduled and Sessions tasks. Thinking and tool steps collapse into a one-line summary, with changes and task details on separate pages.
 - Image attachments in user messages appear as thumbnails and open in a fullscreen preview. Only images recorded in that task’s messages can be read, up to 20 MB each; other attachments show their filenames.
 - After turning on “Allow mobile task actions” on the computer, answer permission prompts, send messages and images, stop, continue, accept or discard isolated-copy changes, and create, rename, archive, or delete tasks.
 - When creating a task, choose a model, reasoning effort, and permissions; attach images and tags; select configured skills, MCP servers, and plugins; link workspaces; and reference up to five existing tasks. Idle conversations can also change settings and capabilities for the next turn.
