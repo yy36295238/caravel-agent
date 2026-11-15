@@ -74,7 +74,7 @@ Caravel separates routine execution from decisions that need you:
 - Agents can ask follow-up questions when a decision is needed.
 - Completed code changes await review.
 - Stop, correct, continue the conversation, or take over in a terminal.
-- Use Feishu to follow progress, confirm actions, and accept results away from your desk. A phone browser on the same local network can also follow progress, and can handle permissions, conversation, and acceptance after you allow task actions on the computer.
+- Use Feishu to follow progress, confirm actions, and accept results away from your desk. A phone browser on the same local network can also follow progress after you set an access password on the computer, and can handle permissions, conversation, and acceptance after you allow task actions. When Tailscale is running, a phone on the same tailnet can connect outside the local network.
 
 You can leave a task running and return when your judgment is needed.
 
@@ -134,7 +134,7 @@ Enable Sessions to discuss requirements, develop ideas, and continue working wit
 
 The clipboard keeps text, code, JSON, and image history. My apps turns a concrete request into a report helper, dashboard, or personal tool.
 
-With permission, desktop apps can connect local scripts, files, processes, and services into reusable tools. Their appearance can follow Caravel or use an independent design. Local permissions can be remembered and revoked by scope; program execution has the current user's privileges and should only be granted to trusted apps, as it is not a process sandbox.
+With permission, desktop apps can connect local scripts, files, processes, and services into reusable tools. They can keep running after you leave the page, and can prefill a goal in Caravel’s create-task window for you to confirm before an agent starts. Their appearance can follow Caravel or use an independent design. Local permissions can be remembered and revoked by scope; program execution has the current user's privileges and should only be granted to trusted apps, as it is not a process sandbox.
 
 Keep the path from a captured idea to an agent task within one workspace.
 
@@ -194,7 +194,7 @@ Developers working across projects, frequent AI coding users managing many sessi
 - Use a specialist IDE for breakpoint debugging, profiling, complex type navigation, and large manual refactors.
 - Model-service data handling depends on the selected agent and provider.
 - Caravel reduces the need to keep every development tool running at once; specialist tools remain useful when needed.
-- Mobile access uses HTTP on the local network and should stay on a trusted network. Task actions are off by default; if a link is exposed, turn the switch off or rotate the link.
+- Mobile access uses HTTP and requires both the pairing link and an access password set on the computer. Without a password the phone cannot enter. Keep it on a trusted network or your own Tailscale network. Task actions are off by default; if a link is exposed, turn the switch off, clear the password, or rotate the link.
 
 ## Get started
 
