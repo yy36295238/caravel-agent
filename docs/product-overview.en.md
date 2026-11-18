@@ -113,6 +113,7 @@ Enable Sessions in Settings → Features; it is off by default. Start a conversa
 
 - Sending the first message creates a session. Choose an agent, model, reasoning effort, permissions, attachments, skills, and task references, with a separate draft for new sessions.
 - Search by keyword, date, and tags, showing today by default. Pin, favorite, tag, open historical links, or delete with confirmation.
+- The sidebar shows running sessions and sessions awaiting input independently of list filters. List animations follow the Workbench appearance settings.
 - Follow streaming conversations, handle permissions, stop and continue runs, and view usage, cost, duration, and turns. Resize the list or switch between list and conversation in narrow windows.
 
 ### 2. Task library
@@ -223,7 +224,7 @@ Reuse effective instructions, tools, and knowledge.
 Combine agent steps, commands, and human approval into repeatable processes.
 
 - Assign roles, models, skills, and requirements to individual steps.
-- Use variables, automatic advancement, approval gates, retries, jumps, and cancellation. Reset any step of a stopped workflow, including its current step, while retaining the task and code. Confirmation opens the target step; click “Start this step” to resume execution.
+- Use variables, automatic advancement, approval gates, retries, and cancellation. When a workflow has a task and is not running, jump to a selected step without starting it or confirm to start it immediately. A stopped workflow can also resume from the step where it stopped, retaining the task and code.
 - Rerun the current paused agent step or one awaiting completion confirmation using its configuration. Retain the task, existing code, and other steps while replacing this step’s output; running steps cannot be started again.
 - Attach existing tasks to a workflow.
 - Extract a reusable workflow from a successful agent conversation.
