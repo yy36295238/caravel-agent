@@ -59,7 +59,7 @@ A terminal shows a process. Caravel shows the stage of the work:
 - Current plans, tool calls, and subagent progress.
 - Files changed and whether the result has been delivered.
 
-Use a list to scan tasks, a board to follow stages, or split views to watch several important runs. A terminal remains available for taking over execution.
+Use a list to scan tasks, a board to follow stages, or split views to watch several important runs. Open a terminal in the project directory when you need to run commands manually.
 
 After enabling team selection, desktop tasks can also use a saved collaboration team. The lead agent assigns work according to members’ roles and notes, workers execute one at a time in the shared directory, and the lead reviews their results against the plan. The collaboration panel brings assignments, member progress replies, usage, and acceptance evidence together, with member filters and collected deliverables that open directly; a worker returning or a conversation ending does not automatically mean the whole request is delivered. Pixel cabin and modern office themes offer the same status and conversation controls, with permissions, stopping, and final confirmation available to the user.
 
@@ -73,7 +73,7 @@ Caravel separates routine execution from decisions that need you:
 - Sensitive actions and permissions wait for confirmation.
 - Agents can ask follow-up questions when a decision is needed.
 - Completed code changes await review.
-- Stop, correct, continue the conversation, or take over in a terminal.
+- Stop, correct, continue the conversation,.
 - Use Feishu to follow progress, confirm actions, and accept results away from your desk. A phone browser on the same local network can also follow progress after you set an access password on the computer, and can handle permissions, conversation, and acceptance after you allow task actions. When Tailscale is running, a phone on the same tailnet can connect outside the local network.
 
 You can leave a task running and return when your judgment is needed.
