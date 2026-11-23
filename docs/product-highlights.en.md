@@ -187,7 +187,7 @@ Developers working across projects, frequent AI coding users managing many sessi
 ## Requirements and boundaries
 
 - At least one installed and configured agent CLI is required for agent execution.
-- Antigravity requires the official CLI and a working account or API configuration; the first ACP connection may require a separate browser sign-in.
+- Antigravity requires official CLI 1.5.14 or later and a working account or API configuration. Account sign-in reuses terminal `agy`; sign in there first if needed.
 - TRAE requires CLI 2.0 and an Enterprise Flagship account.
 - Git workspaces require Git.
 - Windows also needs Git for Windows and Node.js; Linux needs Git and Node.js from the package manager, and Linux packages are updated manually.
