@@ -187,7 +187,7 @@ Developers working across projects, frequent AI coding users managing many sessi
 ## Requirements and boundaries
 
 - At least one installed and configured agent CLI is required for agent execution.
-- Antigravity requires official CLI 1.5.14 or later and a working account or API configuration. Account sign-in reuses terminal `agy`; sign in there first if needed.
+- Antigravity requires official CLI 1.5.14 or later and a working account or API configuration. Account sign-in reuses terminal `agy`; sign in there first if needed. Personal account mode supports interactive single-user tasks only. Headless helpers, workflows, schedules, and multi-agent collaboration require Gemini API Key mode; subscription quota collection is disabled.
 - TRAE requires CLI 2.0 and an Enterprise Flagship account.
 - Git workspaces require Git.
 - Windows also needs Git for Windows and Node.js; Linux needs Git and Node.js from the package manager, and Linux packages are updated manually.
