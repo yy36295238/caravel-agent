@@ -192,7 +192,7 @@ Agent CLI 仍需实际运行。Claude、Codex 等任务产生的进程资源，�
 ## 使用边界
 
 - Caravel 仍需至少一个已经安装并完成配置的 Agent CLI；
-- Antigravity 需要官方 CLI 1.5.14 及以上，以及可用的账号或 API 配置；账号登录复用终端 agy，未登录时请先在终端完成登录；个人账号模式仅支持单人交互式普通任务，无头辅助、工作流、定时任务及多 Agent 协作需切换为 Gemini API Key 模式，不再采集订阅额度；
+- Antigravity 需要官方 CLI 1.5.14 及以上，以及可用的账号或 API 配置；账号登录复用终端 agy，未登录时请先在终端完成登录；个人账号模式仅支持单人交互式普通任务，无头辅助、工作流、定时任务、协作、远端调度、顾问及应用工作室等场景需切换为 Gemini API Key 模式，不再采集订阅额度；
 - TRAE 需要 CLI 2.0 与企业版旗舰版账号；
 - Git 工作区仍需 Git；
 - Windows 另需 Git for Windows 与 Node.js，Linux 需用系统包管理器安装 Git 与 Node.js，Linux 安装包需手动下载更新；
